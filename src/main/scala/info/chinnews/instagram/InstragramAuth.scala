@@ -8,11 +8,12 @@ import java.util.Collections
 
 import argonaut.Parse
 import com.typesafe.config.Config
-import info.chinnews.Log
+import info.chinnews.instagram.FrontServer._
 import org.http4s.Method
 import org.http4s.dsl._
 import org.http4s.server.jetty.JettyBuilder
 import org.http4s.server.{HttpService, Server}
+import org.slf4j.{LoggerFactory, Logger}
 
 import scalaj.http.Http
 
@@ -20,6 +21,8 @@ import scalaj.http.Http
   * Created by tsarevskiy on 12/11/15.
   */
 case class InstragramAuth(client_id: String, client_secret: String) {
+
+  private val logger: Logger = LoggerFactory.getLogger(getClass)
 
   case class CopyDirVisitor(fromPath: Path, toPath: Path) extends SimpleFileVisitor[Path] {
 
@@ -45,7 +48,7 @@ case class InstragramAuth(client_id: String, client_secret: String) {
     val service = HttpService {
       case req@Method.GET -> Root =>
         try {
-          Log.logger.info(s"Received a request $req")
+          logger.info(s"Received a request $req")
 
           val code = req.params.get("code").get
           val body = Http("https://api.instagram.com/oauth/access_token").postForm(Seq(
@@ -96,7 +99,7 @@ case class InstragramAuth(client_id: String, client_secret: String) {
 
     var instagramLoginJsResourcePath: Path = null
 
-    Log.logger.info("Copying instagram_login.js. Path: " + uri.toString)
+    logger.info("Copying instagram_login.js. Path: " + uri.toString)
     if (uri.toString.contains("!")) {
       val pathParts: Array[String] = uri.toString.split("!/")
       val fs = FileSystems.newFileSystem(URI.create(pathParts(0)), Collections.emptyMap[String, String]())
@@ -107,7 +110,7 @@ case class InstragramAuth(client_id: String, client_secret: String) {
 
     val instagramLoginJsPath = Files.copy(instagramLoginJsResourcePath, tempDirPath.resolve("instagram_login.js"))
 
-    Log.logger.info(s"Running slimerjs: '$slimerjs $instagramLoginJsPath $client_id $serverHost $serverPort $name $password'")
+    logger.info(s"Running slimerjs: '$slimerjs $instagramLoginJsPath $client_id $serverHost $serverPort $name $password'")
 
     val pb = new ProcessBuilder("xvfb-run",
       slimerjs,instagramLoginJsPath.toString, client_id, serverHost, serverPort, name, password)
@@ -115,7 +118,7 @@ case class InstragramAuth(client_id: String, client_secret: String) {
     pb.redirectError(Redirect.INHERIT)
     pb.start().waitFor()
 
-    Log.logger.info(s"Slimerjs started")
+    logger.info(s"Slimerjs started")
 
   }
 
