@@ -10,7 +10,7 @@ script:
     "
     apt-get -y --force-yes install git;
     apt-get -y --force-yes install protobuf-compiler;
-    git clone https://github.com/daxzel/chin-news /root/chin-news;
+    git clone https://github.com/ThesisBestPractices/filtergram /root/chin-news;
     cd /root/chin-news; sbt packageAll
     "
 
