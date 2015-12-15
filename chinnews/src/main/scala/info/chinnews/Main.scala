@@ -18,7 +18,7 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    val applicationFile = new File("./application.conf")
+    val applicationFile = new File("application.conf")
     val conf = if (applicationFile.exists()) {
       ConfigFactory.parseFile(applicationFile)
     } else {

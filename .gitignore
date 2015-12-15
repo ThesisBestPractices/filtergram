@@ -1,0 +1,15 @@
+*.log
+
+# sbt
+dist/*
+*target/
+project/boot/
+project/plugins/project/
+
+# IDE
+.idea
+
+# Intellij
+.idea/
+*.iml
+*.iws
