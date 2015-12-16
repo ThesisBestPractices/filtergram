@@ -3,10 +3,14 @@ package info.chinnews
 import java.io.File
 
 import akka.actor.ActorSystem
+import com.google.inject.Guice
 import com.typesafe.config.{Config, ConfigFactory}
 import com.typesafe.scalalogging.Logger
 import info.chinnews.instagram._
 import info.chinnews.system.DB
+import info.chinnews.system.akkaguice.AkkaModule
+import info.chinnews.system.akkaguice.ConfigModule
+import info.chinnews.system.akkaguice.{ConfigModule, AkkaModule}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
 

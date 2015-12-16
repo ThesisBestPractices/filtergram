@@ -49,7 +49,9 @@ object Dependencies {
   val commonsIo = "commons-io" % "commons-io" % "2.4"
 
   val protobuf = "com.googlecode.protobuf-java-format" % "protobuf-java-format" % "1.4"
-  val guice = "com.google.inject" % "guice" % "4.0"
+
+  val guice = "com.google.inject" % "guice" % "4.0-beta5"
+  val scala_guice = "net.codingwell" %% "scala-guice" % "4.0.0-beta5"
 
   val http4s = Seq(
     "org.http4s" % "http4s-blaze-server_2.11" % "0.10.0",
