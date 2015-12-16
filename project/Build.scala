@@ -1,20 +1,22 @@
 import Dependencies._
 import sbt._
 import Keys._
+import sbtassembly.{AssemblyPlugin, Assembly}
 
 object Chinnews {
 
-   import sbtprotobuf.ProtobufPlugin
+  import sbtprotobuf.ProtobufPlugin
 
-   val build = Project("fg-chinnews", file("chinnews"),
-     settings = Defaults.coreDefaultSettings ++
-     Settings.common ++
-     ProtobufPlugin.protobufSettings ++
-     Seq(
-        javaSource in ProtobufPlugin.protobufConfig <<= (sourceDirectory in Compile)(_ / "generated"),
+  val build = Project("fg-chinnews", file("chinnews"),
+    settings = Defaults.coreDefaultSettings ++
+      Settings.common ++
+      Seq(Tasks.packageChinNewsTask) ++
+      ProtobufPlugin.protobufSettings ++
+      Seq(
+        javaSource in ProtobufPlugin.protobufConfig <<= (sourceDirectory in Compile) (_ / "generated"),
         libraryDependencies ++= Seq(scalajHttp, argonaut, mongoScalaDriver, sprayJson,
-             scalaLogging, slf4j, akka, httpcore, commonsIo, protobuf, guice, scala_guice) ++  http4s)
-   )
+          scalaLogging, slf4j, akka, httpcore, commonsIo, protobuf, guice, scala_guice) ++ http4s)
+  )
 
 }
 
@@ -45,4 +47,5 @@ object Filtergram extends Build {
   lazy val filtergram = Project("fg-filtergram", file("."))
     .aggregate(chinnews, core, filter, web)
     .settings(Settings.common: _*)
+
 }

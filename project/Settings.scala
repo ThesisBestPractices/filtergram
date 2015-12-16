@@ -1,5 +1,6 @@
 import sbt.Keys._
 import sbt._
+import sbtassembly.AssemblyPlugin
 
 object Settings {
 
@@ -13,7 +14,9 @@ object Settings {
   val scalaVer = "2.11.7"
 
   lazy val common = Seq(
-    ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) },
+    ivyScala := ivyScala.value map {
+      _.copy(overrideScalaVersion = true)
+    },
     scalaVersion := scalaVer,
     version := "0.1-SNAPSHOT",
     javacOptions := Seq(
@@ -62,18 +65,29 @@ object Dependencies {
 }
 
 object Tasks {
-//  val packageAllTask = TaskKey[Unit]("packageAll")
-//
-//  packageAllTask := {
-//    val assembled = assembly.toTask.value
-//    val targetPath = baseDirectory.value.getAbsolutePath + "/target/"
-//    val files = Map(
-//      new File(baseDirectory.value.getAbsolutePath.concat(
-//        "/src/main/resources/application.conf")) -> "application.conf",
-//      assembly.toTask.value -> "chin_news.jar"
-//    )
-//    val chinNewsZip = new File(targetPath + "/chin_news.zip")
-//    IO.zip(files, chinNewsZip)
-//    println("Packaged zip is created " + chinNewsZip.absolutePath)
-//  }
+
+  import AssemblyPlugin.autoImport._
+
+  val packageChinNews = TaskKey[Unit]("packageAll")
+
+  val packageChinNewsTask = packageChinNews := {
+    val assembled = assembly.toTask.value
+    val targetPath = baseDirectory.value.getAbsolutePath + "/target/"
+    val files = Map(
+      new File(baseDirectory.value.getAbsolutePath.concat(
+        "/src/main/resources/application.conf")) -> "application.conf",
+      assembly.toTask.value -> "chin_news.jar"
+    )
+    val chinNewsZip = new File(targetPath + "/chin_news.zip")
+    IO.zip(files, chinNewsZip)
+    println("Packaged zip is created " + chinNewsZip.absolutePath)
+  }
+
+  assemblyMergeStrategy in assembly := {
+    case PathList("application.conf") => sbtassembly.MergeStrategy.discard
+    case x =>
+      val oldStrategy = (assemblyMergeStrategy in assembly).value
+      oldStrategy(x)
+  }
+
 }
