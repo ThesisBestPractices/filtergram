@@ -2,16 +2,16 @@ package info.chinnews.instagram.actors
 
 import java.io.ByteArrayInputStream
 
-import akka.actor.{Props, Actor}
+import akka.actor.Actor
 import com.chinnews.Instagram
 import info.chinnews.system.akkaguice.{GuiceAkkaExtension, NamedActor}
+import org.apache.http.impl.DefaultHttpClientConnection
 
-//import com.chinnews.Instagram
 import com.google.protobuf.ExtensionRegistry
 import com.googlecode.protobuf.format.JsonFormat
 import com.typesafe.scalalogging.Logger
 import org.apache.http.impl.io.{DefaultHttpRequestParser, HttpTransportMetricsImpl, SessionInputBufferImpl}
-import org.apache.http.{Consts, HttpEntityEnclosingRequest}
+import org.apache.http._
 import org.slf4j.LoggerFactory
 
 /**
@@ -32,11 +32,13 @@ class SubscriptionParserActor extends Actor {
     case message: String =>
       logger.info(s"Received a request: $message")
 
+      val client = new DefaultHttpClientConnection()
       val sessionInputBuffer = new SessionInputBufferImpl(new HttpTransportMetricsImpl(), 2048)
       sessionInputBuffer.bind(new ByteArrayInputStream(message.getBytes(Consts.ASCII)))
       val requestParser = new DefaultHttpRequestParser(sessionInputBuffer)
       requestParser.parse() match {
         case request: HttpEntityEnclosingRequest =>
+          client.sendRequestEntity(request)
           if (request.getEntity != null) {
             val content = request.getEntity.getContent
 
@@ -56,5 +58,4 @@ class SubscriptionParserActor extends Actor {
         case default => logger.info("Unrecognized request " + default.toString)
       }
   }
-
 }

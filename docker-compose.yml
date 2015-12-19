@@ -6,6 +6,7 @@ db:
 app:
   image: daxzel/temp
   command: bash -c "cd /root/app && java -jar ./chin_news.jar"
+#  command: bash -c "cd /root/app && java -jar -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005 ./chin_news.jar"
   volumes:
     - ./temp:/root/test
   ports:
