@@ -8,7 +8,6 @@ import java.util.Collections
 
 import argonaut.Parse
 import com.typesafe.config.Config
-import info.chinnews.instagram.FrontServer._
 import org.http4s.Method
 import org.http4s.dsl._
 import org.http4s.server.jetty.JettyBuilder
