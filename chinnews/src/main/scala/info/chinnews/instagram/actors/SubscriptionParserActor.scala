@@ -36,7 +36,7 @@ class SubscriptionParserActor extends Actor {
       val requestParser = new DefaultHttpRequestParser(sessionInputBuffer)
       requestParser.parse() match {
         case request: HttpEntityEnclosingRequest =>
-          client.sendRequestEntity(request)
+          client.receiveRequestEntity(request)
           if (request.getEntity != null) {
             val content = request.getEntity.getContent
 

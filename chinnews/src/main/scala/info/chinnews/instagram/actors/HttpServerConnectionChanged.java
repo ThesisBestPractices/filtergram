@@ -1,13 +1,14 @@
 package info.chinnews.instagram.actors;
 
 import org.apache.http.impl.AbstractHttpClientConnection;
+import org.apache.http.impl.AbstractHttpServerConnection;
 
 import java.io.IOException;
 
 /**
  * Created by Tsarevskiy
  */
-public class HttpServerConnectionChanged extends AbstractHttpClientConnection {
+public class HttpServerConnectionChanged extends AbstractHttpServerConnection {
 
     public HttpServerConnectionChanged() {
         super();
