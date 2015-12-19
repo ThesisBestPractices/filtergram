@@ -1,14 +1,26 @@
 package info.chinnews.system.akkaguice
 
+import java.io.File
+
 import com.google.inject.{AbstractModule, Provider}
 import com.typesafe.config.{Config, ConfigFactory}
 import info.chinnews.system.akkaguice.ConfigModule.ConfigProvider
 import net.codingwell.scalaguice.ScalaModule
 
 object ConfigModule {
+
   class ConfigProvider extends Provider[Config] {
-    override def get() = ConfigFactory.load()
+    override def get() = {
+      val applicationFile = new File("application.conf")
+      val conf = if (applicationFile.exists()) {
+        ConfigFactory.parseFile(applicationFile)
+      } else {
+        ConfigFactory.load()
+      }
+      conf
+    }
   }
+
 }
 
 /**

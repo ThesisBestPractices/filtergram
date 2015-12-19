@@ -8,11 +8,10 @@ import com.typesafe.config.{Config, ConfigFactory}
 import com.typesafe.scalalogging.Logger
 import info.chinnews.instagram._
 import info.chinnews.system.DB
-import info.chinnews.system.akkaguice.AkkaModule
-import info.chinnews.system.akkaguice.ConfigModule
 import info.chinnews.system.akkaguice.{ConfigModule, AkkaModule}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
+import net.codingwell.scalaguice.InjectorExtensions._
 
 
 
@@ -22,23 +21,15 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    val applicationFile = new File("application.conf")
-    val conf = if (applicationFile.exists()) {
-      ConfigFactory.parseFile(applicationFile)
-    } else {
-      ConfigFactory.load()
-    }
-
-    val actorSystem = ActorSystem()
-
-    subscribe(conf, actorSystem)
-
     val injector = Guice.createInjector(
       new ConfigModule(),
       new AkkaModule()
     )
 
+    val actorSystem = injector.instance[ActorSystem]
+    val conf = injector.instance[Config]
 
+    subscribe(conf, actorSystem)
 
     //    InstragramAuth(conf.getString("chin_news.instagram.client_id"), conf.getString("chin_news.instagram.client_secret"))
     //      .auth(conf.getString("chin_news.instagram.login"), conf.getString("chin_news.instagram.password"), conf, (accessToken, failureListener) => {
