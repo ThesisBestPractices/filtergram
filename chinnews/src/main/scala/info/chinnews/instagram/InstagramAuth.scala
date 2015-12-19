@@ -31,8 +31,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
 
   private val client_secret = config.getString("chin_news.instagram.client_secret")
 
-  private
-  @volatile var currentToken: String = ""
+  @volatile var currentToken: String = null
 
   case class CopyDirVisitor(fromPath: Path, toPath: Path) extends SimpleFileVisitor[Path] {
 
