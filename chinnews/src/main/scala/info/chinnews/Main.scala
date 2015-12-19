@@ -33,6 +33,13 @@ object Main {
 
     subscribe(conf, actorSystem)
 
+    val injector = Guice.createInjector(
+      new ConfigModule(),
+      new AkkaModule()
+    )
+
+
+
     //    InstragramAuth(conf.getString("chin_news.instagram.client_id"), conf.getString("chin_news.instagram.client_secret"))
     //      .auth(conf.getString("chin_news.instagram.login"), conf.getString("chin_news.instagram.password"), conf, (accessToken, failureListener) => {
     //

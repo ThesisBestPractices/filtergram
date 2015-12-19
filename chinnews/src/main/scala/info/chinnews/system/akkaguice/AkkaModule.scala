@@ -6,6 +6,7 @@ import akka.actor.ActorSystem
 import com.google.inject.{AbstractModule, Injector, Provider}
 import com.typesafe.config.Config
 import info.chinnews.system.akkaguice.AkkaModule.ActorSystemProvider
+import net.codingwell.scalaguice.ScalaModule
 
 /**
   * Created by Tsarevskiy
@@ -25,9 +26,9 @@ object AkkaModule {
 /**
   * A module providing an Akka ActorSystem.
   */
-//class AkkaModule extends AbstractModule with ScalaModule {
-//
-//  override def configure() {
-//    bind[ActorSystem].toProvider[ActorSystemProvider].asEagerSingleton()
-//  }
-//}
+class AkkaModule extends AbstractModule with ScalaModule {
+
+  override def configure() {
+    bind[ActorSystem].toProvider[ActorSystemProvider].asEagerSingleton()
+  }
+}

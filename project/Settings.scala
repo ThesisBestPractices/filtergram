@@ -53,8 +53,8 @@ object Dependencies {
 
   val protobuf = "com.googlecode.protobuf-java-format" % "protobuf-java-format" % "1.4"
 
-  val guice = "com.google.inject" % "guice" % "4.0-beta5"
-  val scala_guice = "net.codingwell" %% "scala-guice" % "4.0.0-beta5"
+  val guice = "com.google.inject" % "guice" % "4.0"
+  val scala_guice = "net.codingwell" % "scala-guice_2.10" % "4.0.1"
 
   val http4s = Seq(
     "org.http4s" % "http4s-blaze-server_2.11" % "0.10.0",
