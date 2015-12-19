@@ -5,20 +5,23 @@ import java.nio.channels._
 import java.nio.charset.Charset
 import java.util.concurrent.Executors
 
-import akka.actor.{Props, ActorSystem}
-//import info.chinnews.instagram.actors.SubscriptionParserActor
+import akka.actor.ActorSystem
+import com.google.inject.{Injector, Inject}
+import info.chinnews.instagram.actors.SubscriptionParserActor
+import info.chinnews.system.akkaguice.GuiceAkkaExtension
+
 import org.slf4j.{Logger, LoggerFactory}
 
 /**
   * Created by Tsarevskiy
   */
-object FrontServer {
+class FrontServer @Inject()(val system: ActorSystem, val injector: Injector) {
   private val logger: Logger = LoggerFactory.getLogger(getClass)
   var PORT: Int = 8000
 
-  def subscribe(system: ActorSystem) {
+  def subscribe() {
     logger.info("Subscribing to the port: " + PORT)
-//    val instagramMediaActor = system.actorOf(Props[SubscriptionParserActor], "instagramMediaActor")
+        val instagramMediaActor = system.actorOf(GuiceAkkaExtension(system).props(SubscriptionParserActor.name))
 
     Executors.newSingleThreadExecutor().execute(new Runnable {
       override def run(): Unit = {
@@ -74,7 +77,7 @@ object FrontServer {
                         logger.info("Calculated hub_challenge: " + hub_challenge)
                         client.write(encoder.encode(CharBuffer.wrap(hub_challenge)))
                       } else {
-//                        instagramMediaActor ! request
+                        instagramMediaActor ! request
                       }
                       key.cancel()
                       client.close()

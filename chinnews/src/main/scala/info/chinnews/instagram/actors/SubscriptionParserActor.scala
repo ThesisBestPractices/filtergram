@@ -4,6 +4,7 @@ import java.io.ByteArrayInputStream
 
 import akka.actor.{Props, Actor}
 import com.chinnews.Instagram
+import info.chinnews.system.akkaguice.{GuiceAkkaExtension, NamedActor}
 
 //import com.chinnews.Instagram
 import com.google.protobuf.ExtensionRegistry
@@ -16,11 +17,16 @@ import org.slf4j.LoggerFactory
 /**
   * Created by Tsarevskiy
   */
+
+object SubscriptionParserActor extends NamedActor {
+  override final val name = "SubscriptionParserActor"
+}
+
 class SubscriptionParserActor extends Actor {
 
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
 
-  val photoUpdateActor = context.actorOf(Props[PhotoUpdateActor], name = "photoUpdateActor")
+  val photoUpdateActor = context.actorOf(GuiceAkkaExtension(context.system).props(SubscriptionParserActor.name))
 
   def receive() = {
     case message: String =>

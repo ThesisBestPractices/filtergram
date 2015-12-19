@@ -2,9 +2,11 @@ package info.chinnews.system.akkaguice
 
 import javax.inject.Inject
 
-import akka.actor.ActorSystem
+import akka.actor.{Actor, ActorSystem}
+import com.google.inject.name.Names
 import com.google.inject.{AbstractModule, Injector, Provider}
 import com.typesafe.config.Config
+import info.chinnews.instagram.actors.{PhotoUpdateActor, SubscriptionParserActor}
 import info.chinnews.system.DB
 import info.chinnews.system.akkaguice.SystemModule.{DbSystemProvider, ActorSystemProvider}
 import net.codingwell.scalaguice.ScalaModule
@@ -41,5 +43,8 @@ class SystemModule extends AbstractModule with ScalaModule {
     install(new ConfigModule)
     bind[ActorSystem].toProvider[ActorSystemProvider].asEagerSingleton()
     bind[DB].toProvider[DbSystemProvider]
+
+    bind[Actor].annotatedWith(Names.named(SubscriptionParserActor.name)).to[SubscriptionParserActor]
+    bind[Actor].annotatedWith(Names.named(PhotoUpdateActor.name)).to[PhotoUpdateActor]
   }
 }

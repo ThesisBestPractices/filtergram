@@ -54,7 +54,7 @@ object Main {
     val db = injector.instance[DB]
     Subscriber.removeOldConnections(client_id, client_secret)
     CitiesHolder.addCities(db)
-    FrontServer.subscribe(actorSystem)
+    injector.instance[FrontServer].subscribe()
     db.forAllCities((city: Document) => {
       val name = city.get("name").get.asString().getValue
       val lat = city.get("lat").get.asString().getValue
