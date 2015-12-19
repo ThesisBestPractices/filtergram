@@ -21,6 +21,7 @@ import scalaj.http.Http
 /**
   * Created by tsarevskiy on 12/11/15.
   */
+@Singleton
 class InstagramAuth @Inject()(config: Config, injector: Injector) {
 
   private val logger: Logger = LoggerFactory.getLogger(getClass)
