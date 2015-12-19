@@ -1,18 +1,15 @@
 package info.chinnews
 
-import java.io.File
-
 import akka.actor.ActorSystem
-import com.google.inject.Guice
-import com.typesafe.config.{Config, ConfigFactory}
+import com.google.inject.{Injector, Guice}
+import com.typesafe.config.Config
 import com.typesafe.scalalogging.Logger
 import info.chinnews.instagram._
 import info.chinnews.system.DB
-import info.chinnews.system.akkaguice.{ConfigModule, AkkaModule}
+import info.chinnews.system.akkaguice.{ConfigModule, SystemModule}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
 import net.codingwell.scalaguice.InjectorExtensions._
-
 
 
 object Main {
@@ -23,13 +20,13 @@ object Main {
 
     val injector = Guice.createInjector(
       new ConfigModule(),
-      new AkkaModule()
+      new SystemModule()
     )
 
     val actorSystem = injector.instance[ActorSystem]
     val conf = injector.instance[Config]
 
-    subscribe(conf, actorSystem)
+    subscribe(conf, actorSystem, injector)
 
     //    InstragramAuth(conf.getString("chin_news.instagram.client_id"), conf.getString("chin_news.instagram.client_secret"))
     //      .auth(conf.getString("chin_news.instagram.login"), conf.getString("chin_news.instagram.password"), conf, (accessToken, failureListener) => {
@@ -49,14 +46,12 @@ object Main {
     //      )
   }
 
-  def subscribe(conf: Config, actorSystem: ActorSystem): Unit = {
-    val db = DB(conf.getString("chin_news.db.name"), conf.getString("chin_news.db.host"),
-      conf.getInt("chin_news.db.port"))
-
+  def subscribe(conf: Config, actorSystem: ActorSystem, injector: Injector): Unit = {
     val client_id = conf.getString("chin_news.instagram.client_id")
     val client_secret = conf.getString("chin_news.instagram.client_secret")
     val callback_url = conf.getString("chin_news.public.host")
 
+    val db = injector.instance[DB]
     Subscriber.removeOldConnections(client_id, client_secret)
     CitiesHolder.addCities(db)
     FrontServer.subscribe(actorSystem)
