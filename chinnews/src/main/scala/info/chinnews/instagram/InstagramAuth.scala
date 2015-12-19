@@ -5,8 +5,10 @@ import java.net.URI
 import java.nio.file.{Path, _}
 import java.nio.file.attribute.BasicFileAttributes
 import java.util.Collections
+import java.util.concurrent.locks.{ReentrantLock, Lock}
 
 import argonaut.Parse
+import com.google.inject.{Injector, Inject}
 import com.typesafe.config.Config
 import org.http4s.Method
 import org.http4s.dsl._
@@ -19,9 +21,18 @@ import scalaj.http.Http
 /**
   * Created by tsarevskiy on 12/11/15.
   */
-case class InstragramAuth(client_id: String, client_secret: String) {
+class InstagramAuth @Inject()(config: Config, injector: Injector) {
 
   private val logger: Logger = LoggerFactory.getLogger(getClass)
+
+  private val lock: Lock = new ReentrantLock()
+
+  private val client_id = config.getString("chin_news.instagram.client_id")
+
+  private val client_secret = config.getString("chin_news.instagram.client_secret")
+
+  private
+  @volatile var currentToken: String = ""
 
   case class CopyDirVisitor(fromPath: Path, toPath: Path) extends SimpleFileVisitor[Path] {
 
@@ -36,6 +47,34 @@ case class InstragramAuth(client_id: String, client_secret: String) {
         Files.createDirectory(targetPath)
       }
       FileVisitResult.CONTINUE
+    }
+  }
+
+  def acquireToken(): String = {
+
+    if (currentToken != null) {
+      return currentToken
+    }
+
+    lock.lock()
+    try {
+      if (currentToken != null) {
+        return currentToken
+      }
+      logger.info("Starting getting new token")
+      auth(config.getString("chin_news.instagram.login"),
+        config.getString("chin_news.instagram.password"),
+        config, (accessToken, failureListener) => {
+          currentToken = accessToken
+        })
+
+      while (currentToken == null) {
+        Thread.sleep(1000)
+        logger.info("Waiting for the new token...")
+      }
+      currentToken
+    } finally {
+      lock.unlock()
     }
   }
 
@@ -112,7 +151,7 @@ case class InstragramAuth(client_id: String, client_secret: String) {
     logger.info(s"Running slimerjs: '$slimerjs $instagramLoginJsPath $client_id $serverHost $serverPort $name $password'")
 
     val pb = new ProcessBuilder("xvfb-run",
-      slimerjs,instagramLoginJsPath.toString, client_id, serverHost, serverPort, name, password)
+      slimerjs, instagramLoginJsPath.toString, client_id, serverHost, serverPort, name, password)
     pb.redirectOutput(Redirect.INHERIT)
     pb.redirectError(Redirect.INHERIT)
     pb.start().waitFor()

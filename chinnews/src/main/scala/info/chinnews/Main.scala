@@ -27,23 +27,6 @@ object Main {
     val conf = injector.instance[Config]
 
     subscribe(conf, actorSystem, injector)
-
-    //    InstragramAuth(conf.getString("chin_news.instagram.client_id"), conf.getString("chin_news.instagram.client_secret"))
-    //      .auth(conf.getString("chin_news.instagram.login"), conf.getString("chin_news.instagram.password"), conf, (accessToken, failureListener) => {
-    //
-    //        val db = DB(conf.getString("chin_news.db.name"), conf.getString("chin_news.db.host"),
-    //          conf.getInt("chin_news.db.port"))
-    //        scheduler.schedule(
-    //          initialDelay = Duration(5, TimeUnit.SECONDS),
-    //          interval = Duration(60, TimeUnit.SECONDS),
-    //          runnable = new LocationCrawler(accessToken, failureListener, db))
-    //
-    //        scheduler.schedule(
-    //          initialDelay = Duration(5, TimeUnit.SECONDS),
-    //          interval = Duration(20, TimeUnit.SECONDS),
-    //          runnable = new TagCrawler(accessToken, failureListener, db))
-    //      }
-    //      )
   }
 
   def subscribe(conf: Config, actorSystem: ActorSystem, injector: Injector): Unit = {
