@@ -5,8 +5,6 @@ import java.io.ByteArrayInputStream
 import akka.actor.Actor
 import com.chinnews.Instagram
 import info.chinnews.system.akkaguice.{GuiceAkkaExtension, NamedActor}
-import org.apache.http.impl.DefaultHttpClientConnection
-
 import com.google.protobuf.ExtensionRegistry
 import com.googlecode.protobuf.format.JsonFormat
 import com.typesafe.scalalogging.Logger
@@ -32,7 +30,7 @@ class SubscriptionParserActor extends Actor {
     case message: String =>
       logger.info(s"Received a request: $message")
 
-      val client = new DefaultHttpClientConnection()
+      val client = new HttpServerConnectionChanged()
       val sessionInputBuffer = new SessionInputBufferImpl(new HttpTransportMetricsImpl(), 2048)
       sessionInputBuffer.bind(new ByteArrayInputStream(message.getBytes(Consts.ASCII)))
       val requestParser = new DefaultHttpRequestParser(sessionInputBuffer)
