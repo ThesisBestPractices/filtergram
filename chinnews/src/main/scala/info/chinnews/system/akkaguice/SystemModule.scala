@@ -45,6 +45,7 @@ class SystemModule extends AbstractModule with ScalaModule {
     install(new ConfigModule)
     bind[ActorSystem].toProvider[ActorSystemProvider].asEagerSingleton()
     bind[DB].toProvider[DbSystemProvider]
+    bind[InstagramAuth].asEagerSingleton()
     bind[Actor].annotatedWith(Names.named(SubscriptionParserActor.name)).to[SubscriptionParserActor]
     bind[Actor].annotatedWith(Names.named(PhotoUpdateActor.name)).to[PhotoUpdateActor]
   }
