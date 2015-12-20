@@ -8,4 +8,4 @@ Then **filtergram** is for you
 
 
 
-sbt protobuf:protobuf-protoc
+sbt protobuf:protobuf-protoc to update protobuf entities
