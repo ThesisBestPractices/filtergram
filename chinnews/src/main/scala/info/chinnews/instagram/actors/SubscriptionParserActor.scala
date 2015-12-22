@@ -30,7 +30,6 @@ class SubscriptionParserActor extends Actor {
     case message: String =>
       logger.info(s"Received a request: $message")
 
-      val client = new HttpServerConnectionChanged()
       val sessionInputBuffer = new SessionInputBufferImpl(new HttpTransportMetricsImpl(), 2048)
       sessionInputBuffer.bind(new ByteArrayInputStream(message.getBytes(Consts.ASCII)))
       val requestParser = new DefaultHttpRequestParser(sessionInputBuffer)
