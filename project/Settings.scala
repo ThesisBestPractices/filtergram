@@ -7,7 +7,7 @@ object Settings {
   import net.virtualvoid.sbt.graph.DependencyGraphSettings._
 
   val resolutionRepos = Seq(
-    resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/"
+    resolvers ++= Seq("Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/", Resolver.mavenLocal)
   )
 
   val javaVer = "1.7"
@@ -48,7 +48,7 @@ object Dependencies {
   val slf4j = "org.slf4j" % "slf4j-log4j12" % "1.7.13"
 
   val akka = "com.typesafe.akka" % "akka-actor_2.11" % "2.4.1"
-  val httpcore = "org.apache.httpcomponents" % "httpcore" % "4.4.4"
+  val shttpparser = "com.daxzel" % "shttpparser" % "0.4"
   val commonsIo = "commons-io" % "commons-io" % "2.4"
 
   val protobuf = "com.googlecode.protobuf-java-format" % "protobuf-java-format" % "1.4"

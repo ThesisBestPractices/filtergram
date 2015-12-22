@@ -3,7 +3,6 @@ package info.chinnews.system.akkaguice
 import javax.inject.Inject
 
 import akka.actor.{Actor, ActorSystem}
-import com.chinnews.Instagram
 import com.google.inject.name.Names
 import com.google.inject.{AbstractModule, Injector, Provider}
 import com.typesafe.config.Config

@@ -4,12 +4,12 @@ import java.io.ByteArrayInputStream
 
 import akka.actor.Actor
 import com.chinnews.Instagram
+import com.daxzel.shttpparser.DefaultHttpRequestParser
+import com.daxzel.shttpparser.message.{HttpTransportMetricsImpl, SessionInputBufferImpl, Consts, HttpEntityEnclosingRequest}
 import info.chinnews.system.akkaguice.{GuiceAkkaExtension, NamedActor}
 import com.google.protobuf.ExtensionRegistry
 import com.googlecode.protobuf.format.JsonFormat
 import com.typesafe.scalalogging.Logger
-import org.apache.http.impl.io.{DefaultHttpRequestParser, HttpTransportMetricsImpl, SessionInputBufferImpl}
-import org.apache.http._
 import org.slf4j.LoggerFactory
 
 /**
@@ -36,7 +36,6 @@ class SubscriptionParserActor extends Actor {
       val requestParser = new DefaultHttpRequestParser(sessionInputBuffer)
       requestParser.parse() match {
         case request: HttpEntityEnclosingRequest =>
-          client.receiveRequestEntity(request)
           if (request.getEntity != null) {
             val content = request.getEntity.getContent
 
