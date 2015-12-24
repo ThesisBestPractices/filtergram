@@ -41,7 +41,7 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
     val warsawUsers = Parse.parseOption(searchBody).get.field("data").get.array
       .get.map(json => json.field("user").get.field("username").toString).toSet
     warsawUsers.foreach(username => {
-      logger.info("Saving a user in city info " + searchBody)
+      logger.debug("Saving a user in city info: username - " + username + " city - " + city)
       db.storeUserLocation(city, username)
     })
   }
