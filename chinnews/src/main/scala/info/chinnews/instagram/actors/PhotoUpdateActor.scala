@@ -36,7 +36,7 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
     val searchBody = Http(s"https://api.instagram.com/v1/tags/$city/media/recent")
       .param("access_token", accessToken).asString.body
 
-    logger.info("Received news photos. Query:\n" + searchBody)
+    logger.debug("Received news photos. Query:\n" + searchBody)
 
     val warsawUsers = Parse.parseOption(searchBody).get.field("data").get.array
       .get.map(json => json.field("user").get.field("username").toString).toSet
