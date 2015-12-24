@@ -27,6 +27,7 @@ object SubscriptionParserActor extends NamedActor {
   }
 
   def handleOneJsonElement(el: String, func: SubscriptionUpdate => Unit): Unit = {
+    //bug https://github.com/bivas/protobuf-java-format/issues/20
     val message = el.replace("{}", "\" \"")
 
     val builder = Instagram.SubscriptionUpdate.newBuilder()

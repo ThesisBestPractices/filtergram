@@ -64,6 +64,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
       auth(config.getString("chin_news.instagram.login"),
         config.getString("chin_news.instagram.password"),
         config, (accessToken, failureListener) => {
+          logger.info("Acquiring a new token: " + accessToken)
           currentToken = accessToken
         })
 
@@ -71,6 +72,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
         Thread.sleep(1000)
         logger.info("Waiting for the new token...")
       }
+      logger.info("Acquired a new token: " + currentToken)
       currentToken
     } finally {
       lock.unlock()
@@ -95,6 +97,8 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
             "redirect_uri" -> "http://localhost:8080",
             "code" -> code))
             .asString.body
+
+          logger.info(s"Received a request body: $body")
 
           val access_token = Parse.parseWith(body, _.field("access_token").flatMap(_.string).get, msg => msg)
 
