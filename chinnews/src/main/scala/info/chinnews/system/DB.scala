@@ -31,8 +31,13 @@ case class DB(dbname: String, host: String, port: Int) {
     cities.find().foreach(document => f(document))
   }
 
-  def addCity(name: String, lat: String, lng: String): Unit = {
-    cities.insertOne(Document("_id" -> name, "name" -> name, "lat" -> lat, "lng" -> lng)).subscribe(observer)
+  def addCity(name: String, lat: String, lng: String, tags: Seq[String]): Unit = {
+    cities.insertOne(Document(
+      "_id" -> name,
+      "name" -> name,
+      "lat" -> lat,
+      "lng" -> lng,
+      "tags" -> tags)).subscribe(observer)
   }
 
 }

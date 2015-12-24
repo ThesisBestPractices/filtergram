@@ -46,7 +46,7 @@ class FrontServer @Inject()(val system: ActorSystem, val injector: Injector) {
               val iterator = keys.iterator()
               while (iterator.hasNext) {
                 val key = iterator.next()
-                logger.info("Received a key: " + key.toString)
+                logger.trace("Received a key: " + key.toString)
                 iterator.remove()
 
                 if (key == serverKey) {
@@ -66,7 +66,7 @@ class FrontServer @Inject()(val system: ActorSystem, val injector: Injector) {
                     } else {
                       buffer.flip()
                       val request = decoder.decode(buffer).toString
-                      logger.info(request)
+                      logger.trace(request)
                       buffer.clear()
 
                       val index = request.indexOf("hub.challenge")
