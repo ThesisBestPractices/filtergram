@@ -21,12 +21,12 @@ import org.slf4j.LoggerFactory
 object SubscriptionParserActor extends NamedActor {
   override final val name = "SubscriptionParserActor"
 
-  def forAllJsonArrayElements(array: String,  func: String => Unit): Unit = {
-//    array.substring(1, array.length - 1).split(",").foreach(func)
+  def forAllJsonArrayElements(array: String, func: String => Unit): Unit = {
+    //    array.substring(1, array.length - 1).split(",").foreach(func)
     func(array.substring(1, array.length - 1))
   }
 
-  def handleOneJsonElement(el: String,  func: SubscriptionUpdate => Unit): Unit = {
+  def handleOneJsonElement(el: String, func: SubscriptionUpdate => Unit): Unit = {
     val message = el.replace("{}", "\" \"")
 
     val builder = Instagram.SubscriptionUpdate.newBuilder()
@@ -57,11 +57,9 @@ class SubscriptionParserActor extends Actor {
             val stringContent = IOUtils.toString(content)
             if (stringContent.charAt(0).equals('[')) {
               SubscriptionParserActor.forAllJsonArrayElements(stringContent,
-                (el: String) => SubscriptionParserActor.handleOneJsonElement(el,
-                  subscriptionUpdate => photoUpdateActor ! subscriptionUpdate))
+                (el: String) => SubscriptionParserActor.handleOneJsonElement(el, sendPhotoUpdate))
             } else {
-              SubscriptionParserActor.handleOneJsonElement(stringContent,
-                subscriptionUpdate => photoUpdateActor ! subscriptionUpdate)
+              SubscriptionParserActor.handleOneJsonElement(stringContent, sendPhotoUpdate)
             }
           } else {
             logger.warn(s"Can't get a request entity ")
@@ -72,4 +70,11 @@ class SubscriptionParserActor extends Actor {
         case default => logger.info("Unrecognized request " + default.toString)
       }
   }
+
+  def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate) = {
+    logger.info("Sending photo update to another actor " +
+      subscriptionUpdate.getSubscriptionId)
+    photoUpdateActor ! subscriptionUpdate
+  }
+
 }
