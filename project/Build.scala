@@ -15,7 +15,8 @@ object Chinnews {
       Seq(
         javaSource in ProtobufPlugin.protobufConfig <<= (sourceDirectory in Compile) (_ / "generated"),
         libraryDependencies ++= Seq(scalajHttp, argonaut, mongoScalaDriver, sprayJson,
-          scalaLogging, slf4j, akka, shttpparser, commonsIo, protobuf, guice, scala_guice) ++ http4s)
+          scalaLogging, slf4j, akka, shttpparser, commonsIo, protobuf, guice, scala_guice,
+          scalaTest) ++ http4s)
   )
 
 }

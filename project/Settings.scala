@@ -50,6 +50,7 @@ object Dependencies {
   val akka = "com.typesafe.akka" % "akka-actor_2.11" % "2.4.1"
   val shttpparser = "com.daxzel" % "shttpparser" % "0.5"
   val commonsIo = "commons-io" % "commons-io" % "2.4"
+  val scalaTest = "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 
   val protobuf = "com.googlecode.protobuf-java-format" % "protobuf-java-format" % "1.4"
 
