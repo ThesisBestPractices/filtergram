@@ -60,19 +60,19 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
       if (currentToken != null) {
         return currentToken
       }
-      logger.info("Starting getting new token")
+      logger.debug("Starting getting new token")
       auth(config.getString("chin_news.instagram.login"),
         config.getString("chin_news.instagram.password"),
         config, (accessToken, failureListener) => {
-          logger.info("Acquiring a new token: " + accessToken)
+          logger.debug("Acquiring a new token: " + accessToken)
           currentToken = accessToken
         })
 
       while (currentToken == null) {
         Thread.sleep(1000)
-        logger.info("Waiting for the new token...")
+        logger.debug("Waiting for the new token...")
       }
-      logger.info("Acquired a new token: " + currentToken)
+      logger.debug("Acquired a new token: " + currentToken)
       currentToken
     } finally {
       lock.unlock()
@@ -87,7 +87,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
     val service = HttpService {
       case req@Method.GET -> Root =>
         try {
-          logger.info(s"Received a request $req")
+          logger.debug(s"Received a request $req")
 
           val code = req.params.get("code").get
           val body = Http("https://api.instagram.com/oauth/access_token").postForm(Seq(
@@ -98,7 +98,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
             "code" -> code))
             .asString.body
 
-          logger.info(s"Received a request body: $body")
+          logger.debug(s"Received a request body: $body")
 
           val access_token = Parse.parseWith(body, _.field("access_token").flatMap(_.string).get, msg => msg)
 
@@ -140,7 +140,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
 
     var instagramLoginJsResourcePath: Path = null
 
-    logger.info("Copying instagram_login.js. Path: " + uri.toString)
+    logger.debug("Copying instagram_login.js. Path: " + uri.toString)
     if (uri.toString.contains("!")) {
       val pathParts: Array[String] = uri.toString.split("!/")
       val fs = FileSystems.newFileSystem(URI.create(pathParts(0)), Collections.emptyMap[String, String]())
@@ -151,7 +151,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
 
     val instagramLoginJsPath = Files.copy(instagramLoginJsResourcePath, tempDirPath.resolve("instagram_login.js"))
 
-    logger.info(s"Running slimerjs: '$slimerjs $instagramLoginJsPath $client_id $serverHost $serverPort $name $password'")
+    logger.debug(s"Running slimerjs: '$slimerjs $instagramLoginJsPath $client_id $serverHost $serverPort $name $password'")
 
     val pb = new ProcessBuilder("xvfb-run",
       slimerjs, instagramLoginJsPath.toString, client_id, serverHost, serverPort, name, password)
@@ -159,7 +159,7 @@ class InstagramAuth @Inject()(config: Config, injector: Injector) {
     pb.redirectError(Redirect.INHERIT)
     pb.start().waitFor()
 
-    logger.info(s"Slimerjs started")
+    logger.debug(s"Slimerjs started")
 
   }
 

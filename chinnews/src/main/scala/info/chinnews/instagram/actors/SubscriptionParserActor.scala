@@ -46,7 +46,7 @@ class SubscriptionParserActor extends Actor {
 
   def receive() = {
     case message: String =>
-      logger.debug(s"Received a request: $message")
+      logger.trace(s"Received a request: $message")
 
       val sessionInputBuffer = new SessionInputBufferImpl(new HttpTransportMetricsImpl(), 2048)
       sessionInputBuffer.bind(new ByteArrayInputStream(message.getBytes(Consts.ASCII)))
@@ -68,12 +68,12 @@ class SubscriptionParserActor extends Actor {
               logger.warn(s"Expected continue")
             }
           }
-        case default => logger.info("Unrecognized request " + default.toString)
+        case default => logger.debug("Unrecognized request " + default.toString)
       }
   }
 
   def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate) = {
-    logger.info("Sending photo update to another actor " +
+    logger.debug("Sending photo update to another actor " +
       subscriptionUpdate.getSubscriptionId)
     photoUpdateActor ! subscriptionUpdate
   }
