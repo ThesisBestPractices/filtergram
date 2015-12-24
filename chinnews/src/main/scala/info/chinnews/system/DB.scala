@@ -24,7 +24,10 @@ case class DB(dbname: String, host: String, port: Int) {
 
 
   def storeUserLocation(city_id: String, username: String): Unit = {
-    userLocations.insertOne(Document("city_id" -> city_id, "username" -> username)).subscribe(observer)
+    userLocations.insertOne(Document(
+      "_id" -> (city_id + username),
+      "city_id" -> city_id,
+      "username" -> username)).subscribe(observer)
   }
 
   def forAllCities(f: (Document) => _) {
