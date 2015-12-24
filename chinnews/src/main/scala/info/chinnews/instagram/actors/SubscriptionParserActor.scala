@@ -41,11 +41,11 @@ class SubscriptionParserActor extends Actor {
 
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
 
-  val photoUpdateActor = context.actorOf(GuiceAkkaExtension(context.system).props(SubscriptionParserActor.name))
+  val photoUpdateActor = context.actorOf(GuiceAkkaExtension(context.system).props(PhotoUpdateActor.name))
 
   def receive() = {
     case message: String =>
-      logger.info(s"Received a request: $message")
+      logger.debug(s"Received a request: $message")
 
       val sessionInputBuffer = new SessionInputBufferImpl(new HttpTransportMetricsImpl(), 2048)
       sessionInputBuffer.bind(new ByteArrayInputStream(message.getBytes(Consts.ASCII)))
