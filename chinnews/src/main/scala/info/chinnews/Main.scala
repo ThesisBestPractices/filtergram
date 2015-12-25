@@ -40,12 +40,17 @@ object Main {
     injector.instance[FrontServer].subscribe()
     db.forAllCities((city: Document) => {
       val name = city.get("name").get.asString().getValue
-      val lat = city.get("lat").get.asString().getValue
-      val lng = city.get("lng").get.asString().getValue
       logger.info(s"Subscribing to the city $name")
+      city.get("tags").foreach(value => {
+        val tag = value.asString().getValue
+        logger.info(s"Subscribing to the tag $tag")
+        Subscriber.subscribeByTag(tag, client_id, client_secret, callback_url, name)
+      })
 
-      Subscriber.subscribeByLocation(lat, lng, client_id, client_secret, callback_url, name)
-      Subscriber.subscribeByTag(name, client_id, client_secret, callback_url, name)
+      //      val lat = city.get("lat").get.asString().getValue
+      //      val lng = city.get("lng").get.asString().getValue
+      //      Subscriber.subscribeByLocation(lat, lng, client_id, client_secret, callback_url, name)
+      //      Subscriber.subscribeByTag(name, client_id, client_secret, callback_url, name)
     })
   }
 }

@@ -1,22 +1,24 @@
 import Dependencies._
 import sbt._
-import Keys._
+import sbt.Keys._
 import sbtassembly.{AssemblyPlugin, Assembly}
+import sbtprotobuf.ProtobufPlugin
 
 object Chinnews {
 
   import sbtprotobuf.ProtobufPlugin
+
+  javaSource in ProtobufPlugin.protobufConfig <<= (baseDirectory in Compile) (_ / "chinnews/src/main/generated")
+  sourceDirectory in ProtobufPlugin.protobufConfig <<= (baseDirectory in Compile) (_ / "chinnews/src/main/protobuf")
 
   val build = Project("fg-chinnews", file("chinnews"),
     settings = Defaults.coreDefaultSettings ++
       Settings.common ++
       Seq(Tasks.packageChinNewsTask) ++
       ProtobufPlugin.protobufSettings ++
-      Seq(
-        javaSource in ProtobufPlugin.protobufConfig <<= (sourceDirectory in Compile) (_ / "generated"),
-        libraryDependencies ++= Seq(scalajHttp, argonaut, mongoScalaDriver, sprayJson,
-          scalaLogging, slf4j, akka, shttpparser, commonsIo, protobuf, guice, scala_guice,
-          scalaTest) ++ http4s)
+      Seq(libraryDependencies ++= Seq(scalajHttp, argonaut, mongoScalaDriver, sprayJson,
+        scalaLogging, slf4j, akka, shttpparser, commonsIo, protobuf, guice, scala_guice,
+        scalaTest) ++ http4s)
   )
 
 }

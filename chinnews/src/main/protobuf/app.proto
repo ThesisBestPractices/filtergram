@@ -1,0 +1,9 @@
+syntax = "proto2";
+package com.chinnews;
+
+import "instagram.proto";
+
+message SubscriptionUpdateCity {
+    optional SubscriptionUpdate subscriptionUpdate = 1;
+    optional string cityId = 2;
+}

@@ -3,7 +3,7 @@ package info.chinnews.instagram.actors
 import java.io.ByteArrayInputStream
 
 import akka.actor.Actor
-import com.chinnews.Instagram
+import com.chinnews.{App, Instagram}
 import com.chinnews.Instagram.SubscriptionUpdate
 import com.daxzel.shttpparser.DefaultHttpRequestParser
 import com.daxzel.shttpparser.message.{HttpTransportMetricsImpl, SessionInputBufferImpl, Consts, HttpEntityEnclosingRequest}
@@ -36,6 +36,11 @@ object SubscriptionParserActor extends NamedActor {
     val subscriptionUpdate = builder.build()
     func(subscriptionUpdate)
   }
+
+  def receiveCityId(uri: String) = {
+    val uriParts = uri.split("/")
+    uriParts(1)
+  }
 }
 
 class SubscriptionParserActor extends Actor {
@@ -54,13 +59,17 @@ class SubscriptionParserActor extends Actor {
       requestParser.parse() match {
         case request: HttpEntityEnclosingRequest =>
           if (request.getEntity != null) {
+            val cityId = SubscriptionParserActor.receiveCityId(request.getRequestLine.getUri)
+            logger.trace(s"Received a request. City id : $cityId")
             val content = request.getEntity.getContent
             val stringContent = IOUtils.toString(content)
             if (stringContent.charAt(0).equals('[')) {
               SubscriptionParserActor.forAllJsonArrayElements(stringContent,
-                (el: String) => SubscriptionParserActor.handleOneJsonElement(el, sendPhotoUpdate))
+                (el: String) => SubscriptionParserActor.handleOneJsonElement(el,
+                  subscriptionUpdate => sendPhotoUpdate(subscriptionUpdate, cityId)))
             } else {
-              SubscriptionParserActor.handleOneJsonElement(stringContent, sendPhotoUpdate)
+              SubscriptionParserActor.handleOneJsonElement(stringContent,
+                subscriptionUpdate => sendPhotoUpdate(subscriptionUpdate, cityId))
             }
           } else {
             logger.warn(s"Can't get a request entity ")
@@ -72,10 +81,14 @@ class SubscriptionParserActor extends Actor {
       }
   }
 
-  def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate) = {
-    logger.debug("Sending photo update to another actor " +
-      subscriptionUpdate.getSubscriptionId)
-    photoUpdateActor ! subscriptionUpdate
+  def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate, cityId: String) = {
+    logger.info("Sending photo update to another actor. Tag: " +
+      subscriptionUpdate.getObjectId + " city: " + cityId)
+
+    val subscriptionUpdateCity = App.SubscriptionUpdateCity.newBuilder()
+      .setCityId(cityId)
+      .setSubscriptionUpdate(subscriptionUpdate)
+    photoUpdateActor ! subscriptionUpdateCity
   }
 
 }

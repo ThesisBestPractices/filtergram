@@ -2,6 +2,7 @@ package info.chinnews.instagram.actors
 
 import akka.actor.Actor
 import argonaut.Parse
+import com.chinnews.App.SubscriptionUpdateCity
 import com.chinnews.Instagram.SubscriptionUpdate
 import com.google.inject.Inject
 import info.chinnews.instagram.InstagramAuth
@@ -26,14 +27,16 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
 
   def receive() = {
-    case subscriptionUpdate: SubscriptionUpdate =>
+    case subscriptionUpdateCity: SubscriptionUpdateCity =>
+      val subscriptionUpdate = subscriptionUpdateCity.getSubscriptionUpdate
       logger.info("Received message for the photo update: " + subscriptionUpdate.getSubscriptionId)
       val accessToken = auth.acquireToken()
-      updatePhotos(accessToken, subscriptionUpdate, subscriptionUpdate.getObjectId)
+      updatePhotos(accessToken, subscriptionUpdate, subscriptionUpdateCity.getCityId)
   }
 
   def updatePhotos(accessToken: String, subscriptionUpdate: SubscriptionUpdate, city: String): Unit = {
-    val searchBody = Http(s"https://api.instagram.com/v1/tags/$city/media/recent")
+    val tag = subscriptionUpdate.getObjectId
+    val searchBody = Http(s"https://api.instagram.com/v1/tags/$tag/media/recent")
       .param("access_token", accessToken).asString.body
 
     logger.trace("Received news photos. Query:\n" + searchBody)
