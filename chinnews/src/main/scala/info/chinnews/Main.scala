@@ -10,6 +10,7 @@ import info.chinnews.system.akkaguice.{ConfigModule, SystemModule}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
 import net.codingwell.scalaguice.InjectorExtensions._
+import scala.collection.JavaConversions._
 
 
 object Main {
@@ -42,7 +43,7 @@ object Main {
       db.forAllCities((city: Document) => {
         val name = city.get("name").get.asString().getValue
         logger.info(s"Subscribing to the city $name")
-        city.get("tags").foreach(value => {
+        city.get("tags").get.asArray().foreach(value => {
           val tag = value.asString().getValue
           logger.info(s"Subscribing to the tag $tag")
           Subscriber.subscribeByTag(tag, client_id, client_secret, callback_url, name)
