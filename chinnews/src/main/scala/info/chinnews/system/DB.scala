@@ -4,6 +4,8 @@ import com.typesafe.scalalogging.Logger
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
 
+import org.mongodb.scala.model.Filters._
+
 /**
   * Created by tsarevskiy on 12/11/15.
   */
@@ -29,10 +31,13 @@ case class DB(dbname: String, host: String, port: Int) {
 
 
   def storeUserLocation(city_id: String, username: String): Unit = {
-    userLocations.insertOne(Document(
-      "_id" -> (city_id + username),
-      "city_id" -> city_id,
-      "username" -> username)).subscribe(observer)
+    val id = city_id + username
+    if (userLocations.find(equal("_id", id)).first() == null) {
+      userLocations.insertOne(Document(
+        "_id" -> id,
+        "city_id" -> city_id,
+        "username" -> username)).subscribe(observer)
+    }
   }
 
   def forAllCities(f: (Document) => _) {
