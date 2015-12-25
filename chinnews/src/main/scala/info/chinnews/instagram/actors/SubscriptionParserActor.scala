@@ -87,7 +87,7 @@ class SubscriptionParserActor extends Actor {
 
     val subscriptionUpdateCity = App.SubscriptionUpdateCity.newBuilder()
       .setCityId(cityId)
-      .setSubscriptionUpdate(subscriptionUpdate)
+      .setSubscriptionUpdate(subscriptionUpdate).build()
     photoUpdateActor ! subscriptionUpdateCity
   }
 
