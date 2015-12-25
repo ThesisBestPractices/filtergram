@@ -1,16 +1,21 @@
 package info.chinnews.system
 
+import com.typesafe.scalalogging.Logger
 import org.mongodb.scala._
+import org.slf4j.LoggerFactory
 
 /**
   * Created by tsarevskiy on 12/11/15.
   */
 case class DB(dbname: String, host: String, port: Int) {
 
+  val logger = Logger(LoggerFactory.getLogger(this.getClass))
+
   val observer = new Observer[Completed] {
     override def onNext(result: Completed): Unit = {}
 
-    override def onError(e: Throwable): Unit = println("Failed")
+    override def onError(e: Throwable): Unit =
+      logger.error("Can't process a database query:\n" + e.toString)
 
     override def onComplete(): Unit = {}
   }
