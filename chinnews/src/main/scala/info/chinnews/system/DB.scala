@@ -53,4 +53,15 @@ case class DB(dbname: String, host: String, port: Int) {
       "tags" -> tags)).subscribe(observer)
   }
 
+  def removeAllCities(f: () => _): Unit = {
+
+    cities.drop().subscribe(new Observer[Completed] {
+      override def onNext(result: Completed): Unit = {}
+
+      override def onError(e: Throwable): Unit = logger.error("Can't drop a collection")
+
+      override def onComplete(): Unit = f()
+    })
+  }
+
 }
