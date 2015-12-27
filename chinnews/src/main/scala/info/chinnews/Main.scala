@@ -7,6 +7,7 @@ import com.typesafe.scalalogging.Logger
 import info.chinnews.instagram._
 import info.chinnews.system.DB
 import info.chinnews.system.akkaguice.{ConfigModule, SystemModule}
+import org.apache.log4j.{LogManager, Level}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
 import net.codingwell.scalaguice.InjectorExtensions._
@@ -26,6 +27,8 @@ object Main {
 
     val actorSystem = injector.instance[ActorSystem]
     val conf = injector.instance[Config]
+
+    LogManager.getRootLogger.setLevel(Level.toLevel(conf.getString("log.level")))
 
     subscribe(conf, actorSystem, injector)
   }
