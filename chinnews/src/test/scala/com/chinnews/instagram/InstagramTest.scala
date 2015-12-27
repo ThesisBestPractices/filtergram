@@ -78,7 +78,7 @@ class InstagramTest extends FlatSpec with Matchers {
         |        "type": "video",
         |        "videos": {
         |            "low_resolution": {
-        |                "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4",
+        |                "url": "http:\/\/distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4",
         |                "width": 480,
         |                "height": 480
         |            },
@@ -134,7 +134,7 @@ class InstagramTest extends FlatSpec with Matchers {
         |        "id": "3",
         |        "location": null
         |    }]
-        |}""".stripMargin
+        |}""".replace("\\/", "/").stripMargin
 
     val builder = Instagram.MediaRecentResponse.newBuilder()
     val jsonFormat = new JsonFormat

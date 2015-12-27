@@ -51,8 +51,12 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
     val request = s"https://api.instagram.com/v1/tags/$tag/media/recent"
     logger.info("Running http query: " + request + " access token: " + accessToken)
     val searchBody = Http(request).param("access_token", accessToken).asString.body
-    logger.trace("Received news photos. Query:\n" + searchBody)
-    searchBody
+
+    //some kind of bug fix
+    val searchBodyFixed = searchBody.replace("\\/", "/")
+
+    logger.trace("Received news photos. Query:\n" + searchBodyFixed)
+    searchBodyFixed
   }
 
 }
