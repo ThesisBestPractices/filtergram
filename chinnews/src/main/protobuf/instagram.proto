@@ -9,7 +9,7 @@ message SubscriptionUpdate {
     optional int32 time = 4;
     optional int32 subscription_id = 5;
 }
-/*
+
 message Data {
     required string type = 1;
     optional group Videos = 2 {
@@ -31,7 +31,7 @@ message Data {
         required Media standard_resolution = 3;
     }
     required string id = 13;
-    required string location = 14;
+    optional string location = 14;
 }
 
 message Media {
@@ -60,4 +60,8 @@ message Caption {
 
 message CommentInfo {
     required int32 count = 1;
-}*/
+}
+
+message MediaRecentResponse {
+    repeated Data data = 1;
+}

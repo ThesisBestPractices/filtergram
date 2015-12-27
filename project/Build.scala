@@ -8,9 +8,6 @@ object Chinnews {
 
   import sbtprotobuf.ProtobufPlugin
 
-  javaSource in ProtobufPlugin.protobufConfig <<= (baseDirectory in Compile) (_ / "chinnews/src/main/generated")
-  sourceDirectory in ProtobufPlugin.protobufConfig <<= (baseDirectory in Compile) (_ / "chinnews/src/main/protobuf")
-
   val build = Project("fg-chinnews", file("chinnews"),
     settings = Defaults.coreDefaultSettings ++
       Settings.common ++
@@ -18,9 +15,11 @@ object Chinnews {
       ProtobufPlugin.protobufSettings ++
       Seq(libraryDependencies ++= Seq(scalajHttp, argonaut, mongoScalaDriver, sprayJson,
         scalaLogging, slf4j, akka, shttpparser, commonsIo, protobuf, guice, scala_guice,
-        scalaTest) ++ http4s)
+        scalaTest) ++ http4s) ++
+      Seq(
+        version in ProtobufPlugin.protobufConfig := "2.6.1"
+      )
   )
-
 }
 
 object Core {
