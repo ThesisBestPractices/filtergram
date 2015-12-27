@@ -1,17 +1,19 @@
 package info.chinnews.instagram.actors
 
 import akka.actor.Actor
-import argonaut.Parse
 import com.chinnews.App.SubscriptionUpdateCity
+import com.chinnews.Instagram
 import com.chinnews.Instagram.SubscriptionUpdate
 import com.google.inject.Inject
+import com.google.protobuf.ExtensionRegistry
+import com.googlecode.protobuf.format.JsonFormat
 import info.chinnews.instagram.InstagramAuth
 import info.chinnews.system.DB
 import info.chinnews.system.akkaguice.NamedActor
+import scala.collection.JavaConversions._
 
 import scalaj.http.Http
 
-//import com.chinnews.Instagram.SubscriptionUpdate
 import com.typesafe.scalalogging.Logger
 import org.slf4j.LoggerFactory
 
@@ -44,12 +46,12 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
 
     logger.trace("Received news photos. Query:\n" + searchBody)
 
-    val warsawUsers = Parse.parseOption(searchBody).get.field("data").get.array
-      .get.map(json => json.field("user").get.field("username").toString).toSet
-    warsawUsers.foreach(username => {
-      logger.debug("Saving a user in city info: username - " + username + " city - " + city)
-      db.storeUserLocation(city, username)
-    })
+    val builder = Instagram.MediaRecentResponse.newBuilder()
+    val jsonFormat = new JsonFormat
+    jsonFormat.merge(searchBody, ExtensionRegistry.getEmptyRegistry, builder)
+    builder.getDataBuilderList.foreach(dataBuilder => dataBuilder.setId15(dataBuilder.getId13))
+    logger.debug("Saving a media in city info: " + city)
+    db.storeMediaResponse(builder.build())
   }
 
 }

@@ -32,6 +32,9 @@ message Data {
     }
     required string id = 13;
     optional string location = 14;
+
+    //for mongodb
+    optional string _id = 15;
 }
 
 message Media {

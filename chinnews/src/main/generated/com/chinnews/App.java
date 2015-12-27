@@ -19,11 +19,11 @@ public final class App {
     /**
      * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
      */
-    com.chinnews.Instagram.SubscriptionUpdate getSubscriptionUpdate();
+    Instagram.SubscriptionUpdate getSubscriptionUpdate();
     /**
      * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
      */
-    com.chinnews.Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder();
+    Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder();
 
     /**
      * <code>optional string cityId = 2;</code>
@@ -32,7 +32,7 @@ public final class App {
     /**
      * <code>optional string cityId = 2;</code>
      */
-    java.lang.String getCityId();
+    String getCityId();
     /**
      * <code>optional string cityId = 2;</code>
      */
@@ -63,7 +63,7 @@ public final class App {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -92,11 +92,11 @@ public final class App {
               break;
             }
             case 10: {
-              com.chinnews.Instagram.SubscriptionUpdate.Builder subBuilder = null;
+              Instagram.SubscriptionUpdate.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = subscriptionUpdate_.toBuilder();
               }
-              subscriptionUpdate_ = input.readMessage(com.chinnews.Instagram.SubscriptionUpdate.PARSER, extensionRegistry);
+              subscriptionUpdate_ = input.readMessage(Instagram.SubscriptionUpdate.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(subscriptionUpdate_);
                 subscriptionUpdate_ = subBuilder.buildPartial();
@@ -124,14 +124,14 @@ public final class App {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.chinnews.App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
+      return App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.chinnews.App.internal_static_com_chinnews_SubscriptionUpdateCity_fieldAccessorTable
+      return App.internal_static_com_chinnews_SubscriptionUpdateCity_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.chinnews.App.SubscriptionUpdateCity.class, com.chinnews.App.SubscriptionUpdateCity.Builder.class);
+              SubscriptionUpdateCity.class, Builder.class);
     }
 
     public static com.google.protobuf.Parser<SubscriptionUpdateCity> PARSER =
@@ -144,14 +144,14 @@ public final class App {
       }
     };
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<SubscriptionUpdateCity> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int SUBSCRIPTIONUPDATE_FIELD_NUMBER = 1;
-    private com.chinnews.Instagram.SubscriptionUpdate subscriptionUpdate_;
+    private Instagram.SubscriptionUpdate subscriptionUpdate_;
     /**
      * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
      */
@@ -161,18 +161,18 @@ public final class App {
     /**
      * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
      */
-    public com.chinnews.Instagram.SubscriptionUpdate getSubscriptionUpdate() {
+    public Instagram.SubscriptionUpdate getSubscriptionUpdate() {
       return subscriptionUpdate_;
     }
     /**
      * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
      */
-    public com.chinnews.Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder() {
+    public Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder() {
       return subscriptionUpdate_;
     }
 
     public static final int CITYID_FIELD_NUMBER = 2;
-    private java.lang.Object cityId_;
+    private Object cityId_;
     /**
      * <code>optional string cityId = 2;</code>
      */
@@ -182,14 +182,14 @@ public final class App {
     /**
      * <code>optional string cityId = 2;</code>
      */
-    public java.lang.String getCityId() {
-      java.lang.Object ref = cityId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getCityId() {
+      Object ref = cityId_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           cityId_ = s;
         }
@@ -201,11 +201,11 @@ public final class App {
      */
     public com.google.protobuf.ByteString
         getCityIdBytes() {
-      java.lang.Object ref = cityId_;
-      if (ref instanceof java.lang.String) {
+      Object ref = cityId_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         cityId_ = b;
         return b;
       } else {
@@ -214,7 +214,7 @@ public final class App {
     }
 
     private void initFields() {
-      subscriptionUpdate_ = com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance();
+      subscriptionUpdate_ = Instagram.SubscriptionUpdate.getDefaultInstance();
       cityId_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -259,59 +259,59 @@ public final class App {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
+    @Override
+    protected Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(byte[] data)
+    public static SubscriptionUpdateCity parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(java.io.InputStream input)
+    public static SubscriptionUpdateCity parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseDelimitedFrom(java.io.InputStream input)
+    public static SubscriptionUpdateCity parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseDelimitedFrom(
+    public static SubscriptionUpdateCity parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.chinnews.App.SubscriptionUpdateCity parseFrom(
+    public static SubscriptionUpdateCity parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -320,14 +320,14 @@ public final class App {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.chinnews.App.SubscriptionUpdateCity prototype) {
+    public static Builder newBuilder(SubscriptionUpdateCity prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -337,17 +337,17 @@ public final class App {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.SubscriptionUpdateCity)
-        com.chinnews.App.SubscriptionUpdateCityOrBuilder {
+        SubscriptionUpdateCityOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.chinnews.App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
+        return App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.chinnews.App.internal_static_com_chinnews_SubscriptionUpdateCity_fieldAccessorTable
+        return App.internal_static_com_chinnews_SubscriptionUpdateCity_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.chinnews.App.SubscriptionUpdateCity.class, com.chinnews.App.SubscriptionUpdateCity.Builder.class);
+                SubscriptionUpdateCity.class, Builder.class);
       }
 
       // Construct using com.chinnews.App.SubscriptionUpdateCity.newBuilder()
@@ -356,7 +356,7 @@ public final class App {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -372,7 +372,7 @@ public final class App {
       public Builder clear() {
         super.clear();
         if (subscriptionUpdateBuilder_ == null) {
-          subscriptionUpdate_ = com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance();
+          subscriptionUpdate_ = Instagram.SubscriptionUpdate.getDefaultInstance();
         } else {
           subscriptionUpdateBuilder_.clear();
         }
@@ -388,23 +388,23 @@ public final class App {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.chinnews.App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
+        return App.internal_static_com_chinnews_SubscriptionUpdateCity_descriptor;
       }
 
-      public com.chinnews.App.SubscriptionUpdateCity getDefaultInstanceForType() {
-        return com.chinnews.App.SubscriptionUpdateCity.getDefaultInstance();
+      public SubscriptionUpdateCity getDefaultInstanceForType() {
+        return SubscriptionUpdateCity.getDefaultInstance();
       }
 
-      public com.chinnews.App.SubscriptionUpdateCity build() {
-        com.chinnews.App.SubscriptionUpdateCity result = buildPartial();
+      public SubscriptionUpdateCity build() {
+        SubscriptionUpdateCity result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.chinnews.App.SubscriptionUpdateCity buildPartial() {
-        com.chinnews.App.SubscriptionUpdateCity result = new com.chinnews.App.SubscriptionUpdateCity(this);
+      public SubscriptionUpdateCity buildPartial() {
+        SubscriptionUpdateCity result = new SubscriptionUpdateCity(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -425,16 +425,16 @@ public final class App {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.chinnews.App.SubscriptionUpdateCity) {
-          return mergeFrom((com.chinnews.App.SubscriptionUpdateCity)other);
+        if (other instanceof SubscriptionUpdateCity) {
+          return mergeFrom((SubscriptionUpdateCity)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.chinnews.App.SubscriptionUpdateCity other) {
-        if (other == com.chinnews.App.SubscriptionUpdateCity.getDefaultInstance()) return this;
+      public Builder mergeFrom(SubscriptionUpdateCity other) {
+        if (other == SubscriptionUpdateCity.getDefaultInstance()) return this;
         if (other.hasSubscriptionUpdate()) {
           mergeSubscriptionUpdate(other.getSubscriptionUpdate());
         }
@@ -455,11 +455,11 @@ public final class App {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.chinnews.App.SubscriptionUpdateCity parsedMessage = null;
+        SubscriptionUpdateCity parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.chinnews.App.SubscriptionUpdateCity) e.getUnfinishedMessage();
+          parsedMessage = (SubscriptionUpdateCity) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -470,9 +470,9 @@ public final class App {
       }
       private int bitField0_;
 
-      private com.chinnews.Instagram.SubscriptionUpdate subscriptionUpdate_ = com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance();
+      private Instagram.SubscriptionUpdate subscriptionUpdate_ = Instagram.SubscriptionUpdate.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.chinnews.Instagram.SubscriptionUpdate, com.chinnews.Instagram.SubscriptionUpdate.Builder, com.chinnews.Instagram.SubscriptionUpdateOrBuilder> subscriptionUpdateBuilder_;
+          Instagram.SubscriptionUpdate, Instagram.SubscriptionUpdate.Builder, Instagram.SubscriptionUpdateOrBuilder> subscriptionUpdateBuilder_;
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
@@ -482,7 +482,7 @@ public final class App {
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
-      public com.chinnews.Instagram.SubscriptionUpdate getSubscriptionUpdate() {
+      public Instagram.SubscriptionUpdate getSubscriptionUpdate() {
         if (subscriptionUpdateBuilder_ == null) {
           return subscriptionUpdate_;
         } else {
@@ -492,7 +492,7 @@ public final class App {
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
-      public Builder setSubscriptionUpdate(com.chinnews.Instagram.SubscriptionUpdate value) {
+      public Builder setSubscriptionUpdate(Instagram.SubscriptionUpdate value) {
         if (subscriptionUpdateBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -509,7 +509,7 @@ public final class App {
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
       public Builder setSubscriptionUpdate(
-          com.chinnews.Instagram.SubscriptionUpdate.Builder builderForValue) {
+          Instagram.SubscriptionUpdate.Builder builderForValue) {
         if (subscriptionUpdateBuilder_ == null) {
           subscriptionUpdate_ = builderForValue.build();
           onChanged();
@@ -522,12 +522,12 @@ public final class App {
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
-      public Builder mergeSubscriptionUpdate(com.chinnews.Instagram.SubscriptionUpdate value) {
+      public Builder mergeSubscriptionUpdate(Instagram.SubscriptionUpdate value) {
         if (subscriptionUpdateBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              subscriptionUpdate_ != com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance()) {
+              subscriptionUpdate_ != Instagram.SubscriptionUpdate.getDefaultInstance()) {
             subscriptionUpdate_ =
-              com.chinnews.Instagram.SubscriptionUpdate.newBuilder(subscriptionUpdate_).mergeFrom(value).buildPartial();
+              Instagram.SubscriptionUpdate.newBuilder(subscriptionUpdate_).mergeFrom(value).buildPartial();
           } else {
             subscriptionUpdate_ = value;
           }
@@ -543,7 +543,7 @@ public final class App {
        */
       public Builder clearSubscriptionUpdate() {
         if (subscriptionUpdateBuilder_ == null) {
-          subscriptionUpdate_ = com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance();
+          subscriptionUpdate_ = Instagram.SubscriptionUpdate.getDefaultInstance();
           onChanged();
         } else {
           subscriptionUpdateBuilder_.clear();
@@ -554,7 +554,7 @@ public final class App {
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
-      public com.chinnews.Instagram.SubscriptionUpdate.Builder getSubscriptionUpdateBuilder() {
+      public Instagram.SubscriptionUpdate.Builder getSubscriptionUpdateBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getSubscriptionUpdateFieldBuilder().getBuilder();
@@ -562,7 +562,7 @@ public final class App {
       /**
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
-      public com.chinnews.Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder() {
+      public Instagram.SubscriptionUpdateOrBuilder getSubscriptionUpdateOrBuilder() {
         if (subscriptionUpdateBuilder_ != null) {
           return subscriptionUpdateBuilder_.getMessageOrBuilder();
         } else {
@@ -573,11 +573,11 @@ public final class App {
        * <code>optional .com.chinnews.SubscriptionUpdate subscriptionUpdate = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.chinnews.Instagram.SubscriptionUpdate, com.chinnews.Instagram.SubscriptionUpdate.Builder, com.chinnews.Instagram.SubscriptionUpdateOrBuilder> 
+          Instagram.SubscriptionUpdate, Instagram.SubscriptionUpdate.Builder, Instagram.SubscriptionUpdateOrBuilder>
           getSubscriptionUpdateFieldBuilder() {
         if (subscriptionUpdateBuilder_ == null) {
           subscriptionUpdateBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.chinnews.Instagram.SubscriptionUpdate, com.chinnews.Instagram.SubscriptionUpdate.Builder, com.chinnews.Instagram.SubscriptionUpdateOrBuilder>(
+              Instagram.SubscriptionUpdate, Instagram.SubscriptionUpdate.Builder, Instagram.SubscriptionUpdateOrBuilder>(
                   getSubscriptionUpdate(),
                   getParentForChildren(),
                   isClean());
@@ -586,7 +586,7 @@ public final class App {
         return subscriptionUpdateBuilder_;
       }
 
-      private java.lang.Object cityId_ = "";
+      private Object cityId_ = "";
       /**
        * <code>optional string cityId = 2;</code>
        */
@@ -596,18 +596,18 @@ public final class App {
       /**
        * <code>optional string cityId = 2;</code>
        */
-      public java.lang.String getCityId() {
-        java.lang.Object ref = cityId_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getCityId() {
+        Object ref = cityId_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             cityId_ = s;
           }
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -615,11 +615,11 @@ public final class App {
        */
       public com.google.protobuf.ByteString
           getCityIdBytes() {
-        java.lang.Object ref = cityId_;
+        Object ref = cityId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           cityId_ = b;
           return b;
         } else {
@@ -630,7 +630,7 @@ public final class App {
        * <code>optional string cityId = 2;</code>
        */
       public Builder setCityId(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -686,7 +686,7 @@ public final class App {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\tapp.proto\022\014com.chinnews\032\017instagram.pro" +
       "to\"f\n\026SubscriptionUpdateCity\022<\n\022subscrip" +
       "tionUpdate\030\001 \001(\0132 .com.chinnews.Subscrip" +
@@ -703,15 +703,15 @@ public final class App {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.chinnews.Instagram.getDescriptor(),
+          Instagram.getDescriptor(),
         }, assigner);
     internal_static_com_chinnews_SubscriptionUpdateCity_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_com_chinnews_SubscriptionUpdateCity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_SubscriptionUpdateCity_descriptor,
-        new java.lang.String[] { "SubscriptionUpdate", "CityId", });
-    com.chinnews.Instagram.getDescriptor();
+        new String[] { "SubscriptionUpdate", "CityId", });
+    Instagram.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
