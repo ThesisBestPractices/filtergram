@@ -37,21 +37,22 @@ class PhotoUpdateActor @Inject()(auth: InstagramAuth, db: DB) extends Actor {
   }
 
   def updatePhotos(accessToken: String, subscriptionUpdate: SubscriptionUpdate, city: String): Unit = {
-    val tag = subscriptionUpdate.getObjectId
-    val request = s"https://api.instagram.com/v1/tags/$tag/media/recent"
-    logger.info("Running http query: " + request + " access token: " + accessToken)
 
-    val searchBody = Http(s"https://api.instagram.com/v1/tags/$tag/media/recent")
-      .param("access_token", accessToken).asString.body
-
-    logger.trace("Received news photos. Query:\n" + searchBody)
+    val searchBody = getRecentMediaByTag(subscriptionUpdate.getObjectId, accessToken)
 
     val builder = Instagram.MediaRecentResponse.newBuilder()
-    val jsonFormat = new JsonFormat
-    jsonFormat.merge(searchBody, ExtensionRegistry.getEmptyRegistry, builder)
+    new JsonFormat().merge(searchBody, ExtensionRegistry.getEmptyRegistry, builder)
     builder.getDataBuilderList.foreach(dataBuilder => dataBuilder.setId15(dataBuilder.getId13))
     logger.debug("Saving a media in city info: " + city)
     db.storeMediaResponse(builder.build())
+  }
+
+  def getRecentMediaByTag(tag: String, accessToken: String) = {
+    val request = s"https://api.instagram.com/v1/tags/$tag/media/recent"
+    logger.info("Running http query: " + request + " access token: " + accessToken)
+    val searchBody = Http(request).param("access_token", accessToken).asString.body
+    logger.trace("Received news photos. Query:\n" + searchBody)
+    searchBody
   }
 
 }
