@@ -28,7 +28,7 @@ object Main {
     val actorSystem = injector.instance[ActorSystem]
     val conf = injector.instance[Config]
 
-    LogManager.getRootLogger.setLevel(Level.toLevel(conf.getString("log.level")))
+    LogManager.getRootLogger.setLevel(Level.toLevel(conf.getString("chin_news.log.level")))
 
     subscribe(conf, actorSystem, injector)
   }
