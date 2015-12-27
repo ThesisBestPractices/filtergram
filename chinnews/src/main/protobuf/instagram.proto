@@ -1,4 +1,5 @@
 syntax = "proto2";
+
 package com.chinnews;
 
 message SubscriptionUpdate {
@@ -8,3 +9,55 @@ message SubscriptionUpdate {
     optional int32 time = 4;
     optional int32 subscription_id = 5;
 }
+/*
+message Data {
+    required string type = 1;
+    optional group Videos = 2 {
+        required Media low_resolution = 1;
+        required Media standard_resolution = 2;
+    }
+    repeated string users_in_photo = 3;
+    optional string filter = 4;
+    repeated string tags = 5;
+    optional CommentInfo comments = 6;
+    optional Caption caption = 7;
+    optional Likes likes = 8;
+    optional string link = 9;
+    optional User user = 10;
+    required string created_time = 11;
+    optional group Images = 12 {
+        required Media low_resolution = 1;
+        required Media thumbnail = 2;
+        required Media standard_resolution = 3;
+    }
+    required string id = 13;
+    required string location = 14;
+}
+
+message Media {
+    required string url = 1;
+    required int32 width = 2;
+    required int32 height = 3;
+}
+
+message Likes {
+    required int32 count = 1;
+}
+
+message User {
+    required string username = 1;
+    optional string profile_picture = 2;
+    required string id = 3;
+    optional string full_name = 4;
+}
+
+message Caption {
+    required string created_time = 1;
+    optional string text = 2;
+    required User from = 3;
+    required string id = 4;
+}
+
+message CommentInfo {
+    required int32 count = 1;
+}*/

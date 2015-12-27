@@ -81,7 +81,7 @@ class SubscriptionParserActor extends Actor {
       }
   }
 
-  def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate, cityId: String) = {
+  def sendPhotoUpdate(subscriptionUpdate: SubscriptionUpdate, cityId: String) {
     logger.info("Sending photo update to another actor. Tag: " +
       subscriptionUpdate.getObjectId + " city: " + cityId)
 
