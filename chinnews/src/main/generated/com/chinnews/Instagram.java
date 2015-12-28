@@ -19,7 +19,7 @@ public final class Instagram {
     /**
      * <code>optional string changed_aspect = 1;</code>
      */
-    String getChangedAspect();
+    java.lang.String getChangedAspect();
     /**
      * <code>optional string changed_aspect = 1;</code>
      */
@@ -33,7 +33,7 @@ public final class Instagram {
     /**
      * <code>optional string object = 2;</code>
      */
-    String getObject();
+    java.lang.String getObject();
     /**
      * <code>optional string object = 2;</code>
      */
@@ -47,7 +47,7 @@ public final class Instagram {
     /**
      * <code>optional string object_id = 3;</code>
      */
-    String getObjectId();
+    java.lang.String getObjectId();
     /**
      * <code>optional string object_id = 3;</code>
      */
@@ -96,7 +96,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -166,14 +166,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_SubscriptionUpdate_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_SubscriptionUpdate_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SubscriptionUpdate.class, Builder.class);
+              com.chinnews.Instagram.SubscriptionUpdate.class, com.chinnews.Instagram.SubscriptionUpdate.Builder.class);
     }
 
     public static com.google.protobuf.Parser<SubscriptionUpdate> PARSER =
@@ -186,14 +186,14 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<SubscriptionUpdate> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int CHANGED_ASPECT_FIELD_NUMBER = 1;
-    private Object changedAspect_;
+    private java.lang.Object changedAspect_;
     /**
      * <code>optional string changed_aspect = 1;</code>
      */
@@ -203,14 +203,14 @@ public final class Instagram {
     /**
      * <code>optional string changed_aspect = 1;</code>
      */
-    public String getChangedAspect() {
-      Object ref = changedAspect_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getChangedAspect() {
+      java.lang.Object ref = changedAspect_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           changedAspect_ = s;
         }
@@ -222,11 +222,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getChangedAspectBytes() {
-      Object ref = changedAspect_;
-      if (ref instanceof String) {
+      java.lang.Object ref = changedAspect_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         changedAspect_ = b;
         return b;
       } else {
@@ -235,7 +235,7 @@ public final class Instagram {
     }
 
     public static final int OBJECT_FIELD_NUMBER = 2;
-    private Object object_;
+    private java.lang.Object object_;
     /**
      * <code>optional string object = 2;</code>
      */
@@ -245,14 +245,14 @@ public final class Instagram {
     /**
      * <code>optional string object = 2;</code>
      */
-    public String getObject() {
-      Object ref = object_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getObject() {
+      java.lang.Object ref = object_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           object_ = s;
         }
@@ -264,11 +264,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getObjectBytes() {
-      Object ref = object_;
-      if (ref instanceof String) {
+      java.lang.Object ref = object_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         object_ = b;
         return b;
       } else {
@@ -277,7 +277,7 @@ public final class Instagram {
     }
 
     public static final int OBJECT_ID_FIELD_NUMBER = 3;
-    private Object objectId_;
+    private java.lang.Object objectId_;
     /**
      * <code>optional string object_id = 3;</code>
      */
@@ -287,14 +287,14 @@ public final class Instagram {
     /**
      * <code>optional string object_id = 3;</code>
      */
-    public String getObjectId() {
-      Object ref = objectId_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getObjectId() {
+      java.lang.Object ref = objectId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           objectId_ = s;
         }
@@ -306,11 +306,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getObjectIdBytes() {
-      Object ref = objectId_;
-      if (ref instanceof String) {
+      java.lang.Object ref = objectId_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         objectId_ = b;
         return b;
       } else {
@@ -418,59 +418,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SubscriptionUpdate parseFrom(byte[] data)
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static SubscriptionUpdate parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static SubscriptionUpdate parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.SubscriptionUpdate parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static SubscriptionUpdate parseDelimitedFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static SubscriptionUpdate parseFrom(
+    public static com.chinnews.Instagram.SubscriptionUpdate parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -479,14 +479,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(SubscriptionUpdate prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.SubscriptionUpdate prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -496,17 +496,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.SubscriptionUpdate)
-        SubscriptionUpdateOrBuilder {
+        com.chinnews.Instagram.SubscriptionUpdateOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_SubscriptionUpdate_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_SubscriptionUpdate_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                SubscriptionUpdate.class, Builder.class);
+                com.chinnews.Instagram.SubscriptionUpdate.class, com.chinnews.Instagram.SubscriptionUpdate.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.SubscriptionUpdate.newBuilder()
@@ -515,7 +515,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -548,23 +548,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_SubscriptionUpdate_descriptor;
       }
 
-      public SubscriptionUpdate getDefaultInstanceForType() {
-        return SubscriptionUpdate.getDefaultInstance();
+      public com.chinnews.Instagram.SubscriptionUpdate getDefaultInstanceForType() {
+        return com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance();
       }
 
-      public SubscriptionUpdate build() {
-        SubscriptionUpdate result = buildPartial();
+      public com.chinnews.Instagram.SubscriptionUpdate build() {
+        com.chinnews.Instagram.SubscriptionUpdate result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public SubscriptionUpdate buildPartial() {
-        SubscriptionUpdate result = new SubscriptionUpdate(this);
+      public com.chinnews.Instagram.SubscriptionUpdate buildPartial() {
+        com.chinnews.Instagram.SubscriptionUpdate result = new com.chinnews.Instagram.SubscriptionUpdate(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -593,16 +593,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SubscriptionUpdate) {
-          return mergeFrom((SubscriptionUpdate)other);
+        if (other instanceof com.chinnews.Instagram.SubscriptionUpdate) {
+          return mergeFrom((com.chinnews.Instagram.SubscriptionUpdate)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SubscriptionUpdate other) {
-        if (other == SubscriptionUpdate.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.SubscriptionUpdate other) {
+        if (other == com.chinnews.Instagram.SubscriptionUpdate.getDefaultInstance()) return this;
         if (other.hasChangedAspect()) {
           bitField0_ |= 0x00000001;
           changedAspect_ = other.changedAspect_;
@@ -636,11 +636,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SubscriptionUpdate parsedMessage = null;
+        com.chinnews.Instagram.SubscriptionUpdate parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SubscriptionUpdate) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.SubscriptionUpdate) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -651,7 +651,7 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private Object changedAspect_ = "";
+      private java.lang.Object changedAspect_ = "";
       /**
        * <code>optional string changed_aspect = 1;</code>
        */
@@ -661,18 +661,18 @@ public final class Instagram {
       /**
        * <code>optional string changed_aspect = 1;</code>
        */
-      public String getChangedAspect() {
-        Object ref = changedAspect_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getChangedAspect() {
+        java.lang.Object ref = changedAspect_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             changedAspect_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -680,11 +680,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getChangedAspectBytes() {
-        Object ref = changedAspect_;
+        java.lang.Object ref = changedAspect_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           changedAspect_ = b;
           return b;
         } else {
@@ -695,7 +695,7 @@ public final class Instagram {
        * <code>optional string changed_aspect = 1;</code>
        */
       public Builder setChangedAspect(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -727,7 +727,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object object_ = "";
+      private java.lang.Object object_ = "";
       /**
        * <code>optional string object = 2;</code>
        */
@@ -737,18 +737,18 @@ public final class Instagram {
       /**
        * <code>optional string object = 2;</code>
        */
-      public String getObject() {
-        Object ref = object_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getObject() {
+        java.lang.Object ref = object_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             object_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -756,11 +756,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getObjectBytes() {
-        Object ref = object_;
+        java.lang.Object ref = object_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           object_ = b;
           return b;
         } else {
@@ -771,7 +771,7 @@ public final class Instagram {
        * <code>optional string object = 2;</code>
        */
       public Builder setObject(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -803,7 +803,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object objectId_ = "";
+      private java.lang.Object objectId_ = "";
       /**
        * <code>optional string object_id = 3;</code>
        */
@@ -813,18 +813,18 @@ public final class Instagram {
       /**
        * <code>optional string object_id = 3;</code>
        */
-      public String getObjectId() {
-        Object ref = objectId_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getObjectId() {
+        java.lang.Object ref = objectId_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             objectId_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -832,11 +832,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getObjectIdBytes() {
-        Object ref = objectId_;
+        java.lang.Object ref = objectId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           objectId_ = b;
           return b;
         } else {
@@ -847,7 +847,7 @@ public final class Instagram {
        * <code>optional string object_id = 3;</code>
        */
       public Builder setObjectId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -965,7 +965,7 @@ public final class Instagram {
     /**
      * <code>required string type = 1;</code>
      */
-    String getType();
+    java.lang.String getType();
     /**
      * <code>required string type = 1;</code>
      */
@@ -979,11 +979,11 @@ public final class Instagram {
     /**
      * <code>optional group Videos = 2 { ... }</code>
      */
-    Data.Videos getVideos();
+    com.chinnews.Instagram.Data.Videos getVideos();
     /**
      * <code>optional group Videos = 2 { ... }</code>
      */
-    Data.VideosOrBuilder getVideosOrBuilder();
+    com.chinnews.Instagram.Data.VideosOrBuilder getVideosOrBuilder();
 
     /**
      * <code>repeated string users_in_photo = 3;</code>
@@ -997,7 +997,7 @@ public final class Instagram {
     /**
      * <code>repeated string users_in_photo = 3;</code>
      */
-    String getUsersInPhoto(int index);
+    java.lang.String getUsersInPhoto(int index);
     /**
      * <code>repeated string users_in_photo = 3;</code>
      */
@@ -1011,7 +1011,7 @@ public final class Instagram {
     /**
      * <code>optional string filter = 4;</code>
      */
-    String getFilter();
+    java.lang.String getFilter();
     /**
      * <code>optional string filter = 4;</code>
      */
@@ -1030,7 +1030,7 @@ public final class Instagram {
     /**
      * <code>repeated string tags = 5;</code>
      */
-    String getTags(int index);
+    java.lang.String getTags(int index);
     /**
      * <code>repeated string tags = 5;</code>
      */
@@ -1044,11 +1044,11 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
      */
-    CommentInfo getComments();
+    com.chinnews.Instagram.CommentInfo getComments();
     /**
      * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
      */
-    CommentInfoOrBuilder getCommentsOrBuilder();
+    com.chinnews.Instagram.CommentInfoOrBuilder getCommentsOrBuilder();
 
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
@@ -1057,11 +1057,11 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
      */
-    Caption getCaption();
+    com.chinnews.Instagram.Caption getCaption();
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
      */
-    CaptionOrBuilder getCaptionOrBuilder();
+    com.chinnews.Instagram.CaptionOrBuilder getCaptionOrBuilder();
 
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
@@ -1070,11 +1070,11 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
      */
-    Likes getLikes();
+    com.chinnews.Instagram.Likes getLikes();
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
      */
-    LikesOrBuilder getLikesOrBuilder();
+    com.chinnews.Instagram.LikesOrBuilder getLikesOrBuilder();
 
     /**
      * <code>optional string link = 9;</code>
@@ -1083,7 +1083,7 @@ public final class Instagram {
     /**
      * <code>optional string link = 9;</code>
      */
-    String getLink();
+    java.lang.String getLink();
     /**
      * <code>optional string link = 9;</code>
      */
@@ -1097,11 +1097,11 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.User user = 10;</code>
      */
-    User getUser();
+    com.chinnews.Instagram.User getUser();
     /**
      * <code>optional .com.chinnews.User user = 10;</code>
      */
-    UserOrBuilder getUserOrBuilder();
+    com.chinnews.Instagram.UserOrBuilder getUserOrBuilder();
 
     /**
      * <code>required string created_time = 11;</code>
@@ -1110,7 +1110,7 @@ public final class Instagram {
     /**
      * <code>required string created_time = 11;</code>
      */
-    String getCreatedTime();
+    java.lang.String getCreatedTime();
     /**
      * <code>required string created_time = 11;</code>
      */
@@ -1124,11 +1124,11 @@ public final class Instagram {
     /**
      * <code>optional group Images = 12 { ... }</code>
      */
-    Data.Images getImages();
+    com.chinnews.Instagram.Data.Images getImages();
     /**
      * <code>optional group Images = 12 { ... }</code>
      */
-    Data.ImagesOrBuilder getImagesOrBuilder();
+    com.chinnews.Instagram.Data.ImagesOrBuilder getImagesOrBuilder();
 
     /**
      * <code>required string id = 13;</code>
@@ -1137,7 +1137,7 @@ public final class Instagram {
     /**
      * <code>required string id = 13;</code>
      */
-    String getId13();
+    java.lang.String getId13();
     /**
      * <code>required string id = 13;</code>
      */
@@ -1145,18 +1145,17 @@ public final class Instagram {
         getId13Bytes();
 
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
     boolean hasLocation();
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
-    String getLocation();
+    com.chinnews.Instagram.Location getLocation();
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
-    com.google.protobuf.ByteString
-        getLocationBytes();
+    com.chinnews.Instagram.LocationOrBuilder getLocationOrBuilder();
 
     /**
      * <code>optional string _id = 15;</code>
@@ -1173,7 +1172,7 @@ public final class Instagram {
      *for mongodb
      * </pre>
      */
-    String getId15();
+    java.lang.String getId15();
     /**
      * <code>optional string _id = 15;</code>
      *
@@ -1208,7 +1207,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1243,11 +1242,11 @@ public final class Instagram {
               break;
             }
             case 19: {
-              Videos.Builder subBuilder = null;
+              com.chinnews.Instagram.Data.Videos.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = videos_.toBuilder();
               }
-              videos_ = input.readGroup(2, Videos.PARSER,
+              videos_ = input.readGroup(2, com.chinnews.Instagram.Data.Videos.PARSER,
                   extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(videos_);
@@ -1281,11 +1280,11 @@ public final class Instagram {
               break;
             }
             case 50: {
-              CommentInfo.Builder subBuilder = null;
+              com.chinnews.Instagram.CommentInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00000008) == 0x00000008)) {
                 subBuilder = comments_.toBuilder();
               }
-              comments_ = input.readMessage(CommentInfo.PARSER, extensionRegistry);
+              comments_ = input.readMessage(com.chinnews.Instagram.CommentInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(comments_);
                 comments_ = subBuilder.buildPartial();
@@ -1294,11 +1293,11 @@ public final class Instagram {
               break;
             }
             case 58: {
-              Caption.Builder subBuilder = null;
+              com.chinnews.Instagram.Caption.Builder subBuilder = null;
               if (((bitField0_ & 0x00000010) == 0x00000010)) {
                 subBuilder = caption_.toBuilder();
               }
-              caption_ = input.readMessage(Caption.PARSER, extensionRegistry);
+              caption_ = input.readMessage(com.chinnews.Instagram.Caption.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(caption_);
                 caption_ = subBuilder.buildPartial();
@@ -1307,11 +1306,11 @@ public final class Instagram {
               break;
             }
             case 66: {
-              Likes.Builder subBuilder = null;
+              com.chinnews.Instagram.Likes.Builder subBuilder = null;
               if (((bitField0_ & 0x00000020) == 0x00000020)) {
                 subBuilder = likes_.toBuilder();
               }
-              likes_ = input.readMessage(Likes.PARSER, extensionRegistry);
+              likes_ = input.readMessage(com.chinnews.Instagram.Likes.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(likes_);
                 likes_ = subBuilder.buildPartial();
@@ -1326,11 +1325,11 @@ public final class Instagram {
               break;
             }
             case 82: {
-              User.Builder subBuilder = null;
+              com.chinnews.Instagram.User.Builder subBuilder = null;
               if (((bitField0_ & 0x00000080) == 0x00000080)) {
                 subBuilder = user_.toBuilder();
               }
-              user_ = input.readMessage(User.PARSER, extensionRegistry);
+              user_ = input.readMessage(com.chinnews.Instagram.User.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(user_);
                 user_ = subBuilder.buildPartial();
@@ -1345,11 +1344,11 @@ public final class Instagram {
               break;
             }
             case 99: {
-              Images.Builder subBuilder = null;
+              com.chinnews.Instagram.Data.Images.Builder subBuilder = null;
               if (((bitField0_ & 0x00000200) == 0x00000200)) {
                 subBuilder = images_.toBuilder();
               }
-              images_ = input.readGroup(12, Images.PARSER,
+              images_ = input.readGroup(12, com.chinnews.Instagram.Data.Images.PARSER,
                   extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(images_);
@@ -1365,9 +1364,16 @@ public final class Instagram {
               break;
             }
             case 114: {
-              com.google.protobuf.ByteString bs = input.readBytes();
+              com.chinnews.Instagram.Location.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000800) == 0x00000800)) {
+                subBuilder = location_.toBuilder();
+              }
+              location_ = input.readMessage(com.chinnews.Instagram.Location.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(location_);
+                location_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000800;
-              location_ = bs;
               break;
             }
             case 122: {
@@ -1396,14 +1402,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_Data_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_Data_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_Data_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_Data_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Data.class, Builder.class);
+              com.chinnews.Instagram.Data.class, com.chinnews.Instagram.Data.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Data> PARSER =
@@ -1416,7 +1422,7 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Data> getParserForType() {
       return PARSER;
     }
@@ -1432,11 +1438,11 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      Media getLowResolution();
+      com.chinnews.Instagram.Media getLowResolution();
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      MediaOrBuilder getLowResolutionOrBuilder();
+      com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder();
 
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
@@ -1445,11 +1451,11 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
        */
-      Media getStandardResolution();
+      com.chinnews.Instagram.Media getStandardResolution();
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
        */
-      MediaOrBuilder getStandardResolutionOrBuilder();
+      com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder();
     }
     /**
      * Protobuf type {@code com.chinnews.Data.Videos}
@@ -1475,7 +1481,7 @@ public final class Instagram {
       }
 
       private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @Override
+      @java.lang.Override
       public final com.google.protobuf.UnknownFieldSet
           getUnknownFields() {
         return this.unknownFields;
@@ -1504,11 +1510,11 @@ public final class Instagram {
                 break;
               }
               case 10: {
-                Media.Builder subBuilder = null;
+                com.chinnews.Instagram.Media.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000001) == 0x00000001)) {
                   subBuilder = lowResolution_.toBuilder();
                 }
-                lowResolution_ = input.readMessage(Media.PARSER, extensionRegistry);
+                lowResolution_ = input.readMessage(com.chinnews.Instagram.Media.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(lowResolution_);
                   lowResolution_ = subBuilder.buildPartial();
@@ -1517,11 +1523,11 @@ public final class Instagram {
                 break;
               }
               case 18: {
-                Media.Builder subBuilder = null;
+                com.chinnews.Instagram.Media.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000002) == 0x00000002)) {
                   subBuilder = standardResolution_.toBuilder();
                 }
-                standardResolution_ = input.readMessage(Media.PARSER, extensionRegistry);
+                standardResolution_ = input.readMessage(com.chinnews.Instagram.Media.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(standardResolution_);
                   standardResolution_ = subBuilder.buildPartial();
@@ -1543,14 +1549,14 @@ public final class Instagram {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Data_Videos_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_Videos_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Videos.class, Builder.class);
+                com.chinnews.Instagram.Data.Videos.class, com.chinnews.Instagram.Data.Videos.Builder.class);
       }
 
       public static com.google.protobuf.Parser<Videos> PARSER =
@@ -1563,14 +1569,14 @@ public final class Instagram {
         }
       };
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Parser<Videos> getParserForType() {
         return PARSER;
       }
 
       private int bitField0_;
       public static final int LOW_RESOLUTION_FIELD_NUMBER = 1;
-      private Media lowResolution_;
+      private com.chinnews.Instagram.Media lowResolution_;
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
@@ -1580,18 +1586,18 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      public Media getLowResolution() {
+      public com.chinnews.Instagram.Media getLowResolution() {
         return lowResolution_;
       }
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      public MediaOrBuilder getLowResolutionOrBuilder() {
+      public com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder() {
         return lowResolution_;
       }
 
       public static final int STANDARD_RESOLUTION_FIELD_NUMBER = 2;
-      private Media standardResolution_;
+      private com.chinnews.Instagram.Media standardResolution_;
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
        */
@@ -1601,19 +1607,19 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
        */
-      public Media getStandardResolution() {
+      public com.chinnews.Instagram.Media getStandardResolution() {
         return standardResolution_;
       }
       /**
        * <code>required .com.chinnews.Media standard_resolution = 2;</code>
        */
-      public MediaOrBuilder getStandardResolutionOrBuilder() {
+      public com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder() {
         return standardResolution_;
       }
 
       private void initFields() {
-        lowResolution_ = Media.getDefaultInstance();
-        standardResolution_ = Media.getDefaultInstance();
+        lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
+        standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -1673,59 +1679,59 @@ public final class Instagram {
       }
 
       private static final long serialVersionUID = 0L;
-      @Override
-      protected Object writeReplace()
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
           throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
 
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static Videos parseFrom(byte[] data)
+      public static com.chinnews.Instagram.Data.Videos parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static Videos parseFrom(java.io.InputStream input)
+      public static com.chinnews.Instagram.Data.Videos parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return PARSER.parseFrom(input);
       }
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return PARSER.parseFrom(input, extensionRegistry);
       }
-      public static Videos parseDelimitedFrom(java.io.InputStream input)
+      public static com.chinnews.Instagram.Data.Videos parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return PARSER.parseDelimitedFrom(input);
       }
-      public static Videos parseDelimitedFrom(
+      public static com.chinnews.Instagram.Data.Videos parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return PARSER.parseDelimitedFrom(input, extensionRegistry);
       }
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return PARSER.parseFrom(input);
       }
-      public static Videos parseFrom(
+      public static com.chinnews.Instagram.Data.Videos parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1734,14 +1740,14 @@ public final class Instagram {
 
       public static Builder newBuilder() { return Builder.create(); }
       public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(Videos prototype) {
+      public static Builder newBuilder(com.chinnews.Instagram.Data.Videos prototype) {
         return newBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() { return newBuilder(this); }
 
-      @Override
+      @java.lang.Override
       protected Builder newBuilderForType(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -1751,17 +1757,17 @@ public final class Instagram {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessage.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:com.chinnews.Data.Videos)
-          VideosOrBuilder {
+          com.chinnews.Instagram.Data.VideosOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
         }
 
-        protected FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return Instagram.internal_static_com_chinnews_Data_Videos_fieldAccessorTable
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Videos_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  Videos.class, Builder.class);
+                  com.chinnews.Instagram.Data.Videos.class, com.chinnews.Instagram.Data.Videos.Builder.class);
         }
 
         // Construct using com.chinnews.Instagram.Data.Videos.newBuilder()
@@ -1770,7 +1776,7 @@ public final class Instagram {
         }
 
         private Builder(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -1787,13 +1793,13 @@ public final class Instagram {
         public Builder clear() {
           super.clear();
           if (lowResolutionBuilder_ == null) {
-            lowResolution_ = Media.getDefaultInstance();
+            lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
           } else {
             lowResolutionBuilder_.clear();
           }
           bitField0_ = (bitField0_ & ~0x00000001);
           if (standardResolutionBuilder_ == null) {
-            standardResolution_ = Media.getDefaultInstance();
+            standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
           } else {
             standardResolutionBuilder_.clear();
           }
@@ -1807,23 +1813,23 @@ public final class Instagram {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Videos_descriptor;
         }
 
-        public Videos getDefaultInstanceForType() {
-          return Videos.getDefaultInstance();
+        public com.chinnews.Instagram.Data.Videos getDefaultInstanceForType() {
+          return com.chinnews.Instagram.Data.Videos.getDefaultInstance();
         }
 
-        public Videos build() {
-          Videos result = buildPartial();
+        public com.chinnews.Instagram.Data.Videos build() {
+          com.chinnews.Instagram.Data.Videos result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public Videos buildPartial() {
-          Videos result = new Videos(this);
+        public com.chinnews.Instagram.Data.Videos buildPartial() {
+          com.chinnews.Instagram.Data.Videos result = new com.chinnews.Instagram.Data.Videos(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1848,16 +1854,16 @@ public final class Instagram {
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof Videos) {
-            return mergeFrom((Videos)other);
+          if (other instanceof com.chinnews.Instagram.Data.Videos) {
+            return mergeFrom((com.chinnews.Instagram.Data.Videos)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(Videos other) {
-          if (other == Videos.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.chinnews.Instagram.Data.Videos other) {
+          if (other == com.chinnews.Instagram.Data.Videos.getDefaultInstance()) return this;
           if (other.hasLowResolution()) {
             mergeLowResolution(other.getLowResolution());
           }
@@ -1892,11 +1898,11 @@ public final class Instagram {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          Videos parsedMessage = null;
+          com.chinnews.Instagram.Data.Videos parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (Videos) e.getUnfinishedMessage();
+            parsedMessage = (com.chinnews.Instagram.Data.Videos) e.getUnfinishedMessage();
             throw e;
           } finally {
             if (parsedMessage != null) {
@@ -1907,9 +1913,9 @@ public final class Instagram {
         }
         private int bitField0_;
 
-        private Media lowResolution_ = Media.getDefaultInstance();
+        private com.chinnews.Instagram.Media lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder> lowResolutionBuilder_;
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> lowResolutionBuilder_;
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
@@ -1919,7 +1925,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Media getLowResolution() {
+        public com.chinnews.Instagram.Media getLowResolution() {
           if (lowResolutionBuilder_ == null) {
             return lowResolution_;
           } else {
@@ -1929,7 +1935,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Builder setLowResolution(Media value) {
+        public Builder setLowResolution(com.chinnews.Instagram.Media value) {
           if (lowResolutionBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -1946,7 +1952,7 @@ public final class Instagram {
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
         public Builder setLowResolution(
-            Media.Builder builderForValue) {
+            com.chinnews.Instagram.Media.Builder builderForValue) {
           if (lowResolutionBuilder_ == null) {
             lowResolution_ = builderForValue.build();
             onChanged();
@@ -1959,12 +1965,12 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Builder mergeLowResolution(Media value) {
+        public Builder mergeLowResolution(com.chinnews.Instagram.Media value) {
           if (lowResolutionBuilder_ == null) {
             if (((bitField0_ & 0x00000001) == 0x00000001) &&
-                lowResolution_ != Media.getDefaultInstance()) {
+                lowResolution_ != com.chinnews.Instagram.Media.getDefaultInstance()) {
               lowResolution_ =
-                Media.newBuilder(lowResolution_).mergeFrom(value).buildPartial();
+                com.chinnews.Instagram.Media.newBuilder(lowResolution_).mergeFrom(value).buildPartial();
             } else {
               lowResolution_ = value;
             }
@@ -1980,7 +1986,7 @@ public final class Instagram {
          */
         public Builder clearLowResolution() {
           if (lowResolutionBuilder_ == null) {
-            lowResolution_ = Media.getDefaultInstance();
+            lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
             onChanged();
           } else {
             lowResolutionBuilder_.clear();
@@ -1991,7 +1997,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Media.Builder getLowResolutionBuilder() {
+        public com.chinnews.Instagram.Media.Builder getLowResolutionBuilder() {
           bitField0_ |= 0x00000001;
           onChanged();
           return getLowResolutionFieldBuilder().getBuilder();
@@ -1999,7 +2005,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public MediaOrBuilder getLowResolutionOrBuilder() {
+        public com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder() {
           if (lowResolutionBuilder_ != null) {
             return lowResolutionBuilder_.getMessageOrBuilder();
           } else {
@@ -2010,11 +2016,11 @@ public final class Instagram {
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder>
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> 
             getLowResolutionFieldBuilder() {
           if (lowResolutionBuilder_ == null) {
             lowResolutionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                Media, Media.Builder, MediaOrBuilder>(
+                com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder>(
                     getLowResolution(),
                     getParentForChildren(),
                     isClean());
@@ -2023,9 +2029,9 @@ public final class Instagram {
           return lowResolutionBuilder_;
         }
 
-        private Media standardResolution_ = Media.getDefaultInstance();
+        private com.chinnews.Instagram.Media standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder> standardResolutionBuilder_;
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> standardResolutionBuilder_;
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
@@ -2035,7 +2041,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
-        public Media getStandardResolution() {
+        public com.chinnews.Instagram.Media getStandardResolution() {
           if (standardResolutionBuilder_ == null) {
             return standardResolution_;
           } else {
@@ -2045,7 +2051,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
-        public Builder setStandardResolution(Media value) {
+        public Builder setStandardResolution(com.chinnews.Instagram.Media value) {
           if (standardResolutionBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -2062,7 +2068,7 @@ public final class Instagram {
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
         public Builder setStandardResolution(
-            Media.Builder builderForValue) {
+            com.chinnews.Instagram.Media.Builder builderForValue) {
           if (standardResolutionBuilder_ == null) {
             standardResolution_ = builderForValue.build();
             onChanged();
@@ -2075,12 +2081,12 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
-        public Builder mergeStandardResolution(Media value) {
+        public Builder mergeStandardResolution(com.chinnews.Instagram.Media value) {
           if (standardResolutionBuilder_ == null) {
             if (((bitField0_ & 0x00000002) == 0x00000002) &&
-                standardResolution_ != Media.getDefaultInstance()) {
+                standardResolution_ != com.chinnews.Instagram.Media.getDefaultInstance()) {
               standardResolution_ =
-                Media.newBuilder(standardResolution_).mergeFrom(value).buildPartial();
+                com.chinnews.Instagram.Media.newBuilder(standardResolution_).mergeFrom(value).buildPartial();
             } else {
               standardResolution_ = value;
             }
@@ -2096,7 +2102,7 @@ public final class Instagram {
          */
         public Builder clearStandardResolution() {
           if (standardResolutionBuilder_ == null) {
-            standardResolution_ = Media.getDefaultInstance();
+            standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
             onChanged();
           } else {
             standardResolutionBuilder_.clear();
@@ -2107,7 +2113,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
-        public Media.Builder getStandardResolutionBuilder() {
+        public com.chinnews.Instagram.Media.Builder getStandardResolutionBuilder() {
           bitField0_ |= 0x00000002;
           onChanged();
           return getStandardResolutionFieldBuilder().getBuilder();
@@ -2115,7 +2121,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
-        public MediaOrBuilder getStandardResolutionOrBuilder() {
+        public com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder() {
           if (standardResolutionBuilder_ != null) {
             return standardResolutionBuilder_.getMessageOrBuilder();
           } else {
@@ -2126,11 +2132,11 @@ public final class Instagram {
          * <code>required .com.chinnews.Media standard_resolution = 2;</code>
          */
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder>
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> 
             getStandardResolutionFieldBuilder() {
           if (standardResolutionBuilder_ == null) {
             standardResolutionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                Media, Media.Builder, MediaOrBuilder>(
+                com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder>(
                     getStandardResolution(),
                     getParentForChildren(),
                     isClean());
@@ -2161,11 +2167,11 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      Media getLowResolution();
+      com.chinnews.Instagram.Media getLowResolution();
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      MediaOrBuilder getLowResolutionOrBuilder();
+      com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder();
 
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
@@ -2174,11 +2180,11 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
        */
-      Media getThumbnail();
+      com.chinnews.Instagram.Media getThumbnail();
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
        */
-      MediaOrBuilder getThumbnailOrBuilder();
+      com.chinnews.Instagram.MediaOrBuilder getThumbnailOrBuilder();
 
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
@@ -2187,11 +2193,11 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
        */
-      Media getStandardResolution();
+      com.chinnews.Instagram.Media getStandardResolution();
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
        */
-      MediaOrBuilder getStandardResolutionOrBuilder();
+      com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder();
     }
     /**
      * Protobuf type {@code com.chinnews.Data.Images}
@@ -2217,7 +2223,7 @@ public final class Instagram {
       }
 
       private final com.google.protobuf.UnknownFieldSet unknownFields;
-      @Override
+      @java.lang.Override
       public final com.google.protobuf.UnknownFieldSet
           getUnknownFields() {
         return this.unknownFields;
@@ -2246,11 +2252,11 @@ public final class Instagram {
                 break;
               }
               case 10: {
-                Media.Builder subBuilder = null;
+                com.chinnews.Instagram.Media.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000001) == 0x00000001)) {
                   subBuilder = lowResolution_.toBuilder();
                 }
-                lowResolution_ = input.readMessage(Media.PARSER, extensionRegistry);
+                lowResolution_ = input.readMessage(com.chinnews.Instagram.Media.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(lowResolution_);
                   lowResolution_ = subBuilder.buildPartial();
@@ -2259,11 +2265,11 @@ public final class Instagram {
                 break;
               }
               case 18: {
-                Media.Builder subBuilder = null;
+                com.chinnews.Instagram.Media.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000002) == 0x00000002)) {
                   subBuilder = thumbnail_.toBuilder();
                 }
-                thumbnail_ = input.readMessage(Media.PARSER, extensionRegistry);
+                thumbnail_ = input.readMessage(com.chinnews.Instagram.Media.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(thumbnail_);
                   thumbnail_ = subBuilder.buildPartial();
@@ -2272,11 +2278,11 @@ public final class Instagram {
                 break;
               }
               case 26: {
-                Media.Builder subBuilder = null;
+                com.chinnews.Instagram.Media.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000004) == 0x00000004)) {
                   subBuilder = standardResolution_.toBuilder();
                 }
-                standardResolution_ = input.readMessage(Media.PARSER, extensionRegistry);
+                standardResolution_ = input.readMessage(com.chinnews.Instagram.Media.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(standardResolution_);
                   standardResolution_ = subBuilder.buildPartial();
@@ -2298,14 +2304,14 @@ public final class Instagram {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Data_Images_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_Images_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Data_Images_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_Images_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Images.class, Builder.class);
+                com.chinnews.Instagram.Data.Images.class, com.chinnews.Instagram.Data.Images.Builder.class);
       }
 
       public static com.google.protobuf.Parser<Images> PARSER =
@@ -2318,14 +2324,14 @@ public final class Instagram {
         }
       };
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Parser<Images> getParserForType() {
         return PARSER;
       }
 
       private int bitField0_;
       public static final int LOW_RESOLUTION_FIELD_NUMBER = 1;
-      private Media lowResolution_;
+      private com.chinnews.Instagram.Media lowResolution_;
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
@@ -2335,18 +2341,18 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      public Media getLowResolution() {
+      public com.chinnews.Instagram.Media getLowResolution() {
         return lowResolution_;
       }
       /**
        * <code>required .com.chinnews.Media low_resolution = 1;</code>
        */
-      public MediaOrBuilder getLowResolutionOrBuilder() {
+      public com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder() {
         return lowResolution_;
       }
 
       public static final int THUMBNAIL_FIELD_NUMBER = 2;
-      private Media thumbnail_;
+      private com.chinnews.Instagram.Media thumbnail_;
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
        */
@@ -2356,18 +2362,18 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
        */
-      public Media getThumbnail() {
+      public com.chinnews.Instagram.Media getThumbnail() {
         return thumbnail_;
       }
       /**
        * <code>required .com.chinnews.Media thumbnail = 2;</code>
        */
-      public MediaOrBuilder getThumbnailOrBuilder() {
+      public com.chinnews.Instagram.MediaOrBuilder getThumbnailOrBuilder() {
         return thumbnail_;
       }
 
       public static final int STANDARD_RESOLUTION_FIELD_NUMBER = 3;
-      private Media standardResolution_;
+      private com.chinnews.Instagram.Media standardResolution_;
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
        */
@@ -2377,20 +2383,20 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
        */
-      public Media getStandardResolution() {
+      public com.chinnews.Instagram.Media getStandardResolution() {
         return standardResolution_;
       }
       /**
        * <code>required .com.chinnews.Media standard_resolution = 3;</code>
        */
-      public MediaOrBuilder getStandardResolutionOrBuilder() {
+      public com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder() {
         return standardResolution_;
       }
 
       private void initFields() {
-        lowResolution_ = Media.getDefaultInstance();
-        thumbnail_ = Media.getDefaultInstance();
-        standardResolution_ = Media.getDefaultInstance();
+        lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
+        thumbnail_ = com.chinnews.Instagram.Media.getDefaultInstance();
+        standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
       }
       private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
@@ -2465,59 +2471,59 @@ public final class Instagram {
       }
 
       private static final long serialVersionUID = 0L;
-      @Override
-      protected Object writeReplace()
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
           throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
 
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static Images parseFrom(byte[] data)
+      public static com.chinnews.Instagram.Data.Images parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static Images parseFrom(java.io.InputStream input)
+      public static com.chinnews.Instagram.Data.Images parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return PARSER.parseFrom(input);
       }
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return PARSER.parseFrom(input, extensionRegistry);
       }
-      public static Images parseDelimitedFrom(java.io.InputStream input)
+      public static com.chinnews.Instagram.Data.Images parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return PARSER.parseDelimitedFrom(input);
       }
-      public static Images parseDelimitedFrom(
+      public static com.chinnews.Instagram.Data.Images parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return PARSER.parseDelimitedFrom(input, extensionRegistry);
       }
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return PARSER.parseFrom(input);
       }
-      public static Images parseFrom(
+      public static com.chinnews.Instagram.Data.Images parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -2526,14 +2532,14 @@ public final class Instagram {
 
       public static Builder newBuilder() { return Builder.create(); }
       public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder(Images prototype) {
+      public static Builder newBuilder(com.chinnews.Instagram.Data.Images prototype) {
         return newBuilder().mergeFrom(prototype);
       }
       public Builder toBuilder() { return newBuilder(this); }
 
-      @Override
+      @java.lang.Override
       protected Builder newBuilderForType(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -2543,17 +2549,17 @@ public final class Instagram {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessage.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:com.chinnews.Data.Images)
-          ImagesOrBuilder {
+          com.chinnews.Instagram.Data.ImagesOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return Instagram.internal_static_com_chinnews_Data_Images_descriptor;
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Images_descriptor;
         }
 
-        protected FieldAccessorTable
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return Instagram.internal_static_com_chinnews_Data_Images_fieldAccessorTable
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Images_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  Images.class, Builder.class);
+                  com.chinnews.Instagram.Data.Images.class, com.chinnews.Instagram.Data.Images.Builder.class);
         }
 
         // Construct using com.chinnews.Instagram.Data.Images.newBuilder()
@@ -2562,7 +2568,7 @@ public final class Instagram {
         }
 
         private Builder(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -2580,19 +2586,19 @@ public final class Instagram {
         public Builder clear() {
           super.clear();
           if (lowResolutionBuilder_ == null) {
-            lowResolution_ = Media.getDefaultInstance();
+            lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
           } else {
             lowResolutionBuilder_.clear();
           }
           bitField0_ = (bitField0_ & ~0x00000001);
           if (thumbnailBuilder_ == null) {
-            thumbnail_ = Media.getDefaultInstance();
+            thumbnail_ = com.chinnews.Instagram.Media.getDefaultInstance();
           } else {
             thumbnailBuilder_.clear();
           }
           bitField0_ = (bitField0_ & ~0x00000002);
           if (standardResolutionBuilder_ == null) {
-            standardResolution_ = Media.getDefaultInstance();
+            standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
           } else {
             standardResolutionBuilder_.clear();
           }
@@ -2606,23 +2612,23 @@ public final class Instagram {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return Instagram.internal_static_com_chinnews_Data_Images_descriptor;
+          return com.chinnews.Instagram.internal_static_com_chinnews_Data_Images_descriptor;
         }
 
-        public Images getDefaultInstanceForType() {
-          return Images.getDefaultInstance();
+        public com.chinnews.Instagram.Data.Images getDefaultInstanceForType() {
+          return com.chinnews.Instagram.Data.Images.getDefaultInstance();
         }
 
-        public Images build() {
-          Images result = buildPartial();
+        public com.chinnews.Instagram.Data.Images build() {
+          com.chinnews.Instagram.Data.Images result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public Images buildPartial() {
-          Images result = new Images(this);
+        public com.chinnews.Instagram.Data.Images buildPartial() {
+          com.chinnews.Instagram.Data.Images result = new com.chinnews.Instagram.Data.Images(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2655,16 +2661,16 @@ public final class Instagram {
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof Images) {
-            return mergeFrom((Images)other);
+          if (other instanceof com.chinnews.Instagram.Data.Images) {
+            return mergeFrom((com.chinnews.Instagram.Data.Images)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(Images other) {
-          if (other == Images.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.chinnews.Instagram.Data.Images other) {
+          if (other == com.chinnews.Instagram.Data.Images.getDefaultInstance()) return this;
           if (other.hasLowResolution()) {
             mergeLowResolution(other.getLowResolution());
           }
@@ -2710,11 +2716,11 @@ public final class Instagram {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          Images parsedMessage = null;
+          com.chinnews.Instagram.Data.Images parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (Images) e.getUnfinishedMessage();
+            parsedMessage = (com.chinnews.Instagram.Data.Images) e.getUnfinishedMessage();
             throw e;
           } finally {
             if (parsedMessage != null) {
@@ -2725,9 +2731,9 @@ public final class Instagram {
         }
         private int bitField0_;
 
-        private Media lowResolution_ = Media.getDefaultInstance();
+        private com.chinnews.Instagram.Media lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder> lowResolutionBuilder_;
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> lowResolutionBuilder_;
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
@@ -2737,7 +2743,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Media getLowResolution() {
+        public com.chinnews.Instagram.Media getLowResolution() {
           if (lowResolutionBuilder_ == null) {
             return lowResolution_;
           } else {
@@ -2747,7 +2753,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Builder setLowResolution(Media value) {
+        public Builder setLowResolution(com.chinnews.Instagram.Media value) {
           if (lowResolutionBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -2764,7 +2770,7 @@ public final class Instagram {
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
         public Builder setLowResolution(
-            Media.Builder builderForValue) {
+            com.chinnews.Instagram.Media.Builder builderForValue) {
           if (lowResolutionBuilder_ == null) {
             lowResolution_ = builderForValue.build();
             onChanged();
@@ -2777,12 +2783,12 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Builder mergeLowResolution(Media value) {
+        public Builder mergeLowResolution(com.chinnews.Instagram.Media value) {
           if (lowResolutionBuilder_ == null) {
             if (((bitField0_ & 0x00000001) == 0x00000001) &&
-                lowResolution_ != Media.getDefaultInstance()) {
+                lowResolution_ != com.chinnews.Instagram.Media.getDefaultInstance()) {
               lowResolution_ =
-                Media.newBuilder(lowResolution_).mergeFrom(value).buildPartial();
+                com.chinnews.Instagram.Media.newBuilder(lowResolution_).mergeFrom(value).buildPartial();
             } else {
               lowResolution_ = value;
             }
@@ -2798,7 +2804,7 @@ public final class Instagram {
          */
         public Builder clearLowResolution() {
           if (lowResolutionBuilder_ == null) {
-            lowResolution_ = Media.getDefaultInstance();
+            lowResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
             onChanged();
           } else {
             lowResolutionBuilder_.clear();
@@ -2809,7 +2815,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public Media.Builder getLowResolutionBuilder() {
+        public com.chinnews.Instagram.Media.Builder getLowResolutionBuilder() {
           bitField0_ |= 0x00000001;
           onChanged();
           return getLowResolutionFieldBuilder().getBuilder();
@@ -2817,7 +2823,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
-        public MediaOrBuilder getLowResolutionOrBuilder() {
+        public com.chinnews.Instagram.MediaOrBuilder getLowResolutionOrBuilder() {
           if (lowResolutionBuilder_ != null) {
             return lowResolutionBuilder_.getMessageOrBuilder();
           } else {
@@ -2828,11 +2834,11 @@ public final class Instagram {
          * <code>required .com.chinnews.Media low_resolution = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder>
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> 
             getLowResolutionFieldBuilder() {
           if (lowResolutionBuilder_ == null) {
             lowResolutionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                Media, Media.Builder, MediaOrBuilder>(
+                com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder>(
                     getLowResolution(),
                     getParentForChildren(),
                     isClean());
@@ -2841,9 +2847,9 @@ public final class Instagram {
           return lowResolutionBuilder_;
         }
 
-        private Media thumbnail_ = Media.getDefaultInstance();
+        private com.chinnews.Instagram.Media thumbnail_ = com.chinnews.Instagram.Media.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder> thumbnailBuilder_;
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> thumbnailBuilder_;
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
@@ -2853,7 +2859,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
-        public Media getThumbnail() {
+        public com.chinnews.Instagram.Media getThumbnail() {
           if (thumbnailBuilder_ == null) {
             return thumbnail_;
           } else {
@@ -2863,7 +2869,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
-        public Builder setThumbnail(Media value) {
+        public Builder setThumbnail(com.chinnews.Instagram.Media value) {
           if (thumbnailBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -2880,7 +2886,7 @@ public final class Instagram {
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
         public Builder setThumbnail(
-            Media.Builder builderForValue) {
+            com.chinnews.Instagram.Media.Builder builderForValue) {
           if (thumbnailBuilder_ == null) {
             thumbnail_ = builderForValue.build();
             onChanged();
@@ -2893,12 +2899,12 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
-        public Builder mergeThumbnail(Media value) {
+        public Builder mergeThumbnail(com.chinnews.Instagram.Media value) {
           if (thumbnailBuilder_ == null) {
             if (((bitField0_ & 0x00000002) == 0x00000002) &&
-                thumbnail_ != Media.getDefaultInstance()) {
+                thumbnail_ != com.chinnews.Instagram.Media.getDefaultInstance()) {
               thumbnail_ =
-                Media.newBuilder(thumbnail_).mergeFrom(value).buildPartial();
+                com.chinnews.Instagram.Media.newBuilder(thumbnail_).mergeFrom(value).buildPartial();
             } else {
               thumbnail_ = value;
             }
@@ -2914,7 +2920,7 @@ public final class Instagram {
          */
         public Builder clearThumbnail() {
           if (thumbnailBuilder_ == null) {
-            thumbnail_ = Media.getDefaultInstance();
+            thumbnail_ = com.chinnews.Instagram.Media.getDefaultInstance();
             onChanged();
           } else {
             thumbnailBuilder_.clear();
@@ -2925,7 +2931,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
-        public Media.Builder getThumbnailBuilder() {
+        public com.chinnews.Instagram.Media.Builder getThumbnailBuilder() {
           bitField0_ |= 0x00000002;
           onChanged();
           return getThumbnailFieldBuilder().getBuilder();
@@ -2933,7 +2939,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
-        public MediaOrBuilder getThumbnailOrBuilder() {
+        public com.chinnews.Instagram.MediaOrBuilder getThumbnailOrBuilder() {
           if (thumbnailBuilder_ != null) {
             return thumbnailBuilder_.getMessageOrBuilder();
           } else {
@@ -2944,11 +2950,11 @@ public final class Instagram {
          * <code>required .com.chinnews.Media thumbnail = 2;</code>
          */
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder>
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> 
             getThumbnailFieldBuilder() {
           if (thumbnailBuilder_ == null) {
             thumbnailBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                Media, Media.Builder, MediaOrBuilder>(
+                com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder>(
                     getThumbnail(),
                     getParentForChildren(),
                     isClean());
@@ -2957,9 +2963,9 @@ public final class Instagram {
           return thumbnailBuilder_;
         }
 
-        private Media standardResolution_ = Media.getDefaultInstance();
+        private com.chinnews.Instagram.Media standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder> standardResolutionBuilder_;
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> standardResolutionBuilder_;
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
@@ -2969,7 +2975,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
-        public Media getStandardResolution() {
+        public com.chinnews.Instagram.Media getStandardResolution() {
           if (standardResolutionBuilder_ == null) {
             return standardResolution_;
           } else {
@@ -2979,7 +2985,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
-        public Builder setStandardResolution(Media value) {
+        public Builder setStandardResolution(com.chinnews.Instagram.Media value) {
           if (standardResolutionBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -2996,7 +3002,7 @@ public final class Instagram {
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
         public Builder setStandardResolution(
-            Media.Builder builderForValue) {
+            com.chinnews.Instagram.Media.Builder builderForValue) {
           if (standardResolutionBuilder_ == null) {
             standardResolution_ = builderForValue.build();
             onChanged();
@@ -3009,12 +3015,12 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
-        public Builder mergeStandardResolution(Media value) {
+        public Builder mergeStandardResolution(com.chinnews.Instagram.Media value) {
           if (standardResolutionBuilder_ == null) {
             if (((bitField0_ & 0x00000004) == 0x00000004) &&
-                standardResolution_ != Media.getDefaultInstance()) {
+                standardResolution_ != com.chinnews.Instagram.Media.getDefaultInstance()) {
               standardResolution_ =
-                Media.newBuilder(standardResolution_).mergeFrom(value).buildPartial();
+                com.chinnews.Instagram.Media.newBuilder(standardResolution_).mergeFrom(value).buildPartial();
             } else {
               standardResolution_ = value;
             }
@@ -3030,7 +3036,7 @@ public final class Instagram {
          */
         public Builder clearStandardResolution() {
           if (standardResolutionBuilder_ == null) {
-            standardResolution_ = Media.getDefaultInstance();
+            standardResolution_ = com.chinnews.Instagram.Media.getDefaultInstance();
             onChanged();
           } else {
             standardResolutionBuilder_.clear();
@@ -3041,7 +3047,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
-        public Media.Builder getStandardResolutionBuilder() {
+        public com.chinnews.Instagram.Media.Builder getStandardResolutionBuilder() {
           bitField0_ |= 0x00000004;
           onChanged();
           return getStandardResolutionFieldBuilder().getBuilder();
@@ -3049,7 +3055,7 @@ public final class Instagram {
         /**
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
-        public MediaOrBuilder getStandardResolutionOrBuilder() {
+        public com.chinnews.Instagram.MediaOrBuilder getStandardResolutionOrBuilder() {
           if (standardResolutionBuilder_ != null) {
             return standardResolutionBuilder_.getMessageOrBuilder();
           } else {
@@ -3060,11 +3066,11 @@ public final class Instagram {
          * <code>required .com.chinnews.Media standard_resolution = 3;</code>
          */
         private com.google.protobuf.SingleFieldBuilder<
-            Media, Media.Builder, MediaOrBuilder>
+            com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder> 
             getStandardResolutionFieldBuilder() {
           if (standardResolutionBuilder_ == null) {
             standardResolutionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-                Media, Media.Builder, MediaOrBuilder>(
+                com.chinnews.Instagram.Media, com.chinnews.Instagram.Media.Builder, com.chinnews.Instagram.MediaOrBuilder>(
                     getStandardResolution(),
                     getParentForChildren(),
                     isClean());
@@ -3086,7 +3092,7 @@ public final class Instagram {
 
     private int bitField0_;
     public static final int TYPE_FIELD_NUMBER = 1;
-    private Object type_;
+    private java.lang.Object type_;
     /**
      * <code>required string type = 1;</code>
      */
@@ -3096,14 +3102,14 @@ public final class Instagram {
     /**
      * <code>required string type = 1;</code>
      */
-    public String getType() {
-      Object ref = type_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getType() {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           type_ = s;
         }
@@ -3115,11 +3121,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
-      Object ref = type_;
-      if (ref instanceof String) {
+      java.lang.Object ref = type_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
@@ -3128,7 +3134,7 @@ public final class Instagram {
     }
 
     public static final int VIDEOS_FIELD_NUMBER = 2;
-    private Videos videos_;
+    private com.chinnews.Instagram.Data.Videos videos_;
     /**
      * <code>optional group Videos = 2 { ... }</code>
      */
@@ -3138,13 +3144,13 @@ public final class Instagram {
     /**
      * <code>optional group Videos = 2 { ... }</code>
      */
-    public Videos getVideos() {
+    public com.chinnews.Instagram.Data.Videos getVideos() {
       return videos_;
     }
     /**
      * <code>optional group Videos = 2 { ... }</code>
      */
-    public VideosOrBuilder getVideosOrBuilder() {
+    public com.chinnews.Instagram.Data.VideosOrBuilder getVideosOrBuilder() {
       return videos_;
     }
 
@@ -3166,7 +3172,7 @@ public final class Instagram {
     /**
      * <code>repeated string users_in_photo = 3;</code>
      */
-    public String getUsersInPhoto(int index) {
+    public java.lang.String getUsersInPhoto(int index) {
       return usersInPhoto_.get(index);
     }
     /**
@@ -3178,7 +3184,7 @@ public final class Instagram {
     }
 
     public static final int FILTER_FIELD_NUMBER = 4;
-    private Object filter_;
+    private java.lang.Object filter_;
     /**
      * <code>optional string filter = 4;</code>
      */
@@ -3188,14 +3194,14 @@ public final class Instagram {
     /**
      * <code>optional string filter = 4;</code>
      */
-    public String getFilter() {
-      Object ref = filter_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getFilter() {
+      java.lang.Object ref = filter_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           filter_ = s;
         }
@@ -3207,11 +3213,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getFilterBytes() {
-      Object ref = filter_;
-      if (ref instanceof String) {
+      java.lang.Object ref = filter_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         filter_ = b;
         return b;
       } else {
@@ -3237,7 +3243,7 @@ public final class Instagram {
     /**
      * <code>repeated string tags = 5;</code>
      */
-    public String getTags(int index) {
+    public java.lang.String getTags(int index) {
       return tags_.get(index);
     }
     /**
@@ -3249,7 +3255,7 @@ public final class Instagram {
     }
 
     public static final int COMMENTS_FIELD_NUMBER = 6;
-    private CommentInfo comments_;
+    private com.chinnews.Instagram.CommentInfo comments_;
     /**
      * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
      */
@@ -3259,18 +3265,18 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
      */
-    public CommentInfo getComments() {
+    public com.chinnews.Instagram.CommentInfo getComments() {
       return comments_;
     }
     /**
      * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
      */
-    public CommentInfoOrBuilder getCommentsOrBuilder() {
+    public com.chinnews.Instagram.CommentInfoOrBuilder getCommentsOrBuilder() {
       return comments_;
     }
 
     public static final int CAPTION_FIELD_NUMBER = 7;
-    private Caption caption_;
+    private com.chinnews.Instagram.Caption caption_;
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
      */
@@ -3280,18 +3286,18 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
      */
-    public Caption getCaption() {
+    public com.chinnews.Instagram.Caption getCaption() {
       return caption_;
     }
     /**
      * <code>optional .com.chinnews.Caption caption = 7;</code>
      */
-    public CaptionOrBuilder getCaptionOrBuilder() {
+    public com.chinnews.Instagram.CaptionOrBuilder getCaptionOrBuilder() {
       return caption_;
     }
 
     public static final int LIKES_FIELD_NUMBER = 8;
-    private Likes likes_;
+    private com.chinnews.Instagram.Likes likes_;
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
      */
@@ -3301,18 +3307,18 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
      */
-    public Likes getLikes() {
+    public com.chinnews.Instagram.Likes getLikes() {
       return likes_;
     }
     /**
      * <code>optional .com.chinnews.Likes likes = 8;</code>
      */
-    public LikesOrBuilder getLikesOrBuilder() {
+    public com.chinnews.Instagram.LikesOrBuilder getLikesOrBuilder() {
       return likes_;
     }
 
     public static final int LINK_FIELD_NUMBER = 9;
-    private Object link_;
+    private java.lang.Object link_;
     /**
      * <code>optional string link = 9;</code>
      */
@@ -3322,14 +3328,14 @@ public final class Instagram {
     /**
      * <code>optional string link = 9;</code>
      */
-    public String getLink() {
-      Object ref = link_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getLink() {
+      java.lang.Object ref = link_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           link_ = s;
         }
@@ -3341,11 +3347,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getLinkBytes() {
-      Object ref = link_;
-      if (ref instanceof String) {
+      java.lang.Object ref = link_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         link_ = b;
         return b;
       } else {
@@ -3354,7 +3360,7 @@ public final class Instagram {
     }
 
     public static final int USER_FIELD_NUMBER = 10;
-    private User user_;
+    private com.chinnews.Instagram.User user_;
     /**
      * <code>optional .com.chinnews.User user = 10;</code>
      */
@@ -3364,18 +3370,18 @@ public final class Instagram {
     /**
      * <code>optional .com.chinnews.User user = 10;</code>
      */
-    public User getUser() {
+    public com.chinnews.Instagram.User getUser() {
       return user_;
     }
     /**
      * <code>optional .com.chinnews.User user = 10;</code>
      */
-    public UserOrBuilder getUserOrBuilder() {
+    public com.chinnews.Instagram.UserOrBuilder getUserOrBuilder() {
       return user_;
     }
 
     public static final int CREATED_TIME_FIELD_NUMBER = 11;
-    private Object createdTime_;
+    private java.lang.Object createdTime_;
     /**
      * <code>required string created_time = 11;</code>
      */
@@ -3385,14 +3391,14 @@ public final class Instagram {
     /**
      * <code>required string created_time = 11;</code>
      */
-    public String getCreatedTime() {
-      Object ref = createdTime_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCreatedTime() {
+      java.lang.Object ref = createdTime_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           createdTime_ = s;
         }
@@ -3404,11 +3410,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getCreatedTimeBytes() {
-      Object ref = createdTime_;
-      if (ref instanceof String) {
+      java.lang.Object ref = createdTime_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         createdTime_ = b;
         return b;
       } else {
@@ -3417,7 +3423,7 @@ public final class Instagram {
     }
 
     public static final int IMAGES_FIELD_NUMBER = 12;
-    private Images images_;
+    private com.chinnews.Instagram.Data.Images images_;
     /**
      * <code>optional group Images = 12 { ... }</code>
      */
@@ -3427,18 +3433,18 @@ public final class Instagram {
     /**
      * <code>optional group Images = 12 { ... }</code>
      */
-    public Images getImages() {
+    public com.chinnews.Instagram.Data.Images getImages() {
       return images_;
     }
     /**
      * <code>optional group Images = 12 { ... }</code>
      */
-    public ImagesOrBuilder getImagesOrBuilder() {
+    public com.chinnews.Instagram.Data.ImagesOrBuilder getImagesOrBuilder() {
       return images_;
     }
 
     public static final int ID_FIELD_NUMBER = 13;
-    private Object id13_;
+    private java.lang.Object id13_;
     // An alternative name is used for field "id" because:
     //     capitalized name of field "id" conflicts with field "_id"
     /**
@@ -3450,14 +3456,14 @@ public final class Instagram {
     /**
      * <code>required string id = 13;</code>
      */
-    public String getId13() {
-      Object ref = id13_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getId13() {
+      java.lang.Object ref = id13_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           id13_ = s;
         }
@@ -3469,11 +3475,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getId13Bytes() {
-      Object ref = id13_;
-      if (ref instanceof String) {
+      java.lang.Object ref = id13_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         id13_ = b;
         return b;
       } else {
@@ -3482,49 +3488,28 @@ public final class Instagram {
     }
 
     public static final int LOCATION_FIELD_NUMBER = 14;
-    private Object location_;
+    private com.chinnews.Instagram.Location location_;
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
     public boolean hasLocation() {
       return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
-    public String getLocation() {
-      Object ref = location_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          location_ = s;
-        }
-        return s;
-      }
+    public com.chinnews.Instagram.Location getLocation() {
+      return location_;
     }
     /**
-     * <code>optional string location = 14;</code>
+     * <code>optional .com.chinnews.Location location = 14;</code>
      */
-    public com.google.protobuf.ByteString
-        getLocationBytes() {
-      Object ref = location_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
-        location_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public com.chinnews.Instagram.LocationOrBuilder getLocationOrBuilder() {
+      return location_;
     }
 
     public static final int _ID_FIELD_NUMBER = 15;
-    private Object Id15_;
+    private java.lang.Object Id15_;
     // An alternative name is used for field "_id" because:
     //     capitalized name of field "id" conflicts with field "_id"
     /**
@@ -3544,14 +3529,14 @@ public final class Instagram {
      *for mongodb
      * </pre>
      */
-    public String getId15() {
-      Object ref = Id15_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getId15() {
+      java.lang.Object ref = Id15_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           Id15_ = s;
         }
@@ -3567,11 +3552,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getId15Bytes() {
-      Object ref = Id15_;
-      if (ref instanceof String) {
+      java.lang.Object ref = Id15_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         Id15_ = b;
         return b;
       } else {
@@ -3581,19 +3566,19 @@ public final class Instagram {
 
     private void initFields() {
       type_ = "";
-      videos_ = Videos.getDefaultInstance();
+      videos_ = com.chinnews.Instagram.Data.Videos.getDefaultInstance();
       usersInPhoto_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       filter_ = "";
       tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      comments_ = CommentInfo.getDefaultInstance();
-      caption_ = Caption.getDefaultInstance();
-      likes_ = Likes.getDefaultInstance();
+      comments_ = com.chinnews.Instagram.CommentInfo.getDefaultInstance();
+      caption_ = com.chinnews.Instagram.Caption.getDefaultInstance();
+      likes_ = com.chinnews.Instagram.Likes.getDefaultInstance();
       link_ = "";
-      user_ = User.getDefaultInstance();
+      user_ = com.chinnews.Instagram.User.getDefaultInstance();
       createdTime_ = "";
-      images_ = Images.getDefaultInstance();
+      images_ = com.chinnews.Instagram.Data.Images.getDefaultInstance();
       id13_ = "";
-      location_ = "";
+      location_ = com.chinnews.Instagram.Location.getDefaultInstance();
       Id15_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -3697,7 +3682,7 @@ public final class Instagram {
         output.writeBytes(13, getId13Bytes());
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeBytes(14, getLocationBytes());
+        output.writeMessage(14, location_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         output.writeBytes(15, getId15Bytes());
@@ -3775,7 +3760,7 @@ public final class Instagram {
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(14, getLocationBytes());
+          .computeMessageSize(14, location_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3787,59 +3772,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Data parseFrom(byte[] data)
+    public static com.chinnews.Instagram.Data parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Data parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Data parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Data parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Data parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Data parseDelimitedFrom(
+    public static com.chinnews.Instagram.Data parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Data parseFrom(
+    public static com.chinnews.Instagram.Data parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3848,14 +3833,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Data prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.Data prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3865,17 +3850,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.Data)
-        DataOrBuilder {
+        com.chinnews.Instagram.DataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Data_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Data_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Data.class, Builder.class);
+                com.chinnews.Instagram.Data.class, com.chinnews.Instagram.Data.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.Data.newBuilder()
@@ -3884,7 +3869,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3896,6 +3881,7 @@ public final class Instagram {
           getLikesFieldBuilder();
           getUserFieldBuilder();
           getImagesFieldBuilder();
+          getLocationFieldBuilder();
         }
       }
       private static Builder create() {
@@ -3907,7 +3893,7 @@ public final class Instagram {
         type_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         if (videosBuilder_ == null) {
-          videos_ = Videos.getDefaultInstance();
+          videos_ = com.chinnews.Instagram.Data.Videos.getDefaultInstance();
         } else {
           videosBuilder_.clear();
         }
@@ -3919,19 +3905,19 @@ public final class Instagram {
         tags_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000010);
         if (commentsBuilder_ == null) {
-          comments_ = CommentInfo.getDefaultInstance();
+          comments_ = com.chinnews.Instagram.CommentInfo.getDefaultInstance();
         } else {
           commentsBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000020);
         if (captionBuilder_ == null) {
-          caption_ = Caption.getDefaultInstance();
+          caption_ = com.chinnews.Instagram.Caption.getDefaultInstance();
         } else {
           captionBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000040);
         if (likesBuilder_ == null) {
-          likes_ = Likes.getDefaultInstance();
+          likes_ = com.chinnews.Instagram.Likes.getDefaultInstance();
         } else {
           likesBuilder_.clear();
         }
@@ -3939,7 +3925,7 @@ public final class Instagram {
         link_ = "";
         bitField0_ = (bitField0_ & ~0x00000100);
         if (userBuilder_ == null) {
-          user_ = User.getDefaultInstance();
+          user_ = com.chinnews.Instagram.User.getDefaultInstance();
         } else {
           userBuilder_.clear();
         }
@@ -3947,14 +3933,18 @@ public final class Instagram {
         createdTime_ = "";
         bitField0_ = (bitField0_ & ~0x00000400);
         if (imagesBuilder_ == null) {
-          images_ = Images.getDefaultInstance();
+          images_ = com.chinnews.Instagram.Data.Images.getDefaultInstance();
         } else {
           imagesBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000800);
         id13_ = "";
         bitField0_ = (bitField0_ & ~0x00001000);
-        location_ = "";
+        if (locationBuilder_ == null) {
+          location_ = com.chinnews.Instagram.Location.getDefaultInstance();
+        } else {
+          locationBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00002000);
         Id15_ = "";
         bitField0_ = (bitField0_ & ~0x00004000);
@@ -3967,23 +3957,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_Data_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Data_descriptor;
       }
 
-      public Data getDefaultInstanceForType() {
-        return Data.getDefaultInstance();
+      public com.chinnews.Instagram.Data getDefaultInstanceForType() {
+        return com.chinnews.Instagram.Data.getDefaultInstance();
       }
 
-      public Data build() {
-        Data result = buildPartial();
+      public com.chinnews.Instagram.Data build() {
+        com.chinnews.Instagram.Data result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Data buildPartial() {
-        Data result = new Data(this);
+      public com.chinnews.Instagram.Data buildPartial() {
+        com.chinnews.Instagram.Data result = new com.chinnews.Instagram.Data(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4067,7 +4057,11 @@ public final class Instagram {
         if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
           to_bitField0_ |= 0x00000800;
         }
-        result.location_ = location_;
+        if (locationBuilder_ == null) {
+          result.location_ = location_;
+        } else {
+          result.location_ = locationBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
           to_bitField0_ |= 0x00001000;
         }
@@ -4078,16 +4072,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Data) {
-          return mergeFrom((Data)other);
+        if (other instanceof com.chinnews.Instagram.Data) {
+          return mergeFrom((com.chinnews.Instagram.Data)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Data other) {
-        if (other == Data.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.Data other) {
+        if (other == com.chinnews.Instagram.Data.getDefaultInstance()) return this;
         if (other.hasType()) {
           bitField0_ |= 0x00000001;
           type_ = other.type_;
@@ -4152,9 +4146,7 @@ public final class Instagram {
           onChanged();
         }
         if (other.hasLocation()) {
-          bitField0_ |= 0x00002000;
-          location_ = other.location_;
-          onChanged();
+          mergeLocation(other.getLocation());
         }
         if (other.hasId15()) {
           bitField0_ |= 0x00004000;
@@ -4221,11 +4213,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Data parsedMessage = null;
+        com.chinnews.Instagram.Data parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Data) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.Data) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4236,7 +4228,7 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private Object type_ = "";
+      private java.lang.Object type_ = "";
       /**
        * <code>required string type = 1;</code>
        */
@@ -4246,18 +4238,18 @@ public final class Instagram {
       /**
        * <code>required string type = 1;</code>
        */
-      public String getType() {
-        Object ref = type_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getType() {
+        java.lang.Object ref = type_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             type_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4265,11 +4257,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
-        Object ref = type_;
+        java.lang.Object ref = type_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           type_ = b;
           return b;
         } else {
@@ -4280,7 +4272,7 @@ public final class Instagram {
        * <code>required string type = 1;</code>
        */
       public Builder setType(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4312,9 +4304,9 @@ public final class Instagram {
         return this;
       }
 
-      private Videos videos_ = Videos.getDefaultInstance();
+      private com.chinnews.Instagram.Data.Videos videos_ = com.chinnews.Instagram.Data.Videos.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Videos, Videos.Builder, VideosOrBuilder> videosBuilder_;
+          com.chinnews.Instagram.Data.Videos, com.chinnews.Instagram.Data.Videos.Builder, com.chinnews.Instagram.Data.VideosOrBuilder> videosBuilder_;
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
@@ -4324,7 +4316,7 @@ public final class Instagram {
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
-      public Videos getVideos() {
+      public com.chinnews.Instagram.Data.Videos getVideos() {
         if (videosBuilder_ == null) {
           return videos_;
         } else {
@@ -4334,7 +4326,7 @@ public final class Instagram {
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
-      public Builder setVideos(Videos value) {
+      public Builder setVideos(com.chinnews.Instagram.Data.Videos value) {
         if (videosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4351,7 +4343,7 @@ public final class Instagram {
        * <code>optional group Videos = 2 { ... }</code>
        */
       public Builder setVideos(
-          Videos.Builder builderForValue) {
+          com.chinnews.Instagram.Data.Videos.Builder builderForValue) {
         if (videosBuilder_ == null) {
           videos_ = builderForValue.build();
           onChanged();
@@ -4364,12 +4356,12 @@ public final class Instagram {
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
-      public Builder mergeVideos(Videos value) {
+      public Builder mergeVideos(com.chinnews.Instagram.Data.Videos value) {
         if (videosBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              videos_ != Videos.getDefaultInstance()) {
+              videos_ != com.chinnews.Instagram.Data.Videos.getDefaultInstance()) {
             videos_ =
-              Videos.newBuilder(videos_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.Data.Videos.newBuilder(videos_).mergeFrom(value).buildPartial();
           } else {
             videos_ = value;
           }
@@ -4385,7 +4377,7 @@ public final class Instagram {
        */
       public Builder clearVideos() {
         if (videosBuilder_ == null) {
-          videos_ = Videos.getDefaultInstance();
+          videos_ = com.chinnews.Instagram.Data.Videos.getDefaultInstance();
           onChanged();
         } else {
           videosBuilder_.clear();
@@ -4396,7 +4388,7 @@ public final class Instagram {
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
-      public Videos.Builder getVideosBuilder() {
+      public com.chinnews.Instagram.Data.Videos.Builder getVideosBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getVideosFieldBuilder().getBuilder();
@@ -4404,7 +4396,7 @@ public final class Instagram {
       /**
        * <code>optional group Videos = 2 { ... }</code>
        */
-      public VideosOrBuilder getVideosOrBuilder() {
+      public com.chinnews.Instagram.Data.VideosOrBuilder getVideosOrBuilder() {
         if (videosBuilder_ != null) {
           return videosBuilder_.getMessageOrBuilder();
         } else {
@@ -4415,11 +4407,11 @@ public final class Instagram {
        * <code>optional group Videos = 2 { ... }</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Videos, Videos.Builder, VideosOrBuilder>
+          com.chinnews.Instagram.Data.Videos, com.chinnews.Instagram.Data.Videos.Builder, com.chinnews.Instagram.Data.VideosOrBuilder> 
           getVideosFieldBuilder() {
         if (videosBuilder_ == null) {
           videosBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Videos, Videos.Builder, VideosOrBuilder>(
+              com.chinnews.Instagram.Data.Videos, com.chinnews.Instagram.Data.Videos.Builder, com.chinnews.Instagram.Data.VideosOrBuilder>(
                   getVideos(),
                   getParentForChildren(),
                   isClean());
@@ -4451,7 +4443,7 @@ public final class Instagram {
       /**
        * <code>repeated string users_in_photo = 3;</code>
        */
-      public String getUsersInPhoto(int index) {
+      public java.lang.String getUsersInPhoto(int index) {
         return usersInPhoto_.get(index);
       }
       /**
@@ -4465,7 +4457,7 @@ public final class Instagram {
        * <code>repeated string users_in_photo = 3;</code>
        */
       public Builder setUsersInPhoto(
-          int index, String value) {
+          int index, java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4478,7 +4470,7 @@ public final class Instagram {
        * <code>repeated string users_in_photo = 3;</code>
        */
       public Builder addUsersInPhoto(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4491,7 +4483,7 @@ public final class Instagram {
        * <code>repeated string users_in_photo = 3;</code>
        */
       public Builder addAllUsersInPhoto(
-          Iterable<String> values) {
+          java.lang.Iterable<java.lang.String> values) {
         ensureUsersInPhotoIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, usersInPhoto_);
@@ -4521,7 +4513,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object filter_ = "";
+      private java.lang.Object filter_ = "";
       /**
        * <code>optional string filter = 4;</code>
        */
@@ -4531,18 +4523,18 @@ public final class Instagram {
       /**
        * <code>optional string filter = 4;</code>
        */
-      public String getFilter() {
-        Object ref = filter_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getFilter() {
+        java.lang.Object ref = filter_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             filter_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4550,11 +4542,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getFilterBytes() {
-        Object ref = filter_;
+        java.lang.Object ref = filter_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           filter_ = b;
           return b;
         } else {
@@ -4565,7 +4557,7 @@ public final class Instagram {
        * <code>optional string filter = 4;</code>
        */
       public Builder setFilter(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4620,7 +4612,7 @@ public final class Instagram {
       /**
        * <code>repeated string tags = 5;</code>
        */
-      public String getTags(int index) {
+      public java.lang.String getTags(int index) {
         return tags_.get(index);
       }
       /**
@@ -4634,7 +4626,7 @@ public final class Instagram {
        * <code>repeated string tags = 5;</code>
        */
       public Builder setTags(
-          int index, String value) {
+          int index, java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4647,7 +4639,7 @@ public final class Instagram {
        * <code>repeated string tags = 5;</code>
        */
       public Builder addTags(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4660,7 +4652,7 @@ public final class Instagram {
        * <code>repeated string tags = 5;</code>
        */
       public Builder addAllTags(
-          Iterable<String> values) {
+          java.lang.Iterable<java.lang.String> values) {
         ensureTagsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, tags_);
@@ -4690,9 +4682,9 @@ public final class Instagram {
         return this;
       }
 
-      private CommentInfo comments_ = CommentInfo.getDefaultInstance();
+      private com.chinnews.Instagram.CommentInfo comments_ = com.chinnews.Instagram.CommentInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          CommentInfo, CommentInfo.Builder, CommentInfoOrBuilder> commentsBuilder_;
+          com.chinnews.Instagram.CommentInfo, com.chinnews.Instagram.CommentInfo.Builder, com.chinnews.Instagram.CommentInfoOrBuilder> commentsBuilder_;
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
@@ -4702,7 +4694,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
-      public CommentInfo getComments() {
+      public com.chinnews.Instagram.CommentInfo getComments() {
         if (commentsBuilder_ == null) {
           return comments_;
         } else {
@@ -4712,7 +4704,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
-      public Builder setComments(CommentInfo value) {
+      public Builder setComments(com.chinnews.Instagram.CommentInfo value) {
         if (commentsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4729,7 +4721,7 @@ public final class Instagram {
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
       public Builder setComments(
-          CommentInfo.Builder builderForValue) {
+          com.chinnews.Instagram.CommentInfo.Builder builderForValue) {
         if (commentsBuilder_ == null) {
           comments_ = builderForValue.build();
           onChanged();
@@ -4742,12 +4734,12 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
-      public Builder mergeComments(CommentInfo value) {
+      public Builder mergeComments(com.chinnews.Instagram.CommentInfo value) {
         if (commentsBuilder_ == null) {
           if (((bitField0_ & 0x00000020) == 0x00000020) &&
-              comments_ != CommentInfo.getDefaultInstance()) {
+              comments_ != com.chinnews.Instagram.CommentInfo.getDefaultInstance()) {
             comments_ =
-              CommentInfo.newBuilder(comments_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.CommentInfo.newBuilder(comments_).mergeFrom(value).buildPartial();
           } else {
             comments_ = value;
           }
@@ -4763,7 +4755,7 @@ public final class Instagram {
        */
       public Builder clearComments() {
         if (commentsBuilder_ == null) {
-          comments_ = CommentInfo.getDefaultInstance();
+          comments_ = com.chinnews.Instagram.CommentInfo.getDefaultInstance();
           onChanged();
         } else {
           commentsBuilder_.clear();
@@ -4774,7 +4766,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
-      public CommentInfo.Builder getCommentsBuilder() {
+      public com.chinnews.Instagram.CommentInfo.Builder getCommentsBuilder() {
         bitField0_ |= 0x00000020;
         onChanged();
         return getCommentsFieldBuilder().getBuilder();
@@ -4782,7 +4774,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
-      public CommentInfoOrBuilder getCommentsOrBuilder() {
+      public com.chinnews.Instagram.CommentInfoOrBuilder getCommentsOrBuilder() {
         if (commentsBuilder_ != null) {
           return commentsBuilder_.getMessageOrBuilder();
         } else {
@@ -4793,11 +4785,11 @@ public final class Instagram {
        * <code>optional .com.chinnews.CommentInfo comments = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          CommentInfo, CommentInfo.Builder, CommentInfoOrBuilder>
+          com.chinnews.Instagram.CommentInfo, com.chinnews.Instagram.CommentInfo.Builder, com.chinnews.Instagram.CommentInfoOrBuilder> 
           getCommentsFieldBuilder() {
         if (commentsBuilder_ == null) {
           commentsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              CommentInfo, CommentInfo.Builder, CommentInfoOrBuilder>(
+              com.chinnews.Instagram.CommentInfo, com.chinnews.Instagram.CommentInfo.Builder, com.chinnews.Instagram.CommentInfoOrBuilder>(
                   getComments(),
                   getParentForChildren(),
                   isClean());
@@ -4806,9 +4798,9 @@ public final class Instagram {
         return commentsBuilder_;
       }
 
-      private Caption caption_ = Caption.getDefaultInstance();
+      private com.chinnews.Instagram.Caption caption_ = com.chinnews.Instagram.Caption.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Caption, Caption.Builder, CaptionOrBuilder> captionBuilder_;
+          com.chinnews.Instagram.Caption, com.chinnews.Instagram.Caption.Builder, com.chinnews.Instagram.CaptionOrBuilder> captionBuilder_;
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
@@ -4818,7 +4810,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
-      public Caption getCaption() {
+      public com.chinnews.Instagram.Caption getCaption() {
         if (captionBuilder_ == null) {
           return caption_;
         } else {
@@ -4828,7 +4820,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
-      public Builder setCaption(Caption value) {
+      public Builder setCaption(com.chinnews.Instagram.Caption value) {
         if (captionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4845,7 +4837,7 @@ public final class Instagram {
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
       public Builder setCaption(
-          Caption.Builder builderForValue) {
+          com.chinnews.Instagram.Caption.Builder builderForValue) {
         if (captionBuilder_ == null) {
           caption_ = builderForValue.build();
           onChanged();
@@ -4858,12 +4850,12 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
-      public Builder mergeCaption(Caption value) {
+      public Builder mergeCaption(com.chinnews.Instagram.Caption value) {
         if (captionBuilder_ == null) {
           if (((bitField0_ & 0x00000040) == 0x00000040) &&
-              caption_ != Caption.getDefaultInstance()) {
+              caption_ != com.chinnews.Instagram.Caption.getDefaultInstance()) {
             caption_ =
-              Caption.newBuilder(caption_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.Caption.newBuilder(caption_).mergeFrom(value).buildPartial();
           } else {
             caption_ = value;
           }
@@ -4879,7 +4871,7 @@ public final class Instagram {
        */
       public Builder clearCaption() {
         if (captionBuilder_ == null) {
-          caption_ = Caption.getDefaultInstance();
+          caption_ = com.chinnews.Instagram.Caption.getDefaultInstance();
           onChanged();
         } else {
           captionBuilder_.clear();
@@ -4890,7 +4882,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
-      public Caption.Builder getCaptionBuilder() {
+      public com.chinnews.Instagram.Caption.Builder getCaptionBuilder() {
         bitField0_ |= 0x00000040;
         onChanged();
         return getCaptionFieldBuilder().getBuilder();
@@ -4898,7 +4890,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
-      public CaptionOrBuilder getCaptionOrBuilder() {
+      public com.chinnews.Instagram.CaptionOrBuilder getCaptionOrBuilder() {
         if (captionBuilder_ != null) {
           return captionBuilder_.getMessageOrBuilder();
         } else {
@@ -4909,11 +4901,11 @@ public final class Instagram {
        * <code>optional .com.chinnews.Caption caption = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Caption, Caption.Builder, CaptionOrBuilder>
+          com.chinnews.Instagram.Caption, com.chinnews.Instagram.Caption.Builder, com.chinnews.Instagram.CaptionOrBuilder> 
           getCaptionFieldBuilder() {
         if (captionBuilder_ == null) {
           captionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Caption, Caption.Builder, CaptionOrBuilder>(
+              com.chinnews.Instagram.Caption, com.chinnews.Instagram.Caption.Builder, com.chinnews.Instagram.CaptionOrBuilder>(
                   getCaption(),
                   getParentForChildren(),
                   isClean());
@@ -4922,9 +4914,9 @@ public final class Instagram {
         return captionBuilder_;
       }
 
-      private Likes likes_ = Likes.getDefaultInstance();
+      private com.chinnews.Instagram.Likes likes_ = com.chinnews.Instagram.Likes.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Likes, Likes.Builder, LikesOrBuilder> likesBuilder_;
+          com.chinnews.Instagram.Likes, com.chinnews.Instagram.Likes.Builder, com.chinnews.Instagram.LikesOrBuilder> likesBuilder_;
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
@@ -4934,7 +4926,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
-      public Likes getLikes() {
+      public com.chinnews.Instagram.Likes getLikes() {
         if (likesBuilder_ == null) {
           return likes_;
         } else {
@@ -4944,7 +4936,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
-      public Builder setLikes(Likes value) {
+      public Builder setLikes(com.chinnews.Instagram.Likes value) {
         if (likesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4961,7 +4953,7 @@ public final class Instagram {
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
       public Builder setLikes(
-          Likes.Builder builderForValue) {
+          com.chinnews.Instagram.Likes.Builder builderForValue) {
         if (likesBuilder_ == null) {
           likes_ = builderForValue.build();
           onChanged();
@@ -4974,12 +4966,12 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
-      public Builder mergeLikes(Likes value) {
+      public Builder mergeLikes(com.chinnews.Instagram.Likes value) {
         if (likesBuilder_ == null) {
           if (((bitField0_ & 0x00000080) == 0x00000080) &&
-              likes_ != Likes.getDefaultInstance()) {
+              likes_ != com.chinnews.Instagram.Likes.getDefaultInstance()) {
             likes_ =
-              Likes.newBuilder(likes_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.Likes.newBuilder(likes_).mergeFrom(value).buildPartial();
           } else {
             likes_ = value;
           }
@@ -4995,7 +4987,7 @@ public final class Instagram {
        */
       public Builder clearLikes() {
         if (likesBuilder_ == null) {
-          likes_ = Likes.getDefaultInstance();
+          likes_ = com.chinnews.Instagram.Likes.getDefaultInstance();
           onChanged();
         } else {
           likesBuilder_.clear();
@@ -5006,7 +4998,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
-      public Likes.Builder getLikesBuilder() {
+      public com.chinnews.Instagram.Likes.Builder getLikesBuilder() {
         bitField0_ |= 0x00000080;
         onChanged();
         return getLikesFieldBuilder().getBuilder();
@@ -5014,7 +5006,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
-      public LikesOrBuilder getLikesOrBuilder() {
+      public com.chinnews.Instagram.LikesOrBuilder getLikesOrBuilder() {
         if (likesBuilder_ != null) {
           return likesBuilder_.getMessageOrBuilder();
         } else {
@@ -5025,11 +5017,11 @@ public final class Instagram {
        * <code>optional .com.chinnews.Likes likes = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Likes, Likes.Builder, LikesOrBuilder>
+          com.chinnews.Instagram.Likes, com.chinnews.Instagram.Likes.Builder, com.chinnews.Instagram.LikesOrBuilder> 
           getLikesFieldBuilder() {
         if (likesBuilder_ == null) {
           likesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Likes, Likes.Builder, LikesOrBuilder>(
+              com.chinnews.Instagram.Likes, com.chinnews.Instagram.Likes.Builder, com.chinnews.Instagram.LikesOrBuilder>(
                   getLikes(),
                   getParentForChildren(),
                   isClean());
@@ -5038,7 +5030,7 @@ public final class Instagram {
         return likesBuilder_;
       }
 
-      private Object link_ = "";
+      private java.lang.Object link_ = "";
       /**
        * <code>optional string link = 9;</code>
        */
@@ -5048,18 +5040,18 @@ public final class Instagram {
       /**
        * <code>optional string link = 9;</code>
        */
-      public String getLink() {
-        Object ref = link_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getLink() {
+        java.lang.Object ref = link_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             link_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5067,11 +5059,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getLinkBytes() {
-        Object ref = link_;
+        java.lang.Object ref = link_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           link_ = b;
           return b;
         } else {
@@ -5082,7 +5074,7 @@ public final class Instagram {
        * <code>optional string link = 9;</code>
        */
       public Builder setLink(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5114,9 +5106,9 @@ public final class Instagram {
         return this;
       }
 
-      private User user_ = User.getDefaultInstance();
+      private com.chinnews.Instagram.User user_ = com.chinnews.Instagram.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          User, User.Builder, UserOrBuilder> userBuilder_;
+          com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder> userBuilder_;
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
@@ -5126,7 +5118,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
-      public User getUser() {
+      public com.chinnews.Instagram.User getUser() {
         if (userBuilder_ == null) {
           return user_;
         } else {
@@ -5136,7 +5128,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
-      public Builder setUser(User value) {
+      public Builder setUser(com.chinnews.Instagram.User value) {
         if (userBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5153,7 +5145,7 @@ public final class Instagram {
        * <code>optional .com.chinnews.User user = 10;</code>
        */
       public Builder setUser(
-          User.Builder builderForValue) {
+          com.chinnews.Instagram.User.Builder builderForValue) {
         if (userBuilder_ == null) {
           user_ = builderForValue.build();
           onChanged();
@@ -5166,12 +5158,12 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
-      public Builder mergeUser(User value) {
+      public Builder mergeUser(com.chinnews.Instagram.User value) {
         if (userBuilder_ == null) {
           if (((bitField0_ & 0x00000200) == 0x00000200) &&
-              user_ != User.getDefaultInstance()) {
+              user_ != com.chinnews.Instagram.User.getDefaultInstance()) {
             user_ =
-              User.newBuilder(user_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.User.newBuilder(user_).mergeFrom(value).buildPartial();
           } else {
             user_ = value;
           }
@@ -5187,7 +5179,7 @@ public final class Instagram {
        */
       public Builder clearUser() {
         if (userBuilder_ == null) {
-          user_ = User.getDefaultInstance();
+          user_ = com.chinnews.Instagram.User.getDefaultInstance();
           onChanged();
         } else {
           userBuilder_.clear();
@@ -5198,7 +5190,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
-      public User.Builder getUserBuilder() {
+      public com.chinnews.Instagram.User.Builder getUserBuilder() {
         bitField0_ |= 0x00000200;
         onChanged();
         return getUserFieldBuilder().getBuilder();
@@ -5206,7 +5198,7 @@ public final class Instagram {
       /**
        * <code>optional .com.chinnews.User user = 10;</code>
        */
-      public UserOrBuilder getUserOrBuilder() {
+      public com.chinnews.Instagram.UserOrBuilder getUserOrBuilder() {
         if (userBuilder_ != null) {
           return userBuilder_.getMessageOrBuilder();
         } else {
@@ -5217,11 +5209,11 @@ public final class Instagram {
        * <code>optional .com.chinnews.User user = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          User, User.Builder, UserOrBuilder>
+          com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder> 
           getUserFieldBuilder() {
         if (userBuilder_ == null) {
           userBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              User, User.Builder, UserOrBuilder>(
+              com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder>(
                   getUser(),
                   getParentForChildren(),
                   isClean());
@@ -5230,7 +5222,7 @@ public final class Instagram {
         return userBuilder_;
       }
 
-      private Object createdTime_ = "";
+      private java.lang.Object createdTime_ = "";
       /**
        * <code>required string created_time = 11;</code>
        */
@@ -5240,18 +5232,18 @@ public final class Instagram {
       /**
        * <code>required string created_time = 11;</code>
        */
-      public String getCreatedTime() {
-        Object ref = createdTime_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCreatedTime() {
+        java.lang.Object ref = createdTime_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             createdTime_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5259,11 +5251,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getCreatedTimeBytes() {
-        Object ref = createdTime_;
+        java.lang.Object ref = createdTime_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           createdTime_ = b;
           return b;
         } else {
@@ -5274,7 +5266,7 @@ public final class Instagram {
        * <code>required string created_time = 11;</code>
        */
       public Builder setCreatedTime(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5306,9 +5298,9 @@ public final class Instagram {
         return this;
       }
 
-      private Images images_ = Images.getDefaultInstance();
+      private com.chinnews.Instagram.Data.Images images_ = com.chinnews.Instagram.Data.Images.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          Images, Images.Builder, ImagesOrBuilder> imagesBuilder_;
+          com.chinnews.Instagram.Data.Images, com.chinnews.Instagram.Data.Images.Builder, com.chinnews.Instagram.Data.ImagesOrBuilder> imagesBuilder_;
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
@@ -5318,7 +5310,7 @@ public final class Instagram {
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
-      public Images getImages() {
+      public com.chinnews.Instagram.Data.Images getImages() {
         if (imagesBuilder_ == null) {
           return images_;
         } else {
@@ -5328,7 +5320,7 @@ public final class Instagram {
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
-      public Builder setImages(Images value) {
+      public Builder setImages(com.chinnews.Instagram.Data.Images value) {
         if (imagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5345,7 +5337,7 @@ public final class Instagram {
        * <code>optional group Images = 12 { ... }</code>
        */
       public Builder setImages(
-          Images.Builder builderForValue) {
+          com.chinnews.Instagram.Data.Images.Builder builderForValue) {
         if (imagesBuilder_ == null) {
           images_ = builderForValue.build();
           onChanged();
@@ -5358,12 +5350,12 @@ public final class Instagram {
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
-      public Builder mergeImages(Images value) {
+      public Builder mergeImages(com.chinnews.Instagram.Data.Images value) {
         if (imagesBuilder_ == null) {
           if (((bitField0_ & 0x00000800) == 0x00000800) &&
-              images_ != Images.getDefaultInstance()) {
+              images_ != com.chinnews.Instagram.Data.Images.getDefaultInstance()) {
             images_ =
-              Images.newBuilder(images_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.Data.Images.newBuilder(images_).mergeFrom(value).buildPartial();
           } else {
             images_ = value;
           }
@@ -5379,7 +5371,7 @@ public final class Instagram {
        */
       public Builder clearImages() {
         if (imagesBuilder_ == null) {
-          images_ = Images.getDefaultInstance();
+          images_ = com.chinnews.Instagram.Data.Images.getDefaultInstance();
           onChanged();
         } else {
           imagesBuilder_.clear();
@@ -5390,7 +5382,7 @@ public final class Instagram {
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
-      public Images.Builder getImagesBuilder() {
+      public com.chinnews.Instagram.Data.Images.Builder getImagesBuilder() {
         bitField0_ |= 0x00000800;
         onChanged();
         return getImagesFieldBuilder().getBuilder();
@@ -5398,7 +5390,7 @@ public final class Instagram {
       /**
        * <code>optional group Images = 12 { ... }</code>
        */
-      public ImagesOrBuilder getImagesOrBuilder() {
+      public com.chinnews.Instagram.Data.ImagesOrBuilder getImagesOrBuilder() {
         if (imagesBuilder_ != null) {
           return imagesBuilder_.getMessageOrBuilder();
         } else {
@@ -5409,11 +5401,11 @@ public final class Instagram {
        * <code>optional group Images = 12 { ... }</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          Images, Images.Builder, ImagesOrBuilder>
+          com.chinnews.Instagram.Data.Images, com.chinnews.Instagram.Data.Images.Builder, com.chinnews.Instagram.Data.ImagesOrBuilder> 
           getImagesFieldBuilder() {
         if (imagesBuilder_ == null) {
           imagesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              Images, Images.Builder, ImagesOrBuilder>(
+              com.chinnews.Instagram.Data.Images, com.chinnews.Instagram.Data.Images.Builder, com.chinnews.Instagram.Data.ImagesOrBuilder>(
                   getImages(),
                   getParentForChildren(),
                   isClean());
@@ -5422,7 +5414,7 @@ public final class Instagram {
         return imagesBuilder_;
       }
 
-      private Object id13_ = "";
+      private java.lang.Object id13_ = "";
       /**
        * <code>required string id = 13;</code>
        */
@@ -5432,18 +5424,18 @@ public final class Instagram {
       /**
        * <code>required string id = 13;</code>
        */
-      public String getId13() {
-        Object ref = id13_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getId13() {
+        java.lang.Object ref = id13_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             id13_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5451,11 +5443,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getId13Bytes() {
-        Object ref = id13_;
+        java.lang.Object ref = id13_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           id13_ = b;
           return b;
         } else {
@@ -5466,7 +5458,7 @@ public final class Instagram {
        * <code>required string id = 13;</code>
        */
       public Builder setId13(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5498,83 +5490,123 @@ public final class Instagram {
         return this;
       }
 
-      private Object location_ = "";
+      private com.chinnews.Instagram.Location location_ = com.chinnews.Instagram.Location.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          com.chinnews.Instagram.Location, com.chinnews.Instagram.Location.Builder, com.chinnews.Instagram.LocationOrBuilder> locationBuilder_;
       /**
-       * <code>optional string location = 14;</code>
+       * <code>optional .com.chinnews.Location location = 14;</code>
        */
       public boolean hasLocation() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
-       * <code>optional string location = 14;</code>
+       * <code>optional .com.chinnews.Location location = 14;</code>
        */
-      public String getLocation() {
-        Object ref = location_;
-        if (!(ref instanceof String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            location_ = s;
+      public com.chinnews.Instagram.Location getLocation() {
+        if (locationBuilder_ == null) {
+          return location_;
+        } else {
+          return locationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .com.chinnews.Location location = 14;</code>
+       */
+      public Builder setLocation(com.chinnews.Instagram.Location value) {
+        if (locationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
-          return s;
+          location_ = value;
+          onChanged();
         } else {
-          return (String) ref;
+          locationBuilder_.setMessage(value);
         }
+        bitField0_ |= 0x00002000;
+        return this;
       }
       /**
-       * <code>optional string location = 14;</code>
-       */
-      public com.google.protobuf.ByteString
-          getLocationBytes() {
-        Object ref = location_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
-          location_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string location = 14;</code>
+       * <code>optional .com.chinnews.Location location = 14;</code>
        */
       public Builder setLocation(
-          String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00002000;
-        location_ = value;
-        onChanged();
+          com.chinnews.Instagram.Location.Builder builderForValue) {
+        if (locationBuilder_ == null) {
+          location_ = builderForValue.build();
+          onChanged();
+        } else {
+          locationBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00002000;
         return this;
       }
       /**
-       * <code>optional string location = 14;</code>
+       * <code>optional .com.chinnews.Location location = 14;</code>
+       */
+      public Builder mergeLocation(com.chinnews.Instagram.Location value) {
+        if (locationBuilder_ == null) {
+          if (((bitField0_ & 0x00002000) == 0x00002000) &&
+              location_ != com.chinnews.Instagram.Location.getDefaultInstance()) {
+            location_ =
+              com.chinnews.Instagram.Location.newBuilder(location_).mergeFrom(value).buildPartial();
+          } else {
+            location_ = value;
+          }
+          onChanged();
+        } else {
+          locationBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00002000;
+        return this;
+      }
+      /**
+       * <code>optional .com.chinnews.Location location = 14;</code>
        */
       public Builder clearLocation() {
+        if (locationBuilder_ == null) {
+          location_ = com.chinnews.Instagram.Location.getDefaultInstance();
+          onChanged();
+        } else {
+          locationBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00002000);
-        location_ = getDefaultInstance().getLocation();
-        onChanged();
         return this;
       }
       /**
-       * <code>optional string location = 14;</code>
+       * <code>optional .com.chinnews.Location location = 14;</code>
        */
-      public Builder setLocationBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00002000;
-        location_ = value;
+      public com.chinnews.Instagram.Location.Builder getLocationBuilder() {
+        bitField0_ |= 0x00002000;
         onChanged();
-        return this;
+        return getLocationFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .com.chinnews.Location location = 14;</code>
+       */
+      public com.chinnews.Instagram.LocationOrBuilder getLocationOrBuilder() {
+        if (locationBuilder_ != null) {
+          return locationBuilder_.getMessageOrBuilder();
+        } else {
+          return location_;
+        }
+      }
+      /**
+       * <code>optional .com.chinnews.Location location = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.chinnews.Instagram.Location, com.chinnews.Instagram.Location.Builder, com.chinnews.Instagram.LocationOrBuilder> 
+          getLocationFieldBuilder() {
+        if (locationBuilder_ == null) {
+          locationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.chinnews.Instagram.Location, com.chinnews.Instagram.Location.Builder, com.chinnews.Instagram.LocationOrBuilder>(
+                  getLocation(),
+                  getParentForChildren(),
+                  isClean());
+          location_ = null;
+        }
+        return locationBuilder_;
       }
 
-      private Object Id15_ = "";
+      private java.lang.Object Id15_ = "";
       /**
        * <code>optional string _id = 15;</code>
        *
@@ -5592,18 +5624,18 @@ public final class Instagram {
        *for mongodb
        * </pre>
        */
-      public String getId15() {
-        Object ref = Id15_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getId15() {
+        java.lang.Object ref = Id15_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             Id15_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5615,11 +5647,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getId15Bytes() {
-        Object ref = Id15_;
+        java.lang.Object ref = Id15_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           Id15_ = b;
           return b;
         } else {
@@ -5634,7 +5666,7 @@ public final class Instagram {
        * </pre>
        */
       public Builder setId15(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5685,6 +5717,716 @@ public final class Instagram {
     // @@protoc_insertion_point(class_scope:com.chinnews.Data)
   }
 
+  public interface LocationOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.chinnews.Location)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional float latitude = 1;</code>
+     */
+    boolean hasLatitude();
+    /**
+     * <code>optional float latitude = 1;</code>
+     */
+    float getLatitude();
+
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional float longitude = 3;</code>
+     */
+    boolean hasLongitude();
+    /**
+     * <code>optional float longitude = 3;</code>
+     */
+    float getLongitude();
+
+    /**
+     * <code>optional int32 id = 4;</code>
+     */
+    boolean hasId();
+    /**
+     * <code>optional int32 id = 4;</code>
+     */
+    int getId();
+  }
+  /**
+   * Protobuf type {@code com.chinnews.Location}
+   */
+  public static final class Location extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:com.chinnews.Location)
+      LocationOrBuilder {
+    // Use Location.newBuilder() to construct.
+    private Location(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private Location(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final Location defaultInstance;
+    public static Location getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public Location getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Location(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 13: {
+              bitField0_ |= 0x00000001;
+              latitude_ = input.readFloat();
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              name_ = bs;
+              break;
+            }
+            case 29: {
+              bitField0_ |= 0x00000004;
+              longitude_ = input.readFloat();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              id_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.chinnews.Instagram.internal_static_com_chinnews_Location_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.chinnews.Instagram.internal_static_com_chinnews_Location_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.chinnews.Instagram.Location.class, com.chinnews.Instagram.Location.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<Location> PARSER =
+        new com.google.protobuf.AbstractParser<Location>() {
+      public Location parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Location(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Location> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int LATITUDE_FIELD_NUMBER = 1;
+    private float latitude_;
+    /**
+     * <code>optional float latitude = 1;</code>
+     */
+    public boolean hasLatitude() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional float latitude = 1;</code>
+     */
+    public float getLatitude() {
+      return latitude_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 2;
+    private java.lang.Object name_;
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LONGITUDE_FIELD_NUMBER = 3;
+    private float longitude_;
+    /**
+     * <code>optional float longitude = 3;</code>
+     */
+    public boolean hasLongitude() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional float longitude = 3;</code>
+     */
+    public float getLongitude() {
+      return longitude_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 4;
+    private int id_;
+    /**
+     * <code>optional int32 id = 4;</code>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 id = 4;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    private void initFields() {
+      latitude_ = 0F;
+      name_ = "";
+      longitude_ = 0F;
+      id_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeFloat(1, latitude_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeFloat(3, longitude_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, id_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(1, latitude_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(3, longitude_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, id_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.chinnews.Instagram.Location parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.chinnews.Instagram.Location parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.chinnews.Instagram.Location parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.chinnews.Instagram.Location parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.chinnews.Instagram.Location prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.chinnews.Location}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.chinnews.Location)
+        com.chinnews.Instagram.LocationOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.chinnews.Instagram.internal_static_com_chinnews_Location_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.chinnews.Instagram.internal_static_com_chinnews_Location_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.chinnews.Instagram.Location.class, com.chinnews.Instagram.Location.Builder.class);
+      }
+
+      // Construct using com.chinnews.Instagram.Location.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        latitude_ = 0F;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        longitude_ = 0F;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        id_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.chinnews.Instagram.internal_static_com_chinnews_Location_descriptor;
+      }
+
+      public com.chinnews.Instagram.Location getDefaultInstanceForType() {
+        return com.chinnews.Instagram.Location.getDefaultInstance();
+      }
+
+      public com.chinnews.Instagram.Location build() {
+        com.chinnews.Instagram.Location result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.chinnews.Instagram.Location buildPartial() {
+        com.chinnews.Instagram.Location result = new com.chinnews.Instagram.Location(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.latitude_ = latitude_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.longitude_ = longitude_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.id_ = id_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.chinnews.Instagram.Location) {
+          return mergeFrom((com.chinnews.Instagram.Location)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.chinnews.Instagram.Location other) {
+        if (other == com.chinnews.Instagram.Location.getDefaultInstance()) return this;
+        if (other.hasLatitude()) {
+          setLatitude(other.getLatitude());
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000002;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasLongitude()) {
+          setLongitude(other.getLongitude());
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.chinnews.Instagram.Location parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.chinnews.Instagram.Location) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private float latitude_ ;
+      /**
+       * <code>optional float latitude = 1;</code>
+       */
+      public boolean hasLatitude() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional float latitude = 1;</code>
+       */
+      public float getLatitude() {
+        return latitude_;
+      }
+      /**
+       * <code>optional float latitude = 1;</code>
+       */
+      public Builder setLatitude(float value) {
+        bitField0_ |= 0x00000001;
+        latitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional float latitude = 1;</code>
+       */
+      public Builder clearLatitude() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        latitude_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private float longitude_ ;
+      /**
+       * <code>optional float longitude = 3;</code>
+       */
+      public boolean hasLongitude() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional float longitude = 3;</code>
+       */
+      public float getLongitude() {
+        return longitude_;
+      }
+      /**
+       * <code>optional float longitude = 3;</code>
+       */
+      public Builder setLongitude(float value) {
+        bitField0_ |= 0x00000004;
+        longitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional float longitude = 3;</code>
+       */
+      public Builder clearLongitude() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        longitude_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>optional int32 id = 4;</code>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 id = 4;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>optional int32 id = 4;</code>
+       */
+      public Builder setId(int value) {
+        bitField0_ |= 0x00000008;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 id = 4;</code>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:com.chinnews.Location)
+    }
+
+    static {
+      defaultInstance = new Location(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:com.chinnews.Location)
+  }
+
   public interface MediaOrBuilder extends
       // @@protoc_insertion_point(interface_extends:com.chinnews.Media)
       com.google.protobuf.MessageOrBuilder {
@@ -5696,7 +6438,7 @@ public final class Instagram {
     /**
      * <code>required string url = 1;</code>
      */
-    String getUrl();
+    java.lang.String getUrl();
     /**
      * <code>required string url = 1;</code>
      */
@@ -5745,7 +6487,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -5803,14 +6545,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_Media_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_Media_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_Media_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_Media_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Media.class, Builder.class);
+              com.chinnews.Instagram.Media.class, com.chinnews.Instagram.Media.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Media> PARSER =
@@ -5823,14 +6565,14 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Media> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int URL_FIELD_NUMBER = 1;
-    private Object url_;
+    private java.lang.Object url_;
     /**
      * <code>required string url = 1;</code>
      */
@@ -5840,14 +6582,14 @@ public final class Instagram {
     /**
      * <code>required string url = 1;</code>
      */
-    public String getUrl() {
-      Object ref = url_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           url_ = s;
         }
@@ -5859,11 +6601,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
-      Object ref = url_;
-      if (ref instanceof String) {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         url_ = b;
         return b;
       } else {
@@ -5967,59 +6709,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Media parseFrom(byte[] data)
+    public static com.chinnews.Instagram.Media parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Media parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Media parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Media parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Media parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Media parseDelimitedFrom(
+    public static com.chinnews.Instagram.Media parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Media parseFrom(
+    public static com.chinnews.Instagram.Media parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6028,14 +6770,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Media prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.Media prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6045,17 +6787,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.Media)
-        MediaOrBuilder {
+        com.chinnews.Instagram.MediaOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Media_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Media_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Media_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Media_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Media.class, Builder.class);
+                com.chinnews.Instagram.Media.class, com.chinnews.Instagram.Media.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.Media.newBuilder()
@@ -6064,7 +6806,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6093,23 +6835,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_Media_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Media_descriptor;
       }
 
-      public Media getDefaultInstanceForType() {
-        return Media.getDefaultInstance();
+      public com.chinnews.Instagram.Media getDefaultInstanceForType() {
+        return com.chinnews.Instagram.Media.getDefaultInstance();
       }
 
-      public Media build() {
-        Media result = buildPartial();
+      public com.chinnews.Instagram.Media build() {
+        com.chinnews.Instagram.Media result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Media buildPartial() {
-        Media result = new Media(this);
+      public com.chinnews.Instagram.Media buildPartial() {
+        com.chinnews.Instagram.Media result = new com.chinnews.Instagram.Media(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6130,16 +6872,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Media) {
-          return mergeFrom((Media)other);
+        if (other instanceof com.chinnews.Instagram.Media) {
+          return mergeFrom((com.chinnews.Instagram.Media)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Media other) {
-        if (other == Media.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.Media other) {
+        if (other == com.chinnews.Instagram.Media.getDefaultInstance()) return this;
         if (other.hasUrl()) {
           bitField0_ |= 0x00000001;
           url_ = other.url_;
@@ -6175,11 +6917,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Media parsedMessage = null;
+        com.chinnews.Instagram.Media parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Media) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.Media) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6190,7 +6932,7 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private Object url_ = "";
+      private java.lang.Object url_ = "";
       /**
        * <code>required string url = 1;</code>
        */
@@ -6200,18 +6942,18 @@ public final class Instagram {
       /**
        * <code>required string url = 1;</code>
        */
-      public String getUrl() {
-        Object ref = url_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             url_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -6219,11 +6961,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getUrlBytes() {
-        Object ref = url_;
+        java.lang.Object ref = url_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           url_ = b;
           return b;
         } else {
@@ -6234,7 +6976,7 @@ public final class Instagram {
        * <code>required string url = 1;</code>
        */
       public Builder setUrl(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6353,6 +7095,25 @@ public final class Instagram {
      * <code>required int32 count = 1;</code>
      */
     int getCount();
+
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    com.google.protobuf.ProtocolStringList
+        getDataList();
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    int getDataCount();
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    java.lang.String getData(int index);
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDataBytes(int index);
   }
   /**
    * Protobuf type {@code com.chinnews.Likes}
@@ -6378,7 +7139,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -6411,6 +7172,15 @@ public final class Instagram {
               count_ = input.readInt32();
               break;
             }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                data_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              data_.add(bs);
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -6419,20 +7189,23 @@ public final class Instagram {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = data_.getUnmodifiableView();
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_Likes_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_Likes_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_Likes_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_Likes_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Likes.class, Builder.class);
+              com.chinnews.Instagram.Likes.class, com.chinnews.Instagram.Likes.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Likes> PARSER =
@@ -6445,7 +7218,7 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Likes> getParserForType() {
       return PARSER;
     }
@@ -6466,8 +7239,38 @@ public final class Instagram {
       return count_;
     }
 
+    public static final int DATA_FIELD_NUMBER = 2;
+    private com.google.protobuf.LazyStringList data_;
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getDataList() {
+      return data_;
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public int getDataCount() {
+      return data_.size();
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public java.lang.String getData(int index) {
+      return data_.get(index);
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDataBytes(int index) {
+      return data_.getByteString(index);
+    }
+
     private void initFields() {
       count_ = 0;
+      data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -6489,6 +7292,9 @@ public final class Instagram {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeInt32(1, count_);
       }
+      for (int i = 0; i < data_.size(); i++) {
+        output.writeBytes(2, data_.getByteString(i));
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -6502,65 +7308,74 @@ public final class Instagram {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, count_);
       }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < data_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(data_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getDataList().size();
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Likes parseFrom(byte[] data)
+    public static com.chinnews.Instagram.Likes parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Likes parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Likes parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Likes parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Likes parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Likes parseDelimitedFrom(
+    public static com.chinnews.Instagram.Likes parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Likes parseFrom(
+    public static com.chinnews.Instagram.Likes parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6569,14 +7384,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Likes prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.Likes prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6586,17 +7401,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.Likes)
-        LikesOrBuilder {
+        com.chinnews.Instagram.LikesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Likes_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Likes_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Likes_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Likes_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Likes.class, Builder.class);
+                com.chinnews.Instagram.Likes.class, com.chinnews.Instagram.Likes.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.Likes.newBuilder()
@@ -6605,7 +7420,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6621,6 +7436,8 @@ public final class Instagram {
         super.clear();
         count_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
+        data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -6630,47 +7447,62 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_Likes_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Likes_descriptor;
       }
 
-      public Likes getDefaultInstanceForType() {
-        return Likes.getDefaultInstance();
+      public com.chinnews.Instagram.Likes getDefaultInstanceForType() {
+        return com.chinnews.Instagram.Likes.getDefaultInstance();
       }
 
-      public Likes build() {
-        Likes result = buildPartial();
+      public com.chinnews.Instagram.Likes build() {
+        com.chinnews.Instagram.Likes result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Likes buildPartial() {
-        Likes result = new Likes(this);
+      public com.chinnews.Instagram.Likes buildPartial() {
+        com.chinnews.Instagram.Likes result = new com.chinnews.Instagram.Likes(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
         result.count_ = count_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = data_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.data_ = data_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Likes) {
-          return mergeFrom((Likes)other);
+        if (other instanceof com.chinnews.Instagram.Likes) {
+          return mergeFrom((com.chinnews.Instagram.Likes)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Likes other) {
-        if (other == Likes.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.Likes other) {
+        if (other == com.chinnews.Instagram.Likes.getDefaultInstance()) return this;
         if (other.hasCount()) {
           setCount(other.getCount());
+        }
+        if (!other.data_.isEmpty()) {
+          if (data_.isEmpty()) {
+            data_ = other.data_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureDataIsMutable();
+            data_.addAll(other.data_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -6688,11 +7520,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Likes parsedMessage = null;
+        com.chinnews.Instagram.Likes parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Likes) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.Likes) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6735,6 +7567,99 @@ public final class Instagram {
         return this;
       }
 
+      private com.google.protobuf.LazyStringList data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureDataIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = new com.google.protobuf.LazyStringArrayList(data_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getDataList() {
+        return data_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public int getDataCount() {
+        return data_.size();
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public java.lang.String getData(int index) {
+        return data_.get(index);
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDataBytes(int index) {
+        return data_.getByteString(index);
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder setData(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addData(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addAllData(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureDataIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, data_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder clearData() {
+        data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addDataBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.add(value);
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:com.chinnews.Likes)
     }
 
@@ -6757,7 +7682,7 @@ public final class Instagram {
     /**
      * <code>required string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>required string username = 1;</code>
      */
@@ -6771,7 +7696,7 @@ public final class Instagram {
     /**
      * <code>optional string profile_picture = 2;</code>
      */
-    String getProfilePicture();
+    java.lang.String getProfilePicture();
     /**
      * <code>optional string profile_picture = 2;</code>
      */
@@ -6785,7 +7710,7 @@ public final class Instagram {
     /**
      * <code>required string id = 3;</code>
      */
-    String getId();
+    java.lang.String getId();
     /**
      * <code>required string id = 3;</code>
      */
@@ -6799,7 +7724,7 @@ public final class Instagram {
     /**
      * <code>optional string full_name = 4;</code>
      */
-    String getFullName();
+    java.lang.String getFullName();
     /**
      * <code>optional string full_name = 4;</code>
      */
@@ -6830,7 +7755,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -6896,14 +7821,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_User_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_User_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_User_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_User_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              User.class, Builder.class);
+              com.chinnews.Instagram.User.class, com.chinnews.Instagram.User.Builder.class);
     }
 
     public static com.google.protobuf.Parser<User> PARSER =
@@ -6916,14 +7841,14 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<User> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private Object username_;
+    private java.lang.Object username_;
     /**
      * <code>required string username = 1;</code>
      */
@@ -6933,14 +7858,14 @@ public final class Instagram {
     /**
      * <code>required string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           username_ = s;
         }
@@ -6952,11 +7877,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -6965,7 +7890,7 @@ public final class Instagram {
     }
 
     public static final int PROFILE_PICTURE_FIELD_NUMBER = 2;
-    private Object profilePicture_;
+    private java.lang.Object profilePicture_;
     /**
      * <code>optional string profile_picture = 2;</code>
      */
@@ -6975,14 +7900,14 @@ public final class Instagram {
     /**
      * <code>optional string profile_picture = 2;</code>
      */
-    public String getProfilePicture() {
-      Object ref = profilePicture_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getProfilePicture() {
+      java.lang.Object ref = profilePicture_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           profilePicture_ = s;
         }
@@ -6994,11 +7919,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getProfilePictureBytes() {
-      Object ref = profilePicture_;
-      if (ref instanceof String) {
+      java.lang.Object ref = profilePicture_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         profilePicture_ = b;
         return b;
       } else {
@@ -7007,7 +7932,7 @@ public final class Instagram {
     }
 
     public static final int ID_FIELD_NUMBER = 3;
-    private Object id_;
+    private java.lang.Object id_;
     /**
      * <code>required string id = 3;</code>
      */
@@ -7017,14 +7942,14 @@ public final class Instagram {
     /**
      * <code>required string id = 3;</code>
      */
-    public String getId() {
-      Object ref = id_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           id_ = s;
         }
@@ -7036,11 +7961,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getIdBytes() {
-      Object ref = id_;
-      if (ref instanceof String) {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         id_ = b;
         return b;
       } else {
@@ -7049,7 +7974,7 @@ public final class Instagram {
     }
 
     public static final int FULL_NAME_FIELD_NUMBER = 4;
-    private Object fullName_;
+    private java.lang.Object fullName_;
     /**
      * <code>optional string full_name = 4;</code>
      */
@@ -7059,14 +7984,14 @@ public final class Instagram {
     /**
      * <code>optional string full_name = 4;</code>
      */
-    public String getFullName() {
-      Object ref = fullName_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getFullName() {
+      java.lang.Object ref = fullName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           fullName_ = s;
         }
@@ -7078,11 +8003,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getFullNameBytes() {
-      Object ref = fullName_;
-      if (ref instanceof String) {
+      java.lang.Object ref = fullName_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         fullName_ = b;
         return b;
       } else {
@@ -7160,59 +8085,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static User parseFrom(byte[] data)
+    public static com.chinnews.Instagram.User parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static User parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.User parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static User parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.User parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static User parseDelimitedFrom(
+    public static com.chinnews.Instagram.User parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static User parseFrom(
+    public static com.chinnews.Instagram.User parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7221,14 +8146,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(User prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.User prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -7238,17 +8163,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.User)
-        UserOrBuilder {
+        com.chinnews.Instagram.UserOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_User_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_User_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_User_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_User_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                User.class, Builder.class);
+                com.chinnews.Instagram.User.class, com.chinnews.Instagram.User.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.User.newBuilder()
@@ -7257,7 +8182,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7288,23 +8213,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_User_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_User_descriptor;
       }
 
-      public User getDefaultInstanceForType() {
-        return User.getDefaultInstance();
+      public com.chinnews.Instagram.User getDefaultInstanceForType() {
+        return com.chinnews.Instagram.User.getDefaultInstance();
       }
 
-      public User build() {
-        User result = buildPartial();
+      public com.chinnews.Instagram.User build() {
+        com.chinnews.Instagram.User result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public User buildPartial() {
-        User result = new User(this);
+      public com.chinnews.Instagram.User buildPartial() {
+        com.chinnews.Instagram.User result = new com.chinnews.Instagram.User(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -7329,16 +8254,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof User) {
-          return mergeFrom((User)other);
+        if (other instanceof com.chinnews.Instagram.User) {
+          return mergeFrom((com.chinnews.Instagram.User)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(User other) {
-        if (other == User.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.User other) {
+        if (other == com.chinnews.Instagram.User.getDefaultInstance()) return this;
         if (other.hasUsername()) {
           bitField0_ |= 0x00000001;
           username_ = other.username_;
@@ -7379,11 +8304,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        User parsedMessage = null;
+        com.chinnews.Instagram.User parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (User) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.User) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7394,7 +8319,7 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>required string username = 1;</code>
        */
@@ -7404,18 +8329,18 @@ public final class Instagram {
       /**
        * <code>required string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             username_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7423,11 +8348,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -7438,7 +8363,7 @@ public final class Instagram {
        * <code>required string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7470,7 +8395,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object profilePicture_ = "";
+      private java.lang.Object profilePicture_ = "";
       /**
        * <code>optional string profile_picture = 2;</code>
        */
@@ -7480,18 +8405,18 @@ public final class Instagram {
       /**
        * <code>optional string profile_picture = 2;</code>
        */
-      public String getProfilePicture() {
-        Object ref = profilePicture_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getProfilePicture() {
+        java.lang.Object ref = profilePicture_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             profilePicture_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7499,11 +8424,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getProfilePictureBytes() {
-        Object ref = profilePicture_;
+        java.lang.Object ref = profilePicture_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           profilePicture_ = b;
           return b;
         } else {
@@ -7514,7 +8439,7 @@ public final class Instagram {
        * <code>optional string profile_picture = 2;</code>
        */
       public Builder setProfilePicture(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7546,7 +8471,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object id_ = "";
+      private java.lang.Object id_ = "";
       /**
        * <code>required string id = 3;</code>
        */
@@ -7556,18 +8481,18 @@ public final class Instagram {
       /**
        * <code>required string id = 3;</code>
        */
-      public String getId() {
-        Object ref = id_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             id_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7575,11 +8500,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getIdBytes() {
-        Object ref = id_;
+        java.lang.Object ref = id_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           id_ = b;
           return b;
         } else {
@@ -7590,7 +8515,7 @@ public final class Instagram {
        * <code>required string id = 3;</code>
        */
       public Builder setId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7622,7 +8547,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object fullName_ = "";
+      private java.lang.Object fullName_ = "";
       /**
        * <code>optional string full_name = 4;</code>
        */
@@ -7632,18 +8557,18 @@ public final class Instagram {
       /**
        * <code>optional string full_name = 4;</code>
        */
-      public String getFullName() {
-        Object ref = fullName_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getFullName() {
+        java.lang.Object ref = fullName_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             fullName_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7651,11 +8576,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getFullNameBytes() {
-        Object ref = fullName_;
+        java.lang.Object ref = fullName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           fullName_ = b;
           return b;
         } else {
@@ -7666,7 +8591,7 @@ public final class Instagram {
        * <code>optional string full_name = 4;</code>
        */
       public Builder setFullName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7720,7 +8645,7 @@ public final class Instagram {
     /**
      * <code>required string created_time = 1;</code>
      */
-    String getCreatedTime();
+    java.lang.String getCreatedTime();
     /**
      * <code>required string created_time = 1;</code>
      */
@@ -7734,7 +8659,7 @@ public final class Instagram {
     /**
      * <code>optional string text = 2;</code>
      */
-    String getText();
+    java.lang.String getText();
     /**
      * <code>optional string text = 2;</code>
      */
@@ -7748,11 +8673,11 @@ public final class Instagram {
     /**
      * <code>required .com.chinnews.User from = 3;</code>
      */
-    User getFrom();
+    com.chinnews.Instagram.User getFrom();
     /**
      * <code>required .com.chinnews.User from = 3;</code>
      */
-    UserOrBuilder getFromOrBuilder();
+    com.chinnews.Instagram.UserOrBuilder getFromOrBuilder();
 
     /**
      * <code>required string id = 4;</code>
@@ -7761,7 +8686,7 @@ public final class Instagram {
     /**
      * <code>required string id = 4;</code>
      */
-    String getId();
+    java.lang.String getId();
     /**
      * <code>required string id = 4;</code>
      */
@@ -7792,7 +8717,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -7833,11 +8758,11 @@ public final class Instagram {
               break;
             }
             case 26: {
-              User.Builder subBuilder = null;
+              com.chinnews.Instagram.User.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(User.PARSER, extensionRegistry);
+              from_ = input.readMessage(com.chinnews.Instagram.User.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -7865,14 +8790,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_Caption_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_Caption_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_Caption_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_Caption_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Caption.class, Builder.class);
+              com.chinnews.Instagram.Caption.class, com.chinnews.Instagram.Caption.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Caption> PARSER =
@@ -7885,14 +8810,14 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Caption> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
     public static final int CREATED_TIME_FIELD_NUMBER = 1;
-    private Object createdTime_;
+    private java.lang.Object createdTime_;
     /**
      * <code>required string created_time = 1;</code>
      */
@@ -7902,14 +8827,14 @@ public final class Instagram {
     /**
      * <code>required string created_time = 1;</code>
      */
-    public String getCreatedTime() {
-      Object ref = createdTime_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getCreatedTime() {
+      java.lang.Object ref = createdTime_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           createdTime_ = s;
         }
@@ -7921,11 +8846,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getCreatedTimeBytes() {
-      Object ref = createdTime_;
-      if (ref instanceof String) {
+      java.lang.Object ref = createdTime_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         createdTime_ = b;
         return b;
       } else {
@@ -7934,7 +8859,7 @@ public final class Instagram {
     }
 
     public static final int TEXT_FIELD_NUMBER = 2;
-    private Object text_;
+    private java.lang.Object text_;
     /**
      * <code>optional string text = 2;</code>
      */
@@ -7944,14 +8869,14 @@ public final class Instagram {
     /**
      * <code>optional string text = 2;</code>
      */
-    public String getText() {
-      Object ref = text_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           text_ = s;
         }
@@ -7963,11 +8888,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getTextBytes() {
-      Object ref = text_;
-      if (ref instanceof String) {
+      java.lang.Object ref = text_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         text_ = b;
         return b;
       } else {
@@ -7976,7 +8901,7 @@ public final class Instagram {
     }
 
     public static final int FROM_FIELD_NUMBER = 3;
-    private User from_;
+    private com.chinnews.Instagram.User from_;
     /**
      * <code>required .com.chinnews.User from = 3;</code>
      */
@@ -7986,18 +8911,18 @@ public final class Instagram {
     /**
      * <code>required .com.chinnews.User from = 3;</code>
      */
-    public User getFrom() {
+    public com.chinnews.Instagram.User getFrom() {
       return from_;
     }
     /**
      * <code>required .com.chinnews.User from = 3;</code>
      */
-    public UserOrBuilder getFromOrBuilder() {
+    public com.chinnews.Instagram.UserOrBuilder getFromOrBuilder() {
       return from_;
     }
 
     public static final int ID_FIELD_NUMBER = 4;
-    private Object id_;
+    private java.lang.Object id_;
     /**
      * <code>required string id = 4;</code>
      */
@@ -8007,14 +8932,14 @@ public final class Instagram {
     /**
      * <code>required string id = 4;</code>
      */
-    public String getId() {
-      Object ref = id_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           id_ = s;
         }
@@ -8026,11 +8951,11 @@ public final class Instagram {
      */
     public com.google.protobuf.ByteString
         getIdBytes() {
-      Object ref = id_;
-      if (ref instanceof String) {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         id_ = b;
         return b;
       } else {
@@ -8041,7 +8966,7 @@ public final class Instagram {
     private void initFields() {
       createdTime_ = "";
       text_ = "";
-      from_ = User.getDefaultInstance();
+      from_ = com.chinnews.Instagram.User.getDefaultInstance();
       id_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -8116,59 +9041,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Caption parseFrom(byte[] data)
+    public static com.chinnews.Instagram.Caption parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Caption parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Caption parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static Caption parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.Caption parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static Caption parseDelimitedFrom(
+    public static com.chinnews.Instagram.Caption parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static Caption parseFrom(
+    public static com.chinnews.Instagram.Caption parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8177,14 +9102,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(Caption prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.Caption prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8194,17 +9119,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.Caption)
-        CaptionOrBuilder {
+        com.chinnews.Instagram.CaptionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_Caption_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Caption_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_Caption_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_Caption_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Caption.class, Builder.class);
+                com.chinnews.Instagram.Caption.class, com.chinnews.Instagram.Caption.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.Caption.newBuilder()
@@ -8213,7 +9138,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8233,7 +9158,7 @@ public final class Instagram {
         text_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
         if (fromBuilder_ == null) {
-          from_ = User.getDefaultInstance();
+          from_ = com.chinnews.Instagram.User.getDefaultInstance();
         } else {
           fromBuilder_.clear();
         }
@@ -8249,23 +9174,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_Caption_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_Caption_descriptor;
       }
 
-      public Caption getDefaultInstanceForType() {
-        return Caption.getDefaultInstance();
+      public com.chinnews.Instagram.Caption getDefaultInstanceForType() {
+        return com.chinnews.Instagram.Caption.getDefaultInstance();
       }
 
-      public Caption build() {
-        Caption result = buildPartial();
+      public com.chinnews.Instagram.Caption build() {
+        com.chinnews.Instagram.Caption result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Caption buildPartial() {
-        Caption result = new Caption(this);
+      public com.chinnews.Instagram.Caption buildPartial() {
+        com.chinnews.Instagram.Caption result = new com.chinnews.Instagram.Caption(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -8294,16 +9219,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Caption) {
-          return mergeFrom((Caption)other);
+        if (other instanceof com.chinnews.Instagram.Caption) {
+          return mergeFrom((com.chinnews.Instagram.Caption)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Caption other) {
-        if (other == Caption.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.Caption other) {
+        if (other == com.chinnews.Instagram.Caption.getDefaultInstance()) return this;
         if (other.hasCreatedTime()) {
           bitField0_ |= 0x00000001;
           createdTime_ = other.createdTime_;
@@ -8350,11 +9275,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Caption parsedMessage = null;
+        com.chinnews.Instagram.Caption parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Caption) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.Caption) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -8365,7 +9290,7 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private Object createdTime_ = "";
+      private java.lang.Object createdTime_ = "";
       /**
        * <code>required string created_time = 1;</code>
        */
@@ -8375,18 +9300,18 @@ public final class Instagram {
       /**
        * <code>required string created_time = 1;</code>
        */
-      public String getCreatedTime() {
-        Object ref = createdTime_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getCreatedTime() {
+        java.lang.Object ref = createdTime_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             createdTime_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -8394,11 +9319,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getCreatedTimeBytes() {
-        Object ref = createdTime_;
+        java.lang.Object ref = createdTime_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           createdTime_ = b;
           return b;
         } else {
@@ -8409,7 +9334,7 @@ public final class Instagram {
        * <code>required string created_time = 1;</code>
        */
       public Builder setCreatedTime(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8441,7 +9366,7 @@ public final class Instagram {
         return this;
       }
 
-      private Object text_ = "";
+      private java.lang.Object text_ = "";
       /**
        * <code>optional string text = 2;</code>
        */
@@ -8451,18 +9376,18 @@ public final class Instagram {
       /**
        * <code>optional string text = 2;</code>
        */
-      public String getText() {
-        Object ref = text_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getText() {
+        java.lang.Object ref = text_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             text_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -8470,11 +9395,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getTextBytes() {
-        Object ref = text_;
+        java.lang.Object ref = text_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           text_ = b;
           return b;
         } else {
@@ -8485,7 +9410,7 @@ public final class Instagram {
        * <code>optional string text = 2;</code>
        */
       public Builder setText(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8517,9 +9442,9 @@ public final class Instagram {
         return this;
       }
 
-      private User from_ = User.getDefaultInstance();
+      private com.chinnews.Instagram.User from_ = com.chinnews.Instagram.User.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          User, User.Builder, UserOrBuilder> fromBuilder_;
+          com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder> fromBuilder_;
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
@@ -8529,7 +9454,7 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
-      public User getFrom() {
+      public com.chinnews.Instagram.User getFrom() {
         if (fromBuilder_ == null) {
           return from_;
         } else {
@@ -8539,7 +9464,7 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
-      public Builder setFrom(User value) {
+      public Builder setFrom(com.chinnews.Instagram.User value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8556,7 +9481,7 @@ public final class Instagram {
        * <code>required .com.chinnews.User from = 3;</code>
        */
       public Builder setFrom(
-          User.Builder builderForValue) {
+          com.chinnews.Instagram.User.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -8569,12 +9494,12 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
-      public Builder mergeFrom(User value) {
+      public Builder mergeFrom(com.chinnews.Instagram.User value) {
         if (fromBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              from_ != User.getDefaultInstance()) {
+              from_ != com.chinnews.Instagram.User.getDefaultInstance()) {
             from_ =
-              User.newBuilder(from_).mergeFrom(value).buildPartial();
+              com.chinnews.Instagram.User.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -8590,7 +9515,7 @@ public final class Instagram {
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
-          from_ = User.getDefaultInstance();
+          from_ = com.chinnews.Instagram.User.getDefaultInstance();
           onChanged();
         } else {
           fromBuilder_.clear();
@@ -8601,7 +9526,7 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
-      public User.Builder getFromBuilder() {
+      public com.chinnews.Instagram.User.Builder getFromBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getFromFieldBuilder().getBuilder();
@@ -8609,7 +9534,7 @@ public final class Instagram {
       /**
        * <code>required .com.chinnews.User from = 3;</code>
        */
-      public UserOrBuilder getFromOrBuilder() {
+      public com.chinnews.Instagram.UserOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
@@ -8620,11 +9545,11 @@ public final class Instagram {
        * <code>required .com.chinnews.User from = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          User, User.Builder, UserOrBuilder>
+          com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder> 
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              User, User.Builder, UserOrBuilder>(
+              com.chinnews.Instagram.User, com.chinnews.Instagram.User.Builder, com.chinnews.Instagram.UserOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -8633,7 +9558,7 @@ public final class Instagram {
         return fromBuilder_;
       }
 
-      private Object id_ = "";
+      private java.lang.Object id_ = "";
       /**
        * <code>required string id = 4;</code>
        */
@@ -8643,18 +9568,18 @@ public final class Instagram {
       /**
        * <code>required string id = 4;</code>
        */
-      public String getId() {
-        Object ref = id_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             id_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -8662,11 +9587,11 @@ public final class Instagram {
        */
       public com.google.protobuf.ByteString
           getIdBytes() {
-        Object ref = id_;
+        java.lang.Object ref = id_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           id_ = b;
           return b;
         } else {
@@ -8677,7 +9602,7 @@ public final class Instagram {
        * <code>required string id = 4;</code>
        */
       public Builder setId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8732,6 +9657,25 @@ public final class Instagram {
      * <code>required int32 count = 1;</code>
      */
     int getCount();
+
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    com.google.protobuf.ProtocolStringList
+        getDataList();
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    int getDataCount();
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    java.lang.String getData(int index);
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDataBytes(int index);
   }
   /**
    * Protobuf type {@code com.chinnews.CommentInfo}
@@ -8757,7 +9701,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -8790,6 +9734,15 @@ public final class Instagram {
               count_ = input.readInt32();
               break;
             }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                data_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              data_.add(bs);
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -8798,20 +9751,23 @@ public final class Instagram {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = data_.getUnmodifiableView();
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_CommentInfo_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_CommentInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              CommentInfo.class, Builder.class);
+              com.chinnews.Instagram.CommentInfo.class, com.chinnews.Instagram.CommentInfo.Builder.class);
     }
 
     public static com.google.protobuf.Parser<CommentInfo> PARSER =
@@ -8824,7 +9780,7 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CommentInfo> getParserForType() {
       return PARSER;
     }
@@ -8845,8 +9801,38 @@ public final class Instagram {
       return count_;
     }
 
+    public static final int DATA_FIELD_NUMBER = 2;
+    private com.google.protobuf.LazyStringList data_;
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getDataList() {
+      return data_;
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public int getDataCount() {
+      return data_.size();
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public java.lang.String getData(int index) {
+      return data_.get(index);
+    }
+    /**
+     * <code>repeated string data = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDataBytes(int index) {
+      return data_.getByteString(index);
+    }
+
     private void initFields() {
       count_ = 0;
+      data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -8868,6 +9854,9 @@ public final class Instagram {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeInt32(1, count_);
       }
+      for (int i = 0; i < data_.size(); i++) {
+        output.writeBytes(2, data_.getByteString(i));
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -8881,65 +9870,74 @@ public final class Instagram {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, count_);
       }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < data_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeBytesSizeNoTag(data_.getByteString(i));
+        }
+        size += dataSize;
+        size += 1 * getDataList().size();
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CommentInfo parseFrom(byte[] data)
+    public static com.chinnews.Instagram.CommentInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static CommentInfo parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.CommentInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static CommentInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.CommentInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static CommentInfo parseDelimitedFrom(
+    public static com.chinnews.Instagram.CommentInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static CommentInfo parseFrom(
+    public static com.chinnews.Instagram.CommentInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8948,14 +9946,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(CommentInfo prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.CommentInfo prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8965,17 +9963,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.CommentInfo)
-        CommentInfoOrBuilder {
+        com.chinnews.Instagram.CommentInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_CommentInfo_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_CommentInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                CommentInfo.class, Builder.class);
+                com.chinnews.Instagram.CommentInfo.class, com.chinnews.Instagram.CommentInfo.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.CommentInfo.newBuilder()
@@ -8984,7 +9982,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9000,6 +9998,8 @@ public final class Instagram {
         super.clear();
         count_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
+        data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -9009,47 +10009,62 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_CommentInfo_descriptor;
       }
 
-      public CommentInfo getDefaultInstanceForType() {
-        return CommentInfo.getDefaultInstance();
+      public com.chinnews.Instagram.CommentInfo getDefaultInstanceForType() {
+        return com.chinnews.Instagram.CommentInfo.getDefaultInstance();
       }
 
-      public CommentInfo build() {
-        CommentInfo result = buildPartial();
+      public com.chinnews.Instagram.CommentInfo build() {
+        com.chinnews.Instagram.CommentInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public CommentInfo buildPartial() {
-        CommentInfo result = new CommentInfo(this);
+      public com.chinnews.Instagram.CommentInfo buildPartial() {
+        com.chinnews.Instagram.CommentInfo result = new com.chinnews.Instagram.CommentInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
         result.count_ = count_;
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = data_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.data_ = data_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof CommentInfo) {
-          return mergeFrom((CommentInfo)other);
+        if (other instanceof com.chinnews.Instagram.CommentInfo) {
+          return mergeFrom((com.chinnews.Instagram.CommentInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(CommentInfo other) {
-        if (other == CommentInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.CommentInfo other) {
+        if (other == com.chinnews.Instagram.CommentInfo.getDefaultInstance()) return this;
         if (other.hasCount()) {
           setCount(other.getCount());
+        }
+        if (!other.data_.isEmpty()) {
+          if (data_.isEmpty()) {
+            data_ = other.data_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureDataIsMutable();
+            data_.addAll(other.data_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -9067,11 +10082,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        CommentInfo parsedMessage = null;
+        com.chinnews.Instagram.CommentInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (CommentInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.CommentInfo) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -9114,6 +10129,99 @@ public final class Instagram {
         return this;
       }
 
+      private com.google.protobuf.LazyStringList data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureDataIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          data_ = new com.google.protobuf.LazyStringArrayList(data_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getDataList() {
+        return data_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public int getDataCount() {
+        return data_.size();
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public java.lang.String getData(int index) {
+        return data_.get(index);
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDataBytes(int index) {
+        return data_.getByteString(index);
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder setData(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addData(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addAllData(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureDataIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, data_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder clearData() {
+        data_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string data = 2;</code>
+       */
+      public Builder addDataBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureDataIsMutable();
+        data_.add(value);
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:com.chinnews.CommentInfo)
     }
 
@@ -9132,12 +10240,12 @@ public final class Instagram {
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    java.util.List<Data>
+    java.util.List<com.chinnews.Instagram.Data> 
         getDataList();
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    Data getData(int index);
+    com.chinnews.Instagram.Data getData(int index);
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
@@ -9145,13 +10253,13 @@ public final class Instagram {
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    java.util.List<? extends DataOrBuilder>
+    java.util.List<? extends com.chinnews.Instagram.DataOrBuilder> 
         getDataOrBuilderList();
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    DataOrBuilder getDataOrBuilder(
-            int index);
+    com.chinnews.Instagram.DataOrBuilder getDataOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code com.chinnews.MediaRecentResponse}
@@ -9177,7 +10285,7 @@ public final class Instagram {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -9207,10 +10315,10 @@ public final class Instagram {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                data_ = new java.util.ArrayList<Data>();
+                data_ = new java.util.ArrayList<com.chinnews.Instagram.Data>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              data_.add(input.readMessage(Data.PARSER, extensionRegistry));
+              data_.add(input.readMessage(com.chinnews.Instagram.Data.PARSER, extensionRegistry));
               break;
             }
           }
@@ -9230,14 +10338,14 @@ public final class Instagram {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
+      return com.chinnews.Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
     }
 
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return Instagram.internal_static_com_chinnews_MediaRecentResponse_fieldAccessorTable
+      return com.chinnews.Instagram.internal_static_com_chinnews_MediaRecentResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MediaRecentResponse.class, Builder.class);
+              com.chinnews.Instagram.MediaRecentResponse.class, com.chinnews.Instagram.MediaRecentResponse.Builder.class);
     }
 
     public static com.google.protobuf.Parser<MediaRecentResponse> PARSER =
@@ -9250,23 +10358,23 @@ public final class Instagram {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MediaRecentResponse> getParserForType() {
       return PARSER;
     }
 
     public static final int DATA_FIELD_NUMBER = 1;
-    private java.util.List<Data> data_;
+    private java.util.List<com.chinnews.Instagram.Data> data_;
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    public java.util.List<Data> getDataList() {
+    public java.util.List<com.chinnews.Instagram.Data> getDataList() {
       return data_;
     }
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    public java.util.List<? extends DataOrBuilder>
+    public java.util.List<? extends com.chinnews.Instagram.DataOrBuilder> 
         getDataOrBuilderList() {
       return data_;
     }
@@ -9279,13 +10387,13 @@ public final class Instagram {
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    public Data getData(int index) {
+    public com.chinnews.Instagram.Data getData(int index) {
       return data_.get(index);
     }
     /**
      * <code>repeated .com.chinnews.Data data = 1;</code>
      */
-    public DataOrBuilder getDataOrBuilder(
+    public com.chinnews.Instagram.DataOrBuilder getDataOrBuilder(
         int index) {
       return data_.get(index);
     }
@@ -9334,59 +10442,59 @@ public final class Instagram {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
 
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MediaRecentResponse parseFrom(byte[] data)
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MediaRecentResponse parseFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static MediaRecentResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.chinnews.Instagram.MediaRecentResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static MediaRecentResponse parseDelimitedFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static MediaRecentResponse parseFrom(
+    public static com.chinnews.Instagram.MediaRecentResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -9395,14 +10503,14 @@ public final class Instagram {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(MediaRecentResponse prototype) {
+    public static Builder newBuilder(com.chinnews.Instagram.MediaRecentResponse prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -9412,17 +10520,17 @@ public final class Instagram {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.chinnews.MediaRecentResponse)
-        MediaRecentResponseOrBuilder {
+        com.chinnews.Instagram.MediaRecentResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
       }
 
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return Instagram.internal_static_com_chinnews_MediaRecentResponse_fieldAccessorTable
+        return com.chinnews.Instagram.internal_static_com_chinnews_MediaRecentResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MediaRecentResponse.class, Builder.class);
+                com.chinnews.Instagram.MediaRecentResponse.class, com.chinnews.Instagram.MediaRecentResponse.Builder.class);
       }
 
       // Construct using com.chinnews.Instagram.MediaRecentResponse.newBuilder()
@@ -9431,7 +10539,7 @@ public final class Instagram {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9461,23 +10569,23 @@ public final class Instagram {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
+        return com.chinnews.Instagram.internal_static_com_chinnews_MediaRecentResponse_descriptor;
       }
 
-      public MediaRecentResponse getDefaultInstanceForType() {
-        return MediaRecentResponse.getDefaultInstance();
+      public com.chinnews.Instagram.MediaRecentResponse getDefaultInstanceForType() {
+        return com.chinnews.Instagram.MediaRecentResponse.getDefaultInstance();
       }
 
-      public MediaRecentResponse build() {
-        MediaRecentResponse result = buildPartial();
+      public com.chinnews.Instagram.MediaRecentResponse build() {
+        com.chinnews.Instagram.MediaRecentResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public MediaRecentResponse buildPartial() {
-        MediaRecentResponse result = new MediaRecentResponse(this);
+      public com.chinnews.Instagram.MediaRecentResponse buildPartial() {
+        com.chinnews.Instagram.MediaRecentResponse result = new com.chinnews.Instagram.MediaRecentResponse(this);
         int from_bitField0_ = bitField0_;
         if (dataBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -9493,16 +10601,16 @@ public final class Instagram {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MediaRecentResponse) {
-          return mergeFrom((MediaRecentResponse)other);
+        if (other instanceof com.chinnews.Instagram.MediaRecentResponse) {
+          return mergeFrom((com.chinnews.Instagram.MediaRecentResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MediaRecentResponse other) {
-        if (other == MediaRecentResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.chinnews.Instagram.MediaRecentResponse other) {
+        if (other == com.chinnews.Instagram.MediaRecentResponse.getDefaultInstance()) return this;
         if (dataBuilder_ == null) {
           if (!other.data_.isEmpty()) {
             if (data_.isEmpty()) {
@@ -9547,11 +10655,11 @@ public final class Instagram {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MediaRecentResponse parsedMessage = null;
+        com.chinnews.Instagram.MediaRecentResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MediaRecentResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.chinnews.Instagram.MediaRecentResponse) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -9562,22 +10670,22 @@ public final class Instagram {
       }
       private int bitField0_;
 
-      private java.util.List<Data> data_ =
+      private java.util.List<com.chinnews.Instagram.Data> data_ =
         java.util.Collections.emptyList();
       private void ensureDataIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          data_ = new java.util.ArrayList<Data>(data_);
+          data_ = new java.util.ArrayList<com.chinnews.Instagram.Data>(data_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          Data, Data.Builder, DataOrBuilder> dataBuilder_;
+          com.chinnews.Instagram.Data, com.chinnews.Instagram.Data.Builder, com.chinnews.Instagram.DataOrBuilder> dataBuilder_;
 
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public java.util.List<Data> getDataList() {
+      public java.util.List<com.chinnews.Instagram.Data> getDataList() {
         if (dataBuilder_ == null) {
           return java.util.Collections.unmodifiableList(data_);
         } else {
@@ -9597,7 +10705,7 @@ public final class Instagram {
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public Data getData(int index) {
+      public com.chinnews.Instagram.Data getData(int index) {
         if (dataBuilder_ == null) {
           return data_.get(index);
         } else {
@@ -9608,7 +10716,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder setData(
-          int index, Data value) {
+          int index, com.chinnews.Instagram.Data value) {
         if (dataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9625,7 +10733,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder setData(
-          int index, Data.Builder builderForValue) {
+          int index, com.chinnews.Instagram.Data.Builder builderForValue) {
         if (dataBuilder_ == null) {
           ensureDataIsMutable();
           data_.set(index, builderForValue.build());
@@ -9638,7 +10746,7 @@ public final class Instagram {
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public Builder addData(Data value) {
+      public Builder addData(com.chinnews.Instagram.Data value) {
         if (dataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9655,7 +10763,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder addData(
-          int index, Data value) {
+          int index, com.chinnews.Instagram.Data value) {
         if (dataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9672,7 +10780,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder addData(
-          Data.Builder builderForValue) {
+          com.chinnews.Instagram.Data.Builder builderForValue) {
         if (dataBuilder_ == null) {
           ensureDataIsMutable();
           data_.add(builderForValue.build());
@@ -9686,7 +10794,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder addData(
-          int index, Data.Builder builderForValue) {
+          int index, com.chinnews.Instagram.Data.Builder builderForValue) {
         if (dataBuilder_ == null) {
           ensureDataIsMutable();
           data_.add(index, builderForValue.build());
@@ -9700,7 +10808,7 @@ public final class Instagram {
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
       public Builder addAllData(
-          Iterable<? extends Data> values) {
+          java.lang.Iterable<? extends com.chinnews.Instagram.Data> values) {
         if (dataBuilder_ == null) {
           ensureDataIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -9740,14 +10848,14 @@ public final class Instagram {
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public Data.Builder getDataBuilder(
+      public com.chinnews.Instagram.Data.Builder getDataBuilder(
           int index) {
         return getDataFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public DataOrBuilder getDataOrBuilder(
+      public com.chinnews.Instagram.DataOrBuilder getDataOrBuilder(
           int index) {
         if (dataBuilder_ == null) {
           return data_.get(index);  } else {
@@ -9757,7 +10865,7 @@ public final class Instagram {
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public java.util.List<? extends DataOrBuilder>
+      public java.util.List<? extends com.chinnews.Instagram.DataOrBuilder> 
            getDataOrBuilderList() {
         if (dataBuilder_ != null) {
           return dataBuilder_.getMessageOrBuilderList();
@@ -9768,31 +10876,31 @@ public final class Instagram {
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public Data.Builder addDataBuilder() {
+      public com.chinnews.Instagram.Data.Builder addDataBuilder() {
         return getDataFieldBuilder().addBuilder(
-            Data.getDefaultInstance());
+            com.chinnews.Instagram.Data.getDefaultInstance());
       }
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public Data.Builder addDataBuilder(
+      public com.chinnews.Instagram.Data.Builder addDataBuilder(
           int index) {
         return getDataFieldBuilder().addBuilder(
-            index, Data.getDefaultInstance());
+            index, com.chinnews.Instagram.Data.getDefaultInstance());
       }
       /**
        * <code>repeated .com.chinnews.Data data = 1;</code>
        */
-      public java.util.List<Data.Builder>
+      public java.util.List<com.chinnews.Instagram.Data.Builder> 
            getDataBuilderList() {
         return getDataFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Data, Data.Builder, DataOrBuilder>
+          com.chinnews.Instagram.Data, com.chinnews.Instagram.Data.Builder, com.chinnews.Instagram.DataOrBuilder> 
           getDataFieldBuilder() {
         if (dataBuilder_ == null) {
           dataBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Data, Data.Builder, DataOrBuilder>(
+              com.chinnews.Instagram.Data, com.chinnews.Instagram.Data.Builder, com.chinnews.Instagram.DataOrBuilder>(
                   data_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -9834,6 +10942,11 @@ public final class Instagram {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_com_chinnews_Data_Images_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_chinnews_Location_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_com_chinnews_Location_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_chinnews_Media_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -9871,11 +10984,11 @@ public final class Instagram {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\017instagram.proto\022\014com.chinnews\"v\n\022Subsc" +
       "riptionUpdate\022\026\n\016changed_aspect\030\001 \001(\t\022\016\n" +
       "\006object\030\002 \001(\t\022\021\n\tobject_id\030\003 \001(\t\022\014\n\004time" +
-      "\030\004 \001(\005\022\027\n\017subscription_id\030\005 \001(\005\"\205\005\n\004Data" +
+      "\030\004 \001(\005\022\027\n\017subscription_id\030\005 \001(\005\"\235\005\n\004Data" +
       "\022\014\n\004type\030\001 \002(\t\022)\n\006videos\030\002 \001(\n2\031.com.chi" +
       "nnews.Data.Videos\022\026\n\016users_in_photo\030\003 \003(" +
       "\t\022\016\n\006filter\030\004 \001(\t\022\014\n\004tags\030\005 \003(\t\022+\n\010comme" +
@@ -9884,23 +10997,26 @@ public final class Instagram {
       "likes\030\010 \001(\0132\023.com.chinnews.Likes\022\014\n\004link",
       "\030\t \001(\t\022 \n\004user\030\n \001(\0132\022.com.chinnews.User" +
       "\022\024\n\014created_time\030\013 \002(\t\022)\n\006images\030\014 \001(\n2\031" +
-      ".com.chinnews.Data.Images\022\n\n\002id\030\r \002(\t\022\020\n" +
-      "\010location\030\016 \001(\t\022\013\n\003_id\030\017 \001(\t\032g\n\006Videos\022+" +
-      "\n\016low_resolution\030\001 \002(\0132\023.com.chinnews.Me" +
-      "dia\0220\n\023standard_resolution\030\002 \002(\0132\023.com.c" +
-      "hinnews.Media\032\217\001\n\006Images\022+\n\016low_resoluti" +
-      "on\030\001 \002(\0132\023.com.chinnews.Media\022&\n\tthumbna" +
-      "il\030\002 \002(\0132\023.com.chinnews.Media\0220\n\023standar" +
-      "d_resolution\030\003 \002(\0132\023.com.chinnews.Media\"",
-      "3\n\005Media\022\013\n\003url\030\001 \002(\t\022\r\n\005width\030\002 \002(\005\022\016\n\006" +
-      "height\030\003 \002(\005\"\026\n\005Likes\022\r\n\005count\030\001 \002(\005\"P\n\004" +
-      "User\022\020\n\010username\030\001 \002(\t\022\027\n\017profile_pictur" +
-      "e\030\002 \001(\t\022\n\n\002id\030\003 \002(\t\022\021\n\tfull_name\030\004 \001(\t\"[" +
-      "\n\007Caption\022\024\n\014created_time\030\001 \002(\t\022\014\n\004text\030" +
-      "\002 \001(\t\022 \n\004from\030\003 \002(\0132\022.com.chinnews.User\022" +
-      "\n\n\002id\030\004 \002(\t\"\034\n\013CommentInfo\022\r\n\005count\030\001 \002(" +
-      "\005\"7\n\023MediaRecentResponse\022 \n\004data\030\001 \003(\0132\022" +
-      ".com.chinnews.Data"
+      ".com.chinnews.Data.Images\022\n\n\002id\030\r \002(\t\022(\n" +
+      "\010location\030\016 \001(\0132\026.com.chinnews.Location\022" +
+      "\013\n\003_id\030\017 \001(\t\032g\n\006Videos\022+\n\016low_resolution" +
+      "\030\001 \002(\0132\023.com.chinnews.Media\0220\n\023standard_" +
+      "resolution\030\002 \002(\0132\023.com.chinnews.Media\032\217\001" +
+      "\n\006Images\022+\n\016low_resolution\030\001 \002(\0132\023.com.c" +
+      "hinnews.Media\022&\n\tthumbnail\030\002 \002(\0132\023.com.c" +
+      "hinnews.Media\0220\n\023standard_resolution\030\003 \002",
+      "(\0132\023.com.chinnews.Media\"I\n\010Location\022\020\n\010l" +
+      "atitude\030\001 \001(\002\022\014\n\004name\030\002 \001(\t\022\021\n\tlongitude" +
+      "\030\003 \001(\002\022\n\n\002id\030\004 \001(\005\"3\n\005Media\022\013\n\003url\030\001 \002(\t" +
+      "\022\r\n\005width\030\002 \002(\005\022\016\n\006height\030\003 \002(\005\"$\n\005Likes" +
+      "\022\r\n\005count\030\001 \002(\005\022\014\n\004data\030\002 \003(\t\"P\n\004User\022\020\n" +
+      "\010username\030\001 \002(\t\022\027\n\017profile_picture\030\002 \001(\t" +
+      "\022\n\n\002id\030\003 \002(\t\022\021\n\tfull_name\030\004 \001(\t\"[\n\007Capti" +
+      "on\022\024\n\014created_time\030\001 \002(\t\022\014\n\004text\030\002 \001(\t\022 " +
+      "\n\004from\030\003 \002(\0132\022.com.chinnews.User\022\n\n\002id\030\004" +
+      " \002(\t\"*\n\013CommentInfo\022\r\n\005count\030\001 \002(\005\022\014\n\004da",
+      "ta\030\002 \003(\t\"7\n\023MediaRecentResponse\022 \n\004data\030" +
+      "\001 \003(\0132\022.com.chinnews.Data"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -9919,61 +11035,67 @@ public final class Instagram {
     internal_static_com_chinnews_SubscriptionUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_SubscriptionUpdate_descriptor,
-        new String[] { "ChangedAspect", "Object", "ObjectId", "Time", "SubscriptionId", });
+        new java.lang.String[] { "ChangedAspect", "Object", "ObjectId", "Time", "SubscriptionId", });
     internal_static_com_chinnews_Data_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_com_chinnews_Data_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Data_descriptor,
-        new String[] { "Type", "Videos", "UsersInPhoto", "Filter", "Tags", "Comments", "Caption", "Likes", "Link", "User", "CreatedTime", "Images", "Id13", "Location", "Id15", });
+        new java.lang.String[] { "Type", "Videos", "UsersInPhoto", "Filter", "Tags", "Comments", "Caption", "Likes", "Link", "User", "CreatedTime", "Images", "Id13", "Location", "Id15", });
     internal_static_com_chinnews_Data_Videos_descriptor =
       internal_static_com_chinnews_Data_descriptor.getNestedTypes().get(0);
     internal_static_com_chinnews_Data_Videos_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Data_Videos_descriptor,
-        new String[] { "LowResolution", "StandardResolution", });
+        new java.lang.String[] { "LowResolution", "StandardResolution", });
     internal_static_com_chinnews_Data_Images_descriptor =
       internal_static_com_chinnews_Data_descriptor.getNestedTypes().get(1);
     internal_static_com_chinnews_Data_Images_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Data_Images_descriptor,
-        new String[] { "LowResolution", "Thumbnail", "StandardResolution", });
-    internal_static_com_chinnews_Media_descriptor =
+        new java.lang.String[] { "LowResolution", "Thumbnail", "StandardResolution", });
+    internal_static_com_chinnews_Location_descriptor =
       getDescriptor().getMessageTypes().get(2);
+    internal_static_com_chinnews_Location_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_com_chinnews_Location_descriptor,
+        new java.lang.String[] { "Latitude", "Name", "Longitude", "Id", });
+    internal_static_com_chinnews_Media_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_com_chinnews_Media_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Media_descriptor,
-        new String[] { "Url", "Width", "Height", });
+        new java.lang.String[] { "Url", "Width", "Height", });
     internal_static_com_chinnews_Likes_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_com_chinnews_Likes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Likes_descriptor,
-        new String[] { "Count", });
+        new java.lang.String[] { "Count", "Data", });
     internal_static_com_chinnews_User_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_com_chinnews_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_User_descriptor,
-        new String[] { "Username", "ProfilePicture", "Id", "FullName", });
+        new java.lang.String[] { "Username", "ProfilePicture", "Id", "FullName", });
     internal_static_com_chinnews_Caption_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_com_chinnews_Caption_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_Caption_descriptor,
-        new String[] { "CreatedTime", "Text", "From", "Id", });
+        new java.lang.String[] { "CreatedTime", "Text", "From", "Id", });
     internal_static_com_chinnews_CommentInfo_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_com_chinnews_CommentInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_CommentInfo_descriptor,
-        new String[] { "Count", });
+        new java.lang.String[] { "Count", "Data", });
     internal_static_com_chinnews_MediaRecentResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_com_chinnews_MediaRecentResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_com_chinnews_MediaRecentResponse_descriptor,
-        new String[] { "Data", });
+        new java.lang.String[] { "Data", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
