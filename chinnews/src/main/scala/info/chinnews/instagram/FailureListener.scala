@@ -5,7 +5,7 @@ package info.chinnews.instagram
   */
 class FailureListener {
   var listeners: List[Exception => Unit] = Nil
-  def listen(listener: Exception => Unit): Unit = {
+  def listen(listener: Exception => Unit) {
     listeners ::= listener
   }
   def notify(e: Exception) = for (l <- listeners) l(e)

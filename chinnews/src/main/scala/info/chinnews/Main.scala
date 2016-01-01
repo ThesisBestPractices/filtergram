@@ -1,7 +1,7 @@
 package info.chinnews
 
 import akka.actor.ActorSystem
-import com.google.inject.{Injector, Guice}
+import com.google.inject.Guice
 import com.typesafe.config.Config
 import com.typesafe.scalalogging.Logger
 import info.chinnews.instagram._
@@ -10,9 +10,8 @@ import info.chinnews.system.akkaguice.{ConfigModule, SystemModule}
 import org.apache.log4j.{LogManager, Level}
 import org.mongodb.scala._
 import org.slf4j.LoggerFactory
-import net.codingwell.scalaguice.InjectorExtensions._
 import scala.collection.JavaConversions._
-
+import net.codingwell.scalaguice.InjectorExtensions._
 
 object Main {
 
@@ -27,22 +26,23 @@ object Main {
 
     val actorSystem = injector.instance[ActorSystem]
     val conf = injector.instance[Config]
+    val db = injector.instance[DB]
+    val frontServer = injector.instance[FrontServer]
 
     LogManager.getRootLogger.setLevel(Level.toLevel(conf.getString("chin_news.log.level")))
 
-    subscribe(conf, actorSystem, injector)
+    subscribe(conf, actorSystem, db, frontServer)
   }
 
-  def subscribe(conf: Config, actorSystem: ActorSystem, injector: Injector): Unit = {
+  def subscribe(conf: Config, actorSystem: ActorSystem, db: DB, frontServer: FrontServer): Unit = {
     val client_id = conf.getString("chin_news.instagram.client_id")
     val client_secret = conf.getString("chin_news.instagram.client_secret")
     val callback_url = conf.getString("chin_news.public.host")
 
-    val db = injector.instance[DB]
     Subscriber.removeOldConnections(client_id, client_secret)
     db.removeAllCities(() => {
       CitiesHolder.addCities(db)
-      injector.instance[FrontServer].subscribe()
+      frontServer.subscribe()
       db.forAllCities((city: Document) => {
         val name = city.get("name").get.asString().getValue
         logger.info(s"Subscribing to the city $name")

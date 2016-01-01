@@ -16,7 +16,7 @@ message Data {
         required Media low_resolution = 1;
         required Media standard_resolution = 2;
     }
-    repeated string users_in_photo = 3;
+    repeated UserInPhoto users_in_photo = 3;
     optional string filter = 4;
     repeated string tags = 5;
     optional CommentInfo comments = 6;
@@ -37,6 +37,16 @@ message Data {
     optional string _id = 15;
 }
 
+message UserInPhoto {
+    optional Position position = 1;
+    optional User user = 2;
+}
+
+message Position {
+    required float y = 1;
+    required float x = 2;
+}
+
 message Location {
     optional float latitude = 1;
     optional string name = 2;
@@ -52,7 +62,7 @@ message Media {
 
 message Likes {
     required int32 count = 1;
-    repeated string data = 2;
+    repeated User data = 2;
 }
 
 message User {
@@ -71,7 +81,13 @@ message Caption {
 
 message CommentInfo {
     required int32 count = 1;
-    repeated string data = 2;
+    repeated Comment data = 2;
+}
+
+message Comment {
+    required string created_time = 1;
+    required string text = 2;
+    required User from = 3;
 }
 
 message MediaRecentResponse {

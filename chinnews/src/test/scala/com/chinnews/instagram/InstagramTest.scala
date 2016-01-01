@@ -152,7 +152,7 @@ class InstagramTest extends FlatSpec with Matchers {
     val jsonFormat = new JsonFormat
     jsonFormat.merge(message, ExtensionRegistry.getEmptyRegistry, builder)
     val mediaRecentResponse = builder.build()
-    mediaRecentResponse.getDataCount should be(2)
+    mediaRecentResponse.getDataCount should be(20)
 
   }
 
